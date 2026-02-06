@@ -11,6 +11,7 @@ import matplotlib.dates as mdates
 INPUT_EXCEL = Path("data/matchs.xlsx")
 OUTPUT_DIR = Path("docs/resultats")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+SHEET_NAME = "matchs"
 
 MU0 = 25
 SIGMA0 = MU0 / 3

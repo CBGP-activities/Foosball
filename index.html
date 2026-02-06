@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>TrueSkill Foosball CBGP</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 10px 14px;
+    text-align: center;
+}
+
+th {
+    background: #2f3640;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f1f1f1;
+}
+
+.top1 { background: #ffeaa7; }
+.top2 { background: #dfe6e9; }
+.top3 { background: #fab1a0; }
+
+small {
+    color: #636e72;
+}
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+</head>
+
+<body>
+
+<h1>🏆 TrueSkill ranking </h1>
+
+<table id="classement">
+<thead>
+<tr>
+    <th>Rank</th>
+    <th>Player</th>
+    <th>Score</th>
+    <th>μ</th>
+    <th>σ</th>
+    <th>Games</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+
+<h2 style="text-align:center;margin-top:50px;">
+📈 TrueSkill score evolution
+</h2>
+
+<!-- ======== CONTROLES TEMPORELS ======== -->
+<div style="width:90%;margin:auto;text-align:center;margin-bottom:20px;">
+    <button onclick="setRange('week')">Last 7 days</button>
+    <button onclick="setRange('year')">This year</button>
+    <button onclick="setRange('all')">From the beginning</button>
+    <br><br>
+    From <input type="date" id="fromDate">
+    To <input type="date" id="toDate">
+    <button onclick="setCustomRange()">OK</button>
+</div>
+
+<div style="width:90%;margin:auto;">
+  <canvas id="allPlayersChart"></canvas>
+</div>
+
+<script>
+// =======================
+// TABLEAU CLASSEMENT
+// =======================
+fetch("resultats/classement_actuel.csv")
+.then(response => response.text())
+.then(text => {
+    const lines = text.trim().split("\n");
+    const headers = lines[0].split(",");
+
+    const rows = lines.slice(1).map(line => {
+        const cols = line.split(",");
+        let obj = {};
+        headers.forEach((h, i) => obj[h] = cols[i]);
+        return obj;
+    });
+
+    const tbody = document.querySelector("#classement tbody");
+
+    rows.forEach((row, index) => {
+        const tr = document.createElement("tr");
+        if (index === 0) tr.classList.add("top1");
+        if (index === 1) tr.classList.add("top2");
+        if (index === 2) tr.classList.add("top3");
+
+        const values = [
+            row.rang,
+            row.joueur,
+            row.score,
+            row.mu,
+            row.sigma,
+            row.matches
+        ];
+
+        values.forEach(v => {
+            const td = document.createElement("td");
+            td.textContent = Number(v) ? Number(v).toFixed(2) : v;
+            tr.appendChild(td);
+        });
+
+        tbody.appendChild(tr);
+    });
+});
+
+// =======================
+// VARIABLES GLOBALES
+// =======================
+let fullDatasets = [];
+let chart = null;
+
+// =======================
+// COULEUR UNIQUE PAR JOUEUR
+// =======================
+function colorForIndex(i, total) {
+    const hue = Math.round((360 * i) / total);
+    return `hsl(${hue}, 70%, 45%)`;
+}
+
+// =======================
+// GRAPHIQUE ÉVOLUTION
+// =======================
+fetch("resultats/historique_classement.csv")
+.then(r => r.text())
+.then(text => {
+    const histLines = text.trim().split("\n");
+    const histHeaders = histLines[0].split(",");
+    const historique = histLines.slice(1).map(line => {
+        const cols = line.split(",");
+        let obj = {};
+        histHeaders.forEach((h,i)=>obj[h]=cols[i]);
+        return obj;
+    });
+
+    // lecture classement pour ordre dans la légende
+    fetch("resultats/classement_actuel.csv")
+    .then(r => r.text())
+    .then(text2 => {
+        const rankLines = text2.trim().split("\n").slice(1);
+        const classementOrder = rankLines.map(l => l.split(",")[1].trim());
+        drawAllPlayersChart(historique, classementOrder);
+    });
+});
+
+// =======================
+// DESSIN DU GRAPHIQUE
+// =======================
+function drawAllPlayersChart(historique, classementOrder) {
+
+    // ne garder que les joueurs présents dans l'historique
+    const joueurs = classementOrder.filter(j => historique.some(d=>d.joueur.trim()===j));
+
+    const datasets = joueurs.map((joueur,index)=>{
+        const color = colorForIndex(index,joueurs.length);
+        const rows = historique.filter(d=>d.joueur.trim()===joueur);
+
+        const lastPerDay = {};
+        rows.forEach(r=>{
+            lastPerDay[r.date] = r; // dernier score du jour
+        });
+
+        const points = Object.values(lastPerDay)
+            .sort((a,b)=>new Date(a.date)-new Date(b.date))
+            .map(d=>{
+                const [year,month,day] = d.date.split("-");
+                return { x: new Date(year, month-1, day,0,0,0), y: parseFloat(d.score) };
+            });
+
+        return {
+            label: joueur,
+            data: points,
+            borderColor: color,
+            backgroundColor: color,
+            borderWidth: 1.5,
+            tension: 0.3,
+            fill: false,
+            pointRadius: 3,
+            pointHoverRadius: 6
+        };
+    });
+
+    fullDatasets = datasets.map(ds=>({...ds, data:[...ds.data]}));
+
+    chart = new Chart(document.getElementById("allPlayersChart"), {
+        type:"line",
+        data:{datasets},
+        options:{
+            responsive:true,
+            interaction:{mode:"nearest",intersect:false},
+            plugins:{
+                legend:{
+                    position:"right",
+                    onHover:(e,item,legend)=>{
+                        legend.chart.data.datasets[item.datasetIndex].borderWidth=4;
+                        legend.chart.update();
+                    },
+                    onLeave:(e,item,legend)=>{
+                        legend.chart.data.datasets[item.datasetIndex].borderWidth=1.5;
+                        legend.chart.update();
+                    }
+                },
+                tooltip:{
+                    callbacks:{
+                        label: ctx => `${ctx.dataset.label} : ${ctx.parsed.y.toFixed(2)}`
+                    }
+                },
+                title:{
+                    display:true,
+                    text:"Évolution des scores TrueSkill (μ − 3σ)"
+                }
+            },
+            scales:{
+                x:{type:"time",time:{unit:"day"},title:{display:true,text:"Date"}},
+                y:{title:{display:true,text:"Score"}}
+            }
+        }
+    });
+
+    // affichage par défaut : dernière semaine
+    setRange("week");
+}
+
+// =======================
+// FILTRAGE TEMPOREL
+// =======================
+function setRange(type){
+    const now = new Date();
+    let start=null;
+    if(type==="week"){ start=new Date(); start.setDate(now.getDate()-7); }
+    else if(type==="year"){ start=new Date(now.getFullYear(),0,1); }
+    applyRange(start,now);
+}
+
+function setCustomRange(){
+    const from=document.getElementById("fromDate").value;
+    const to=document.getElementById("toDate").value;
+    if(!from||!to) return;
+    applyRange(new Date(from),new Date(to));
+}
+
+function applyRange(startDate,endDate){
+    chart.data.datasets.forEach((ds,i)=>{
+        const fullData = fullDatasets[i].data;
+        ds.data = fullData.filter(p=>{
+            const d = new Date(p.x);
+            if(startDate && d<startDate) return false;
+            if(endDate && d>endDate) return false;
+            return true;
+        });
+    });
+    chart.update();
+}
+</script>
+
+</body>
+</html>

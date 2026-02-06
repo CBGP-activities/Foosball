@@ -6,6 +6,9 @@ on:
       - data/matchs.xlsx
       - scripts/**
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest

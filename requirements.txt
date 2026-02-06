@@ -1,0 +1,5 @@
+pandas
+trueskill
+matplotlib
+openpyxl
+

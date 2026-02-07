@@ -2,6 +2,7 @@ name: Update TrueSkill tables
 
 on:
   push:
+    branches: [main]
     paths:
       - data/matchs.xlsx
       - scripts/**
@@ -11,6 +12,7 @@ permissions:
 
 jobs:
   build:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
 
     steps:
@@ -34,4 +36,3 @@ jobs:
         git add docs/resultats
         git commit -m "Auto-update TrueSkill results" || echo "No changes"
         git push
-

@@ -11,7 +11,7 @@ body {
     padding: 40px;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
 }
 
@@ -51,7 +51,7 @@ small {
 
 <body>
 
-<h1>🏆 TrueSkill ranking </h1>
+<h1>🏆 TrueSkill ranking</h1>
 
 <table id="classement">
 <thead>
@@ -67,23 +67,28 @@ small {
 <tbody></tbody>
 </table>
 
-<h2 style="text-align:center;margin-top:50px;">
-📈 TrueSkill score evolution
-</h2>
+<h2 style="margin-top:50px;">📈 TrueSkill score evolution</h2>
 
-<!-- ======== CONTROLES TEMPORELS ======== -->
+<!-- ======== CONTROLES ======== -->
 <div style="width:90%;margin:auto;text-align:center;margin-bottom:20px;">
     <button onclick="setRange('week')">Last 7 days</button>
     <button onclick="setRange('year')">This year</button>
     <button onclick="setRange('all')">From the beginning</button>
+
     <br><br>
+
     From <input type="date" id="fromDate">
     To <input type="date" id="toDate">
     <button onclick="setCustomRange()">OK</button>
+
+    <br><br>
+
+    <button onclick="toggleXAxis()">🔄 Switch X-axis (time / match days)</button><br>
+    <small>Time = calendar days • Match days = only days with games</small>
 </div>
 
 <div style="width:90%;margin:auto;">
-  <canvas id="allPlayersChart"></canvas>
+    <canvas id="allPlayersChart"></canvas>
 </div>
 
 <script>
@@ -91,38 +96,28 @@ small {
 // TABLEAU CLASSEMENT
 // =======================
 fetch("resultats/classement_actuel.csv")
-.then(response => response.text())
+.then(r => r.text())
 .then(text => {
     const lines = text.trim().split("\n");
     const headers = lines[0].split(",");
-
     const rows = lines.slice(1).map(line => {
         const cols = line.split(",");
         let obj = {};
-        headers.forEach((h, i) => obj[h] = cols[i]);
+        headers.forEach((h,i)=>obj[h]=cols[i]);
         return obj;
     });
 
     const tbody = document.querySelector("#classement tbody");
 
-    rows.forEach((row, index) => {
+    rows.forEach((row,index)=>{
         const tr = document.createElement("tr");
-        if (index === 0) tr.classList.add("top1");
-        if (index === 1) tr.classList.add("top2");
-        if (index === 2) tr.classList.add("top3");
+        if(index===0) tr.classList.add("top1");
+        if(index===1) tr.classList.add("top2");
+        if(index===2) tr.classList.add("top3");
 
-        const values = [
-            row.rang,
-            row.joueur,
-            row.score,
-            row.mu,
-            row.sigma,
-            row.matches
-        ];
-
-        values.forEach(v => {
+        ["rang","joueur","score","mu","sigma","matches"].forEach(k=>{
             const td = document.createElement("td");
-            td.textContent = Number(v) ? Number(v).toFixed(2) : v;
+            td.textContent = isNaN(row[k]) ? row[k] : Number(row[k]).toFixed(2);
             tr.appendChild(td);
         });
 
@@ -133,122 +128,156 @@ fetch("resultats/classement_actuel.csv")
 // =======================
 // VARIABLES GLOBALES
 // =======================
-let fullDatasets = [];
 let chart = null;
+let fullDatasets = [];
+let allMatchDates = [];
+let xMode = "time";
 
 // =======================
-// COULEUR UNIQUE PAR JOUEUR
+// COULEUR UNIQUE
 // =======================
-function colorForIndex(i, total) {
-    const hue = Math.round((360 * i) / total);
-    return `hsl(${hue}, 70%, 45%)`;
+function colorForIndex(i,total){
+    return `hsl(${Math.round(360*i/total)},70%,45%)`;
 }
 
 // =======================
-// GRAPHIQUE ÉVOLUTION
+// LECTURE HISTORIQUE
 // =======================
 fetch("resultats/historique_classement.csv")
-.then(r => r.text())
-.then(text => {
-    const histLines = text.trim().split("\n");
-    const histHeaders = histLines[0].split(",");
-    const historique = histLines.slice(1).map(line => {
+.then(r=>r.text())
+.then(text=>{
+    const lines = text.trim().split("\n");
+    const headers = lines[0].split(",");
+    const historique = lines.slice(1).map(line=>{
         const cols = line.split(",");
-        let obj = {};
-        histHeaders.forEach((h,i)=>obj[h]=cols[i]);
+        let obj={};
+        headers.forEach((h,i)=>obj[h]=cols[i]);
         return obj;
     });
 
-    // lecture classement pour ordre dans la légende
     fetch("resultats/classement_actuel.csv")
-    .then(r => r.text())
-    .then(text2 => {
-        const rankLines = text2.trim().split("\n").slice(1);
-        const classementOrder = rankLines.map(l => l.split(",")[1].trim());
-        drawAllPlayersChart(historique, classementOrder);
+    .then(r=>r.text())
+    .then(t=>{
+        const order = t.trim().split("\n").slice(1).map(l=>l.split(",")[1].trim());
+        drawAllPlayersChart(historique, order);
     });
 });
 
 // =======================
 // DESSIN DU GRAPHIQUE
 // =======================
-function drawAllPlayersChart(historique, classementOrder) {
+function drawAllPlayersChart(historique, classementOrder){
 
-    // ne garder que les joueurs présents dans l'historique
-    const joueurs = classementOrder.filter(j => historique.some(d=>d.joueur.trim()===j));
+    const joueurs = classementOrder.filter(j =>
+        historique.some(d=>d.joueur.trim()===j)
+    );
+
+    allMatchDates = [...new Set(historique.map(d=>d.date))]
+        .sort((a,b)=>new Date(a)-new Date(b));
 
     const datasets = joueurs.map((joueur,index)=>{
         const color = colorForIndex(index,joueurs.length);
         const rows = historique.filter(d=>d.joueur.trim()===joueur);
 
         const lastPerDay = {};
-        rows.forEach(r=>{
-            lastPerDay[r.date] = r; // dernier score du jour
-        });
+        rows.forEach(r=>lastPerDay[r.date]=r);
 
-        const points = Object.values(lastPerDay)
+        const timeData = Object.values(lastPerDay)
             .sort((a,b)=>new Date(a.date)-new Date(b.date))
             .map(d=>{
-                const [year,month,day] = d.date.split("-");
-                return { x: new Date(year, month-1, day,0,0,0), y: parseFloat(d.score) };
+                const [y,m,day]=d.date.split("-");
+                return {x:new Date(y,m-1,day,0,0,0), y:parseFloat(d.score)};
             });
+
+        const scoreByDate = {};
+        Object.values(lastPerDay).forEach(d=>scoreByDate[d.date]=parseFloat(d.score));
+
+        const categoryData = allMatchDates.map(date=>({
+            x:date,
+            y:scoreByDate[date] ?? null
+        }));
 
         return {
             label: joueur,
-            data: points,
             borderColor: color,
             backgroundColor: color,
             borderWidth: 1.5,
             tension: 0.3,
-            fill: false,
-            pointRadius: 3,
-            pointHoverRadius: 6
+            fill:false,
+            pointRadius:3,
+            pointHoverRadius:6,
+            timeData,
+            categoryData,
+            data: timeData
         };
     });
 
-    fullDatasets = datasets.map(ds=>({...ds, data:[...ds.data]}));
+    fullDatasets = datasets.map(ds=>({
+        ...ds,
+        timeData:[...ds.timeData],
+        categoryData:[...ds.categoryData]
+    }));
 
     chart = new Chart(document.getElementById("allPlayersChart"), {
         type:"line",
         data:{datasets},
-        options:{
-            responsive:true,
-            interaction:{mode:"nearest",intersect:false},
-            plugins:{
-                legend:{
-                    position:"right",
-                    onHover:(e,item,legend)=>{
-                        legend.chart.data.datasets[item.datasetIndex].borderWidth=4;
-                        legend.chart.update();
-                    },
-                    onLeave:(e,item,legend)=>{
-                        legend.chart.data.datasets[item.datasetIndex].borderWidth=1.5;
-                        legend.chart.update();
-                    }
-                },
-                tooltip:{
-                    callbacks:{
-                        label: ctx => `${ctx.dataset.label} : ${ctx.parsed.y.toFixed(2)}`
-                    }
-                },
-                title:{
-                    display:true,
-                    text:"Évolution des scores TrueSkill (μ − 3σ)"
-                }
-            },
-            scales:{
-                x:{type:"time",time:{unit:"day"},title:{display:true,text:"Date"}},
-                y:{title:{display:true,text:"Score"}}
-            }
-        }
+        options:getChartOptions()
     });
 
-    // affichage par défaut : dernière semaine
     setRange("week");
 }
 
 // =======================
-// FILTRAGE TEMPOREL
+// OPTIONS DYNAMIQUES
+// =======================
+function getChartOptions(){
+    return {
+        responsive:true,
+        interaction:{mode:"nearest",intersect:false},
+        plugins:{
+            legend:{
+                position:"right",
+                onHover:(e,item,l)=>{
+                    l.chart.data.datasets[item.datasetIndex].borderWidth=4;
+                    l.chart.update();
+                },
+                onLeave:(e,item,l)=>{
+                    l.chart.data.datasets[item.datasetIndex].borderWidth=1.5;
+                    l.chart.update();
+                }
+            },
+            tooltip:{
+                callbacks:{
+                    label: ctx =>
+                        `${ctx.dataset.label} : ${ctx.parsed.y.toFixed(2)}`
+                }
+            }
+        },
+        scales:{
+            x: xMode==="time"
+                ? {type:"time",time:{unit:"day"},title:{display:true,text:"Date"}}
+                : {type:"category",labels:allMatchDates,title:{display:true,text:"Match days"}},
+            y:{title:{display:true,text:"Score"}}
+        }
+    };
+}
+
+// =======================
+// SWITCH AXE X
+// =======================
+function toggleXAxis(){
+    xMode = xMode==="time" ? "category" : "time";
+    chart.data.datasets.forEach((ds,i)=>{
+        ds.data = xMode==="time"
+            ? fullDatasets[i].timeData
+            : fullDatasets[i].categoryData;
+    });
+    chart.options = getChartOptions();
+    chart.update();
+}
+
+// =======================
+// FILTRES TEMPORELS
 // =======================
 function setRange(type){
     const now = new Date();
@@ -259,19 +288,19 @@ function setRange(type){
 }
 
 function setCustomRange(){
-    const from=document.getElementById("fromDate").value;
-    const to=document.getElementById("toDate").value;
-    if(!from||!to) return;
-    applyRange(new Date(from),new Date(to));
+    const f=document.getElementById("fromDate").value;
+    const t=document.getElementById("toDate").value;
+    if(!f||!t) return;
+    applyRange(new Date(f),new Date(t));
 }
 
-function applyRange(startDate,endDate){
+function applyRange(start,end){
     chart.data.datasets.forEach((ds,i)=>{
-        const fullData = fullDatasets[i].data;
-        ds.data = fullData.filter(p=>{
-            const d = new Date(p.x);
-            if(startDate && d<startDate) return false;
-            if(endDate && d>endDate) return false;
+        ds.data = fullDatasets[i][xMode+"Data"].filter(p=>{
+            if(!p.y) return false;
+            const d = xMode==="time" ? new Date(p.x) : new Date(p.x);
+            if(start && d<start) return false;
+            if(end && d>end) return false;
             return true;
         });
     });

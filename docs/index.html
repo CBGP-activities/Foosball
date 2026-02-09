@@ -71,15 +71,17 @@ small {
 
 <!-- ======== CONTROLES ======== -->
 <div style="width:90%;margin:auto;text-align:center;margin-bottom:20px;">
-    <button onclick="setRange('week')">Last 7 days</button>
-    <button onclick="setRange('year')">This year</button>
     <button onclick="setRange('all')">From the beginning</button>
+    <button onclick="setRange('year')">This year</button>
+    <button onclick="setRange('week')">Last 7 days</button>
 
     <br><br>
-
-    From <input type="date" id="fromDate">
-    To <input type="date" id="toDate">
-    <button onclick="setCustomRange()">OK</button>
+    
+    <span style="font-size:0.85em;">
+		From <input type="date" id="fromDate">
+		to <input type="date" id="toDate">
+	</span>
+	<button onclick="setCustomRange()">OK</button>
 
     <br><br>
 
@@ -131,7 +133,7 @@ fetch("resultats/classement_actuel.csv")
 let chart = null;
 let fullDatasets = [];
 let allMatchDates = [];
-let xMode = "time";
+let xMode = "category";
 
 // =======================
 // COULEUR UNIQUE
@@ -224,7 +226,7 @@ function drawAllPlayersChart(historique, classementOrder){
         options:getChartOptions()
     });
 
-    setRange("week");
+    setRange("all");
 }
 
 // =======================

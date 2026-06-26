@@ -74,6 +74,15 @@ for match_id, row in df.iterrows():
             "score": rating.mu - 3 * rating.sigma
         })
 
+for joueur in list(ratings.keys()):
+    print(f"joueur : {joueur}, nb_match : {nb_matchs[joueur]}")
+    if nb_matchs[joueur] <= 10:
+        del ratings[joueur]
+
+print("===========")        
+for joueur in list(ratings.keys()):
+    print(f"joueur : {joueur}, nb_match : {nb_matchs[joueur]}")
+
 ## =====================
 ## Graphique historique
 ## =====================

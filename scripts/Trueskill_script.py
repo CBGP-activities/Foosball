@@ -177,6 +177,11 @@ joueurs_actifs = set(
 
 )
 
+joueurs_actifs = {
+    str(joueur).strip()
+    for joueur in joueurs_actifs
+}
+
 
 joueurs_eligibles = {
 
@@ -345,6 +350,33 @@ df_stats["joueur"] = (
 )
 
 
+stats_dates = {}
+
+for joueur in ratings.keys():
+
+    matches_joueur = df[
+        (df["rouge_p1"] == joueur)
+        | (df["rouge_p2"] == joueur)
+        | (df["bleu_p1"] == joueur)
+        | (df["bleu_p2"] == joueur)
+    ]
+
+    stats_dates[joueur] = {
+
+        "premier_match":
+            matches_joueur["date"].min().date(),
+
+        "dernier_match":
+            matches_joueur["date"].max().date(),
+
+        "jours_depuis_dernier_match":
+            (
+                df["date"].max()
+                - matches_joueur["date"].max()
+            ).days
+
+    }
+
 stats_joueurs = []
 
 
@@ -376,19 +408,16 @@ for joueur, df_j in df_stats.groupby("joueur"):
             else None
         ),
 
+        
         "premier_match":
-            pd.to_datetime(df_j["date"].min()).date(),
+            stats_dates[joueur]["premier_match"],
 
         "dernier_match":
-            pd.to_datetime(df_j["date"].max()).date(),
-        
-        "jours_depuis_dernier_match":
-            (
-                df["date"].max()
-                -
-                df_j["date"].max()
-            ).days,
+            stats_dates[joueur]["dernier_match"],
 
+        "jours_depuis_dernier_match":
+            stats_dates[joueur]["jours_depuis_dernier_match"],
+        
         "eligible_classement":
             joueur in joueurs_eligibles
 

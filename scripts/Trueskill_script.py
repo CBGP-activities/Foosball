@@ -4,6 +4,7 @@ from collections import defaultdict
 from pathlib import Path
 import matplotlib.pyplot as plt
 
+
 # =====================
 # PARAMÈTRES
 # =====================
@@ -23,9 +24,40 @@ MOIS_ACTIVITE_CLASSEMENT = 6
 # =====================
 # LECTURE DES MATCHS
 # =====================
-df = pd.read_excel(INPUT_EXCEL, sheet_name=SHEET_NAME)
+df = pd.read_excel(
+    INPUT_EXCEL,
+    sheet_name=SHEET_NAME
+)
+
+
+# =====================
+# NETTOYAGE DES NOMS JOUEURS
+# =====================
+colonnes_joueurs = [
+    "rouge_p1",
+    "rouge_p2",
+    "bleu_p1",
+    "bleu_p2"
+]
+
+
+for col in colonnes_joueurs:
+    df[col] = (
+        df[col]
+        .astype(str)
+        .str.strip()
+        .str.replace(r"\s+", " ", regex=True)
+    )
+
+
 df["date"] = pd.to_datetime(df["date"])
-df = df.sort_values("date").reset_index(drop=True)
+
+df = (
+    df
+    .sort_values("date")
+    .reset_index(drop=True)
+)
+
 
 
 # =====================
@@ -37,9 +69,15 @@ historique = []
 
 
 def get_rating(joueur):
+
     if joueur not in ratings:
-        ratings[joueur] = Rating(mu=MU0, sigma=SIGMA0)
+        ratings[joueur] = Rating(
+            mu=MU0,
+            sigma=SIGMA0
+        )
+
     return ratings[joueur]
+
 
 
 # =====================
@@ -48,6 +86,7 @@ def get_rating(joueur):
 for match_id, row in df.iterrows():
 
     date = row["date"]
+
 
     t1_players = [
         row["rouge_p1"],
@@ -59,91 +98,121 @@ for match_id, row in df.iterrows():
         row["bleu_p2"]
     ]
 
-    rouge = [get_rating(p) for p in t1_players]
-    bleu = [get_rating(p) for p in t2_players]
+
+    rouge = [
+        get_rating(p)
+        for p in t1_players
+    ]
+
+    bleu = [
+        get_rating(p)
+        for p in t2_players
+    ]
+
 
     if row["vainqueur"] == "rouge":
         ranks = [0, 1]
     else:
         ranks = [1, 0]
 
+
     new_teams = rate(
         [rouge, bleu],
         ranks=ranks
     )
 
+
     # mise à jour ratings
     for p, r in zip(t1_players, new_teams[0]):
+
         ratings[p] = r
         nb_matchs[p] += 1
 
+
     for p, r in zip(t2_players, new_teams[1]):
+
         ratings[p] = r
         nb_matchs[p] += 1
+
 
 
     # historique complet
     for joueur, rating in ratings.items():
 
         historique.append({
+
             "date": date,
             "match_id": match_id + 1,
             "joueur": joueur,
             "mu": rating.mu,
             "sigma": rating.sigma,
             "score": rating.mu - 3 * rating.sigma
+
         })
+
 
 
 # =====================
 # JOUEURS ÉLIGIBLES
 # =====================
-# Ces joueurs apparaîtront dans :
-# - classement
-# - graphique Python
-# - graphique HTML
 
 date_limite = (
     df["date"].max()
-    - pd.DateOffset(months=MOIS_ACTIVITE_CLASSEMENT)
+    -
+    pd.DateOffset(
+        months=MOIS_ACTIVITE_CLASSEMENT
+    )
 )
 
 
 joueurs_actifs = set(
-    df[df["date"] >= date_limite][
-        [
-            "rouge_p1",
-            "rouge_p2",
-            "bleu_p1",
-            "bleu_p2"
-        ]
+
+    df[
+        df["date"] >= date_limite
+    ][
+        colonnes_joueurs
     ]
     .values
     .flatten()
+
 )
 
 
 joueurs_eligibles = {
+
     joueur
+
     for joueur in ratings.keys()
+
     if nb_matchs[joueur] >= MIN_MATCHS_CLASSEMENT
     and joueur in joueurs_actifs
+
 }
+
 
 
 # =====================
 # GRAPHIQUE ÉVOLUTION
 # =====================
+
 df_histo = pd.DataFrame(historique)
 
-df_histo["date"] = pd.to_datetime(df_histo["date"])
-df_histo["joueur"] = df_histo["joueur"].str.strip()
+df_histo["date"] = pd.to_datetime(
+    df_histo["date"]
+)
+
+df_histo["joueur"] = (
+    df_histo["joueur"]
+    .str.strip()
+)
 
 
-# filtrage graphique
+
 df_histo = df_histo[
-    df_histo["joueur"].isin(joueurs_eligibles)
+    df_histo["joueur"]
+    .isin(joueurs_eligibles)
 ]
+
 
 
 plt.figure(figsize=(12, 6))
@@ -151,7 +220,7 @@ plt.figure(figsize=(12, 6))
 
 for joueur, df_j in df_histo.groupby("joueur"):
 
-    # dernier score par jour
+
     df_last = (
         df_j
         .sort_values("date")
@@ -179,11 +248,24 @@ for joueur, df_j in df_histo.groupby("joueur"):
     )
 
 
-plt.title("Évolution des scores TrueSkill (μ − 3σ)")
+
+plt.title(
+    "Évolution des scores TrueSkill (μ − 3σ)"
+)
+
 plt.xlabel("Date")
 plt.ylabel("Score")
-plt.grid(True, alpha=0.3)
-plt.legend(ncol=2, fontsize=9)
+
+plt.grid(
+    True,
+    alpha=0.3
+)
+
+plt.legend(
+    ncol=2,
+    fontsize=9
+)
+
 plt.tight_layout()
 
 
@@ -192,15 +274,20 @@ plt.savefig(
     dpi=150
 )
 
+
 plt.close()
 
 
-print("📈 Graphe évolution généré : resultats/evolution_scores.png")
+print(
+    "📈 Graphe évolution généré : resultats/evolution_scores.png"
+)
+
 
 
 # =====================
 # CLASSEMENT FINAL
 # =====================
+
 classement = []
 
 
@@ -234,8 +321,104 @@ df_classement = (
 df_classement.insert(
     0,
     "rang",
-    range(1, len(df_classement)+1)
+    range(
+        1,
+        len(df_classement)+1
+    )
 )
+
+
+
+# =====================
+# STATISTIQUES JOUEURS
+# =====================
+
+df_stats = pd.DataFrame(historique)
+
+df_stats["date"] = pd.to_datetime(
+    df_stats["date"]
+)
+
+df_stats["joueur"] = (
+    df_stats["joueur"]
+    .str.strip()
+)
+
+
+stats_joueurs = []
+
+
+for joueur, df_j in df_stats.groupby("joueur"):
+
+    stats_joueurs.append({
+
+        "joueur": joueur,
+
+        "matches": nb_matchs[joueur],
+
+        "mu": (
+            ratings[joueur].mu
+            if joueur in ratings
+            else None
+        ),
+
+        "sigma": (
+            ratings[joueur].sigma
+            if joueur in ratings
+            else None
+        ),
+
+        "score": (
+            ratings[joueur].mu
+            -
+            3 * ratings[joueur].sigma
+            if joueur in ratings
+            else None
+        ),
+
+        "premier_match":
+            pd.to_datetime(df_j["date"].min()).date(),
+
+        "dernier_match":
+            pd.to_datetime(df_j["date"].max()).date(),
+        
+        "jours_depuis_dernier_match":
+            (
+                df["date"].max()
+                -
+                df_j["date"].max()
+            ).days,
+
+        "eligible_classement":
+            joueur in joueurs_eligibles
+
+    })
+
+
+df_stats_joueurs = pd.DataFrame(
+    stats_joueurs
+)
+
+
+df_stats_joueurs = (
+    df_stats_joueurs
+    .sort_values(
+        "score",
+        ascending=False
+    )
+)
+
+
+df_stats_joueurs.to_csv(
+    OUTPUT_DIR / "players_statistiques.csv",
+    index=False
+)
+
+
+print(
+    "📊 Statistiques joueurs générées"
+)
+
 
 
 # =====================
@@ -248,12 +431,18 @@ df_classement.to_csv(
 )
 
 
-# historique filtré pour le HTML
-df_historique_export = pd.DataFrame(historique)
 
-df_historique_export = df_historique_export[
-    df_historique_export["joueur"].isin(joueurs_eligibles)
-]
+df_historique_export = pd.DataFrame(
+    historique
+)
+
+
+df_historique_export = (
+    df_historique_export[
+        df_historique_export["joueur"]
+        .isin(joueurs_eligibles)
+    ]
+)
 
 
 df_historique_export.to_csv(
@@ -262,6 +451,8 @@ df_historique_export.to_csv(
 )
 
 
+
 print("✅ Classement généré")
 print(" - resultats/classement_actuel.csv")
 print(" - resultats/historique_classement.csv")
+print(" - resultats/players_statistiques.csv")

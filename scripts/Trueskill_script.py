@@ -17,7 +17,7 @@ SIGMA0 = MU0 / 3
 
 # critères d'affichage du classement
 MIN_MATCHS_CLASSEMENT = 10
-MOIS_ACTIVITE_CLASSEMENT = 2
+MOIS_ACTIVITE_CLASSEMENT = 6
 
 
 # =====================

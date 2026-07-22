@@ -66,7 +66,7 @@ df = (
 ratings = {}
 nb_matchs = defaultdict(int)
 historique = []
-
+resultats_joueurs = defaultdict(list)
 
 def get_rating(joueur):
 
@@ -120,7 +120,42 @@ for match_id, row in df.iterrows():
         [rouge, bleu],
         ranks=ranks
     )
+    
+    # =====================
+    # ENREGISTREMENT STATS MATCH
+    # =====================
 
+    rouge_gagne = row["vainqueur"] == "rouge"
+
+
+    for joueur in t1_players:
+
+        resultats_joueurs[joueur].append({
+
+            "date": date,
+            "resultat": "V" if rouge_gagne else "D",
+            "coequipiers": [
+                p for p in t1_players
+                if p != joueur
+            ],
+            "adversaires": t2_players
+
+        })
+
+
+    for joueur in t2_players:
+
+        resultats_joueurs[joueur].append({
+
+            "date": date,
+            "resultat": "D" if rouge_gagne else "V",
+            "coequipiers": [
+                p for p in t2_players
+                if p != joueur
+            ],
+            "adversaires": t1_players
+
+        })
 
     # mise à jour ratings
     for p, r in zip(t1_players, new_teams[0]):
@@ -338,6 +373,86 @@ df_classement.insert(
 # STATISTIQUES JOUEURS
 # =====================
 
+def taux_victoire(matchs):
+
+    if len(matchs) == 0:
+        return 0
+
+    return (
+        sum(m["resultat"] == "V" for m in matchs)
+        /
+        len(matchs)
+    )
+
+
+
+def serie_max(matchs, resultat):
+
+    max_serie = 0
+    serie = 0
+
+    for m in matchs:
+
+        if m["resultat"] == resultat:
+            serie += 1
+            max_serie = max(max_serie, serie)
+
+        else:
+            serie = 0
+
+    return max_serie
+
+
+
+def pire_ennemi(joueur):
+
+    defaites = defaultdict(int)
+
+    for match in resultats_joueurs[joueur]:
+
+        if match["resultat"] == "D":
+
+            for adv in match["adversaires"]:
+                defaites[adv] += 1
+
+
+    if not defaites:
+        return None
+
+    return max(
+        defaites,
+        key=defaites.get
+    )
+
+
+
+def meilleur_coequipier(joueur):
+
+    stats = defaultdict(
+        lambda: {"V":0,"total":0}
+    )
+
+
+    for match in resultats_joueurs[joueur]:
+
+        for coeq in match["coequipiers"]:
+
+            stats[coeq]["total"] += 1
+
+            if match["resultat"] == "V":
+                stats[coeq]["V"] += 1
+
+
+    if not stats:
+        return None
+
+
+    return max(
+        stats,
+        key=lambda x:
+        stats[x]["V"] / stats[x]["total"]
+    )
+
 df_stats = pd.DataFrame(historique)
 
 df_stats["date"] = pd.to_datetime(
@@ -417,6 +532,51 @@ for joueur, df_j in df_stats.groupby("joueur"):
 
         "jours_depuis_dernier_match":
             stats_dates[joueur]["jours_depuis_dernier_match"],
+        
+        "taux_victoire_all_time":
+            taux_victoire(
+                resultats_joueurs[joueur]
+            ),
+
+
+        "taux_victoire_30j":
+            taux_victoire(
+                [
+                    m
+                    for m in resultats_joueurs[joueur]
+                    if m["date"] >= (
+                        df["date"].max()
+                        -
+                        pd.Timedelta(days=30)
+                    )
+                ]
+            ),
+
+
+        "pire_ennemi":
+            pire_ennemi(joueur),
+
+
+        "meilleur_coequipier":
+            meilleur_coequipier(joueur),
+
+
+        "plus_longue_serie_victoires":
+            serie_max(
+                resultats_joueurs[joueur],
+                "V"
+            ),
+
+
+        "plus_longue_serie_defaites":
+            serie_max(
+                resultats_joueurs[joueur],
+                "D"
+            ),
+
+
+        "score_trueskill_max":
+            df_j["score"].max(),
         
         "eligible_classement":
             joueur in joueurs_eligibles

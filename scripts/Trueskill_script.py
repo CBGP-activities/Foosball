@@ -68,6 +68,15 @@ nb_matchs = defaultdict(int)
 historique = []
 resultats_joueurs = defaultdict(list)
 
+relations = defaultdict(
+    lambda: {
+        "ensemble_matchs": 0,
+        "ensemble_victoires": 0,
+        "contre_matchs": 0,
+        "contre_victoires": 0
+    }
+)
+
 def get_rating(joueur):
 
     if joueur not in ratings:
@@ -126,6 +135,50 @@ for match_id, row in df.iterrows():
     # =====================
 
     rouge_gagne = row["vainqueur"] == "rouge"
+
+    # =====================
+    # ENREGISTREMENT RELATIONS
+    # =====================
+
+    # rouge avec bleu comme adversaires
+    for joueur in t1_players:
+    
+        for coeq in t1_players:
+    
+            if joueur != coeq:
+                relations[(joueur, coeq)]["ensemble_matchs"] += 1
+
+                if rouge_gagne:
+                    relations[(joueur, coeq)]["ensemble_victoires"] += 1
+
+
+        for adv in t2_players:
+
+            relations[(joueur, adv)]["contre_matchs"] += 1
+
+            if rouge_gagne:
+                relations[(joueur, adv)]["contre_victoires"] += 1
+
+
+
+    # bleu avec rouge comme adversaires
+    for joueur in t2_players:
+
+        for coeq in t2_players:
+
+            if joueur != coeq:
+                relations[(joueur, coeq)]["ensemble_matchs"] += 1
+
+                if not rouge_gagne:
+                    relations[(joueur, coeq)]["ensemble_victoires"] += 1
+
+
+        for adv in t1_players:
+
+            relations[(joueur, adv)]["contre_matchs"] += 1
+
+            if not rouge_gagne:    
+                relations[(joueur, adv)]["contre_victoires"] += 1
 
 
     for joueur in t1_players:
@@ -615,6 +668,114 @@ df_stats_joueurs.to_csv(
     index=False
 )
 
+# =====================
+# MATRICES RELATIONS
+# =====================
+
+
+joueurs = sorted(ratings.keys())
+
+
+# ---------------------
+# COEQUIPIERS
+# ---------------------
+
+matrice_coequipiers = []
+
+
+for joueur in joueurs:
+
+    ligne = {
+        "joueur": joueur
+    }
+
+    for autre in joueurs:
+
+        stats = relations[(joueur, autre)]
+
+        if stats["ensemble_matchs"] >= MIN_MATCHS_RELATION:
+
+            ligne[autre] = round(
+                100 *
+                stats["ensemble_victoires"]
+                /
+                stats["ensemble_matchs"],
+                1
+            )
+
+        else:
+
+            ligne[autre] = None
+
+
+    matrice_coequipiers.append(ligne)
+
+
+
+df_coequipiers = pd.DataFrame(
+    matrice_coequipiers
+)
+
+
+df_coequipiers.to_csv(
+    OUTPUT_DIR / "stats_coequipiers.csv",
+    index=False
+)
+
+
+
+# ---------------------
+# ADVERSAIRES
+# ---------------------
+
+matrice_adversaires = []
+
+
+for joueur in joueurs:
+
+    ligne = {
+        "joueur": joueur
+    }
+
+
+    for autre in joueurs:
+
+        stats = relations[(joueur, autre)]
+
+
+        if stats["contre_matchs"] >= MIN_MATCHS_RELATION:
+
+            # taux de victoire de joueur contre autre
+
+            ligne[autre] = round(
+                100 *
+                stats["contre_victoires"]
+                /
+                stats["contre_matchs"],
+                1
+            )
+
+        else:
+
+            ligne[autre] = None
+
+
+    matrice_adversaires.append(ligne)
+
+
+
+df_adversaires = pd.DataFrame(
+    matrice_adversaires
+)
+
+
+df_adversaires.to_csv(
+    OUTPUT_DIR / "stats_adversaires.csv",
+    index=False
+)
+
+
+print("🤝 Matrices coéquipiers/adversaires générées")
 
 print(
     "📊 Statistiques joueurs générées"

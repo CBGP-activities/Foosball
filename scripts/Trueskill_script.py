@@ -666,7 +666,7 @@ for joueur, df_j in df_stats.groupby("joueur"):
 
 
         "meilleur_coequipier":
-            detail_meilleur_coequipier(joueur),
+            detail_coequipier(joueur),
 
 
         "plus_longue_serie_victoires":

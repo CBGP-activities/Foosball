@@ -20,6 +20,7 @@ SIGMA0 = MU0 / 3
 MIN_MATCHS_CLASSEMENT = 10
 MOIS_ACTIVITE_CLASSEMENT = 6
 MIN_MATCHS_RELATION = 5
+STATS_SEULEMENT_JOUEURS_ACTIFS = False
 
 # =====================
 # LECTURE DES MATCHS
@@ -715,9 +716,10 @@ df_stats_joueurs.to_csv(
 # MATRICES RELATIONS
 # =====================
 
-
-joueurs = sorted(ratings.keys())
-
+if STATS_SEULEMENT_JOUEURS_ACTIFS:
+    joueurs = sorted(joueurs_eligibles)
+else:
+    joueurs = sorted(ratings.keys())
 
 # ---------------------
 # COEQUIPIERS

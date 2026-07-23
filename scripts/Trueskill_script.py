@@ -19,7 +19,7 @@ SIGMA0 = MU0 / 3
 # critères d'affichage du classement
 MIN_MATCHS_CLASSEMENT = 10
 MOIS_ACTIVITE_CLASSEMENT = 6
-
+MIN_MATCHS_RELATION = 5
 
 # =====================
 # LECTURE DES MATCHS
@@ -406,25 +406,33 @@ def serie_max(matchs, resultat):
 
 def pire_ennemi(joueur):
 
-    defaites = defaultdict(int)
+    stats = defaultdict(
+        lambda: {"D": 0, "total": 0}
+    )
 
     for match in resultats_joueurs[joueur]:
 
-        if match["resultat"] == "D":
+        for adv in match["adversaires"]:
 
-            for adv in match["adversaires"]:
-                defaites[adv] += 1
+            stats[adv]["total"] += 1
 
+            if match["resultat"] == "D":
+                stats[adv]["D"] += 1
 
-    if not defaites:
+    stats_filtrees = {
+        adv: valeurs
+        for adv, valeurs in stats.items()
+        if valeurs["total"] >= MIN_MATCHS_RELATION
+    }
+
+    if not stats_filtrees:
         return None
 
     return max(
-        defaites,
-        key=defaites.get
+        stats_filtrees,
+        key=lambda x:
+        stats_filtrees[x]["D"] / stats_filtrees[x]["total"]
     )
-
-
 
 def meilleur_coequipier(joueur):
 
@@ -442,16 +450,20 @@ def meilleur_coequipier(joueur):
             if match["resultat"] == "V":
                 stats[coeq]["V"] += 1
 
+    stats_filtrees = {
+        coeq: valeurs
+        for coeq, valeurs in stats.items()
+        if valeurs["total"] >= MIN_MATCHS_RELATION
+    }
 
-    if not stats:
+    if not stats_filtrees:
         return None
 
-
     return max(
-        stats,
+        stats_filtrees,
         key=lambda x:
-        stats[x]["V"] / stats[x]["total"]
-    )
+        stats_filtrees[x]["V"] / stats_filtrees[x]["total"]
+    ) 
 
 df_stats = pd.DataFrame(historique)
 

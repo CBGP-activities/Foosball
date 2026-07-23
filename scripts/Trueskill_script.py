@@ -483,9 +483,10 @@ def pire_ennemi(joueur):
 
     return max(
         stats_filtrees,
-        key=lambda x:
-        stats_filtrees[x]["D"] / stats_filtrees[x]["total"],
-        stats_filtrees[x]["total"]
+        key=lambda x: (
+            stats_filtrees[x]["D"] / stats_filtrees[x]["total"],
+            stats_filtrees[x]["total"]
+        )
     )
 
 def meilleur_coequipier(joueur):
@@ -515,9 +516,10 @@ def meilleur_coequipier(joueur):
 
     return max(
         stats_filtrees,
-        key=lambda x:
-        stats_filtrees[x]["V"] / stats_filtrees[x]["total"],
-        stats_filtrees[x]["total"]
+        key=lambda x: (
+            stats_filtrees[x]["V"] / stats_filtrees[x]["total"],
+            stats_filtrees[x]["total"]
+        )
     ) 
 
 df_stats = pd.DataFrame(historique)

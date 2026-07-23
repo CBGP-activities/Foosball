@@ -522,6 +522,45 @@ def meilleur_coequipier(joueur):
         )
     ) 
 
+# =====================
+# FORMATAGE RELATIONS
+# =====================
+
+def detail_coequipier(joueur):
+
+    candidat = meilleur_coequipier(joueur)
+
+    if candidat is None:
+        return None
+
+    stats = relations[(joueur, candidat)]
+
+    return (
+        f"{candidat} "
+        f"({stats['ensemble_victoires']}/"
+        f"{stats['ensemble_matchs']} "
+        f"{round(100 * stats['ensemble_victoires'] / stats['ensemble_matchs'],1)}%)"
+    )
+
+
+
+def detail_pire_ennemi(joueur):
+
+    candidat = pire_ennemi(joueur)
+
+    if candidat is None:
+        return None
+
+    stats = relations[(joueur, candidat)]
+
+    return (
+        f"{candidat} "
+        f"({stats['contre_matchs'] - stats['contre_victoires']}/"
+        f"{stats['contre_matchs']} "
+        f"{round(100 * (stats['contre_matchs'] - stats['contre_victoires']) / stats['contre_matchs'],1)}%)"
+    )
+
+
 df_stats = pd.DataFrame(historique)
 
 df_stats["date"] = pd.to_datetime(
@@ -623,11 +662,11 @@ for joueur, df_j in df_stats.groupby("joueur"):
 
 
         "pire_ennemi":
-            pire_ennemi(joueur),
+            detail_pire_ennemi(joueur),
 
 
         "meilleur_coequipier":
-            meilleur_coequipier(joueur),
+            detail_meilleur_coequipier(joueur),
 
 
         "plus_longue_serie_victoires":
@@ -701,7 +740,7 @@ for joueur in joueurs:
 
             ligne[autre] = (
                 f"{stats['ensemble_victoires']}/"
-                f"{stats['ensemble_matchs']}"
+                f"{stats['ensemble_matchs']} "
                 f"({round(100 * stats['ensemble_victoires'] / stats['ensemble_matchs'], 1)}%)"
             )    
 
@@ -751,7 +790,7 @@ for joueur in joueurs:
 
             ligne[autre] = (
                 f"{stats['contre_victoires']}/"
-                f"{stats['contre_matchs']}"
+                f"{stats['contre_matchs']} "
                 f"({round(100 * stats['contre_victoires'] / stats['contre_matchs'], 1)}%)"
             )
 

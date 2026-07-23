@@ -484,7 +484,8 @@ def pire_ennemi(joueur):
     return max(
         stats_filtrees,
         key=lambda x:
-        stats_filtrees[x]["D"] / stats_filtrees[x]["total"]
+        stats_filtrees[x]["D"] / stats_filtrees[x]["total"],
+        stats_filtrees[x]["total"]
     )
 
 def meilleur_coequipier(joueur):
@@ -515,7 +516,8 @@ def meilleur_coequipier(joueur):
     return max(
         stats_filtrees,
         key=lambda x:
-        stats_filtrees[x]["V"] / stats_filtrees[x]["total"]
+        stats_filtrees[x]["V"] / stats_filtrees[x]["total"],
+        stats_filtrees[x]["total"]
     ) 
 
 df_stats = pd.DataFrame(historique)
@@ -695,13 +697,11 @@ for joueur in joueurs:
 
         if stats["ensemble_matchs"] >= MIN_MATCHS_RELATION:
 
-            ligne[autre] = round(
-                100 *
-                stats["ensemble_victoires"]
-                /
-                stats["ensemble_matchs"],
-                1
-            )
+            ligne[autre] = (
+                f"{stats['ensemble_victoires']}/"
+                f"{stats['ensemble_matchs']}"
+                f"({round(100 * stats['ensemble_victoires'] / stats['ensemble_matchs'], 1)}%)"
+            )    
 
         else:
 
@@ -747,12 +747,10 @@ for joueur in joueurs:
 
             # taux de victoire de joueur contre autre
 
-            ligne[autre] = round(
-                100 *
-                stats["contre_victoires"]
-                /
-                stats["contre_matchs"],
-                1
+            ligne[autre] = (
+                f"{stats['contre_victoires']}/"
+                f"{stats['contre_matchs']}"
+                f"({round(100 * stats['contre_victoires'] / stats['contre_matchs'], 1)}%)"
             )
 
         else:

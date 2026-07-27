@@ -2,30 +2,6 @@
   {
     "date": "2026-07-21 00:00:00",
     "team_red": [
-      "Morgane",
-      "Lily"
-    ],
-    "team_blue": [
-      "Jules",
-      "Loïc"
-    ],
-    "winner": "red"
-  },
-  {
-    "date": "2026-07-21 00:00:00",
-    "team_red": [
-      "Lilou",
-      "Rémi"
-    ],
-    "team_blue": [
-      "ManonV",
-      "Morgane"
-    ],
-    "winner": "red"
-  },
-  {
-    "date": "2026-07-21 00:00:00",
-    "team_red": [
       "Lily",
       "EmmanuelP"
     ],
@@ -236,6 +212,30 @@
     "team_blue": [
       "Lilou",
       "Lily"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-07-23 00:00:00",
+    "team_red": [
+      "Loïc",
+      "Armelle"
+    ],
+    "team_blue": [
+      "Jules",
+      "JulieB"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-07-23 00:00:00",
+    "team_red": [
+      "Loïc",
+      "Lily"
+    ],
+    "team_blue": [
+      "ThéoM",
+      "Jules"
     ],
     "winner": "blue"
   }

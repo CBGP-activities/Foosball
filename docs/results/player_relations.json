@@ -1137,10 +1137,10 @@
     "player": "Jules",
     "other": "Armelle",
     "type": "opponent",
-    "matches": 5,
-    "wins": 3,
+    "matches": 6,
+    "wins": 4,
     "losses": 2,
-    "winrate": 60.0
+    "winrate": 66.7
   },
   {
     "player": "Armelle",
@@ -1155,10 +1155,10 @@
     "player": "Armelle",
     "other": "Jules",
     "type": "opponent",
-    "matches": 5,
+    "matches": 6,
     "wins": 2,
-    "losses": 3,
-    "winrate": 40.0
+    "losses": 4,
+    "winrate": 33.3
   },
   {
     "player": "Armelle",
@@ -1182,10 +1182,10 @@
     "player": "Loïc",
     "other": "JulieB",
     "type": "opponent",
-    "matches": 20,
+    "matches": 21,
     "wins": 9,
-    "losses": 11,
-    "winrate": 45.0
+    "losses": 12,
+    "winrate": 42.9
   },
   {
     "player": "Loïc",
@@ -1200,10 +1200,10 @@
     "player": "Loïc",
     "other": "ThéoM",
     "type": "opponent",
-    "matches": 17,
+    "matches": 18,
     "wins": 9,
-    "losses": 8,
-    "winrate": 52.9
+    "losses": 9,
+    "winrate": 50.0
   },
   {
     "player": "Loïc",
@@ -1227,10 +1227,10 @@
     "player": "JulieB",
     "other": "Loïc",
     "type": "opponent",
-    "matches": 20,
-    "wins": 11,
+    "matches": 21,
+    "wins": 12,
     "losses": 9,
-    "winrate": 55.0
+    "winrate": 57.1
   },
   {
     "player": "JulieB",
@@ -1263,10 +1263,10 @@
     "player": "ThéoM",
     "other": "Loïc",
     "type": "opponent",
-    "matches": 17,
-    "wins": 8,
+    "matches": 18,
+    "wins": 9,
     "losses": 9,
-    "winrate": 47.1
+    "winrate": 50.0
   },
   {
     "player": "ThéoM",
@@ -1470,10 +1470,10 @@
     "player": "Jules",
     "other": "Lily",
     "type": "opponent",
-    "matches": 32,
-    "wins": 4,
+    "matches": 33,
+    "wins": 5,
     "losses": 28,
-    "winrate": 12.5
+    "winrate": 15.2
   },
   {
     "player": "ManonV",
@@ -1506,10 +1506,10 @@
     "player": "Lily",
     "other": "Jules",
     "type": "opponent",
-    "matches": 32,
+    "matches": 33,
     "wins": 28,
-    "losses": 4,
-    "winrate": 87.5
+    "losses": 5,
+    "winrate": 84.8
   },
   {
     "player": "Lily",
@@ -1848,10 +1848,10 @@
     "player": "Lily",
     "other": "ThéoM",
     "type": "opponent",
-    "matches": 18,
+    "matches": 19,
     "wins": 13,
-    "losses": 5,
-    "winrate": 72.2
+    "losses": 6,
+    "winrate": 68.4
   },
   {
     "player": "ThéoM",
@@ -1866,10 +1866,10 @@
     "player": "ThéoM",
     "other": "Lily",
     "type": "opponent",
-    "matches": 18,
-    "wins": 5,
+    "matches": 19,
+    "wins": 6,
     "losses": 13,
-    "winrate": 27.8
+    "winrate": 31.6
   },
   {
     "player": "ThéoM",
@@ -2145,10 +2145,10 @@
     "player": "Loïc",
     "other": "Lily",
     "type": "teammate",
-    "matches": 10,
+    "matches": 11,
     "wins": 6,
-    "losses": 4,
-    "winrate": 60.0
+    "losses": 5,
+    "winrate": 54.5
   },
   {
     "player": "Loïc",
@@ -2163,10 +2163,10 @@
     "player": "Lily",
     "other": "Loïc",
     "type": "teammate",
-    "matches": 10,
+    "matches": 11,
     "wins": 6,
-    "losses": 4,
-    "winrate": 60.0
+    "losses": 5,
+    "winrate": 54.5
   },
   {
     "player": "Lily",
@@ -2288,11 +2288,29 @@
   {
     "player": "Jules",
     "other": "ThéoM",
+    "type": "teammate",
+    "matches": 5,
+    "wins": 3,
+    "losses": 2,
+    "winrate": 60.0
+  },
+  {
+    "player": "Jules",
+    "other": "ThéoM",
     "type": "opponent",
     "matches": 8,
     "wins": 2,
     "losses": 6,
     "winrate": 25.0
+  },
+  {
+    "player": "ThéoM",
+    "other": "Jules",
+    "type": "teammate",
+    "matches": 5,
+    "wins": 3,
+    "losses": 2,
+    "winrate": 60.0
   },
   {
     "player": "ThéoM",
@@ -2388,10 +2406,10 @@
     "player": "Jules",
     "other": "Loïc",
     "type": "opponent",
-    "matches": 12,
-    "wins": 6,
+    "matches": 14,
+    "wins": 8,
     "losses": 6,
-    "winrate": 50.0
+    "winrate": 57.1
   },
   {
     "player": "Loïc",
@@ -2406,19 +2424,19 @@
     "player": "Loïc",
     "other": "Jules",
     "type": "opponent",
-    "matches": 12,
+    "matches": 14,
     "wins": 6,
-    "losses": 6,
-    "winrate": 50.0
+    "losses": 8,
+    "winrate": 42.9
   },
   {
     "player": "Jules",
     "other": "JulieB",
     "type": "teammate",
-    "matches": 5,
-    "wins": 3,
+    "matches": 6,
+    "wins": 4,
     "losses": 2,
-    "winrate": 60.0
+    "winrate": 66.7
   },
   {
     "player": "Jules",
@@ -2433,10 +2451,10 @@
     "player": "JulieB",
     "other": "Jules",
     "type": "teammate",
-    "matches": 5,
-    "wins": 3,
+    "matches": 6,
+    "wins": 4,
     "losses": 2,
-    "winrate": 60.0
+    "winrate": 66.7
   },
   {
     "player": "JulieB",

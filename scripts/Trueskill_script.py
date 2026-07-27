@@ -100,9 +100,30 @@ def load_matches():
             sheet_name=SHEET_NAME
         )
 
+def export_excel_backup(df):
 
+    backup_path = Path("data/matchs.xlsx")
+
+    backup_path.parent.mkdir(
+        parents=True,
+        exist_ok=True
+    )
+
+    df.to_excel(
+        backup_path,
+        index=False,
+        sheet_name="matchs"
+    )
+
+    print(
+        "💾 Backup Excel créé :",
+        backup_path
+    )
+	
 df = load_matches()
-
+if USE_SUPABASE:
+    export_excel_backup(df)
+	
 # =====================
 # NETTOYAGE DES NOMS JOUEURS
 # =====================

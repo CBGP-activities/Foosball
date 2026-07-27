@@ -1,11 +1,9 @@
 name: Update TrueSkill tables
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - data/matchs.xlsx
-      - scripts/**
+  schedule:
+    - cron: "0 22 * * *"
+
   workflow_dispatch:
 
 permissions:
@@ -28,10 +26,10 @@ jobs:
       run: pip install -r requirements.txt
 
     - name: Run TrueSkill script
-      run: python scripts/Trueskill_script.py
       env:
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+      run: python scripts/Trueskill_script.py
 
     - name: Commit updated results
       run: |

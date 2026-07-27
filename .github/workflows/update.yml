@@ -28,6 +28,9 @@ jobs:
 
     - name: Run TrueSkill script
       run: python scripts/Trueskill_script.py
+      env:
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
 
     - name: Commit updated results
       run: |

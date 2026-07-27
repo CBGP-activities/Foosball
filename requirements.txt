@@ -2,4 +2,4 @@ pandas
 trueskill
 matplotlib
 openpyxl
-
+supabase

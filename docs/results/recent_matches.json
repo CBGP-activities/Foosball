@@ -1,0 +1,242 @@
+[
+  {
+    "date": "2026-07-21 00:00:00",
+    "team_red": [
+      "Morgane",
+      "Lily"
+    ],
+    "team_blue": [
+      "Jules",
+      "Loïc"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-07-21 00:00:00",
+    "team_red": [
+      "Lilou",
+      "Rémi"
+    ],
+    "team_blue": [
+      "ManonV",
+      "Morgane"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-07-21 00:00:00",
+    "team_red": [
+      "Lily",
+      "EmmanuelP"
+    ],
+    "team_blue": [
+      "Jules",
+      "Loïc"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-07-21 00:00:00",
+    "team_red": [
+      "Lilou",
+      "Rémi"
+    ],
+    "team_blue": [
+      "Lily",
+      "EmmanuelP"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-07-21 00:00:00",
+    "team_red": [
+      "EmmanuelP",
+      "Lily"
+    ],
+    "team_blue": [
+      "Rémi",
+      "NathV"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-07-21 00:00:00",
+    "team_red": [
+      "Lily",
+      "ManonV"
+    ],
+    "team_blue": [
+      "Rémi",
+      "Lilou"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-07-21 00:00:00",
+    "team_red": [
+      "Rémi",
+      "Lilou"
+    ],
+    "team_blue": [
+      "Lily",
+      "ManonV"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-07-21 00:00:00",
+    "team_red": [
+      "Lily",
+      "ManonV"
+    ],
+    "team_blue": [
+      "Rémi",
+      "Lilou"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-07-22 00:00:00",
+    "team_red": [
+      "JulieB",
+      "Anna"
+    ],
+    "team_blue": [
+      "ManonV",
+      "Loïc"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-07-22 00:00:00",
+    "team_red": [
+      "Lily",
+      "Loïc"
+    ],
+    "team_blue": [
+      "ManonV",
+      "Rémi"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-07-22 00:00:00",
+    "team_red": [
+      "Rémi",
+      "JulieB"
+    ],
+    "team_blue": [
+      "ManonV",
+      "Loïc"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-07-22 00:00:00",
+    "team_red": [
+      "ManonV",
+      "JulieB"
+    ],
+    "team_blue": [
+      "Lily",
+      "Loïc"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-07-22 00:00:00",
+    "team_red": [
+      "EmmanuelP",
+      "Rémi"
+    ],
+    "team_blue": [
+      "Lily",
+      "Loïc"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-07-22 00:00:00",
+    "team_red": [
+      "Lily",
+      "EmmanuelP"
+    ],
+    "team_blue": [
+      "Rémi",
+      "JulieB"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-07-22 00:00:00",
+    "team_red": [
+      "Lily",
+      "JulieB"
+    ],
+    "team_blue": [
+      "Rémi",
+      "Loïc"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-07-23 00:00:00",
+    "team_red": [
+      "Lily",
+      "Loïc"
+    ],
+    "team_blue": [
+      "ThéoM",
+      "ManonV"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-07-23 00:00:00",
+    "team_red": [
+      "Armelle",
+      "JulieB"
+    ],
+    "team_blue": [
+      "Jules",
+      "Rémi"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-07-23 00:00:00",
+    "team_red": [
+      "Lily",
+      "Lilou"
+    ],
+    "team_blue": [
+      "ThéoM",
+      "EmmanuelP"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-07-23 00:00:00",
+    "team_red": [
+      "Jules",
+      "Loïc"
+    ],
+    "team_blue": [
+      "JulieB",
+      "Rémi"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-07-23 00:00:00",
+    "team_red": [
+      "Armelle",
+      "ThéoM"
+    ],
+    "team_blue": [
+      "Lilou",
+      "Lily"
+    ],
+    "winner": "blue"
+  }
+]

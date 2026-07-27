@@ -1,17 +1,24 @@
+import os
 import pandas as pd
 from trueskill import Rating, rate
 from collections import defaultdict
 from pathlib import Path
 import matplotlib.pyplot as plt
-
+import json
+from supabase import create_client
 
 # =====================
 # PARAMÈTRES
 # =====================
+USE_SUPABASE = False
 INPUT_EXCEL = Path("data/matchs.xlsx")
-OUTPUT_DIR = Path("docs/resultats")
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 SHEET_NAME = "matchs"
+if USE_SUPABASE:
+	SUPABASE_URL = os.environ["SUPABASE_URL"]
+	SUPABASE_KEY = os.environ["SUPABASE_SERVICE_KEY"]
+
+OUTPUT_DIR = Path("docs/results")
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 MU0 = 25
 SIGMA0 = MU0 / 3
@@ -23,13 +30,78 @@ MIN_MATCHS_RELATION = 5
 STATS_SEULEMENT_JOUEURS_ACTIFS = False
 
 # =====================
+# EXPORT CSV + JSON
+# =====================
+
+def export_data(df, filename):
+
+    df.to_csv(
+        OUTPUT_DIR / f"{filename}.csv",
+        index=False
+    )
+
+    with open(
+        OUTPUT_DIR / f"{filename}.json",
+        "w",
+        encoding="utf-8"
+    ) as f:
+
+        clean_df = df.where(pd.notnull(df), None)
+        json.dump(
+			clean_df.to_dict(orient="records"),
+			f,
+			ensure_ascii=False,
+			indent=2,
+			default=str
+		)
+        
+# =====================
 # LECTURE DES MATCHS
 # =====================
-df = pd.read_excel(
-    INPUT_EXCEL,
-    sheet_name=SHEET_NAME
-)
+def load_matches():
 
+    if USE_SUPABASE:
+
+        print("Lecture des matchs depuis Supabase...")
+
+        supabase = create_client(
+            SUPABASE_URL,
+            SUPABASE_KEY
+        )
+
+        response = (
+            supabase
+            .table("matches")
+            .select("*")
+            .order("id")
+            .execute()
+        )
+
+        df = pd.DataFrame(response.data)
+
+        df = df[[
+			"id",
+            "date",
+            "rouge_p1",
+            "rouge_p2",
+            "bleu_p1",
+            "bleu_p2",
+            "vainqueur"
+        ]]
+
+        return df
+
+    else:
+
+        print("Lecture des matchs depuis Excel...")
+
+        return pd.read_excel(
+            INPUT_EXCEL,
+            sheet_name=SHEET_NAME
+        )
+
+
+df = load_matches()
 
 # =====================
 # NETTOYAGE DES NOMS JOUEURS
@@ -55,11 +127,36 @@ df["date"] = pd.to_datetime(df["date"])
 
 df = (
     df
-    .sort_values("date")
+    .sort_values("id")
     .reset_index(drop=True)
 )
 
 
+def export_players(df):
+
+    players = sorted(
+        pd.concat(
+            [df[col] for col in colonnes_joueurs]
+        )
+        .dropna()
+        .unique()
+        .tolist()
+    )
+
+    with open(
+        OUTPUT_DIR / "players.json",
+        "w",
+        encoding="utf-8"
+    ) as f:
+
+        json.dump(
+            players,
+            f,
+            ensure_ascii=False,
+            indent=2
+        )
+
+export_players(df)
 
 # =====================
 # STRUCTURES
@@ -232,7 +329,7 @@ for match_id, row in df.iterrows():
 
             "date": date,
             "match_id": match_id + 1,
-            "joueur": joueur,
+            "player": joueur,
             "mu": rating.mu,
             "sigma": rating.sigma,
             "score": rating.mu - 3 * rating.sigma
@@ -295,15 +392,15 @@ df_histo["date"] = pd.to_datetime(
     df_histo["date"]
 )
 
-df_histo["joueur"] = (
-    df_histo["joueur"]
+df_histo["player"] = (
+    df_histo["player"]
     .str.strip()
 )
 
 
 
 df_histo = df_histo[
-    df_histo["joueur"]
+    df_histo["player"]
     .isin(joueurs_eligibles)
 ]
 
@@ -312,7 +409,7 @@ df_histo = df_histo[
 plt.figure(figsize=(12, 6))
 
 
-for joueur, df_j in df_histo.groupby("joueur"):
+for joueur, df_j in df_histo.groupby("player"):
 
 
     df_last = (
@@ -364,18 +461,12 @@ plt.tight_layout()
 
 
 plt.savefig(
-    OUTPUT_DIR / "evolution_scores.png",
+    OUTPUT_DIR / "score_evolution.png",
     dpi=150
 )
 
 
 plt.close()
-
-
-print(
-    "📈 Graphe évolution généré : resultats/evolution_scores.png"
-)
-
 
 
 # =====================
@@ -391,7 +482,7 @@ for joueur, rating in ratings.items():
 
         classement.append({
 
-            "joueur": joueur,
+            "player": joueur,
             "mu": rating.mu,
             "sigma": rating.sigma,
             "score": rating.mu - 3 * rating.sigma,
@@ -414,7 +505,7 @@ df_classement = (
 
 df_classement.insert(
     0,
-    "rang",
+    "rank",
     range(
         1,
         len(df_classement)+1
@@ -568,8 +659,8 @@ df_stats["date"] = pd.to_datetime(
     df_stats["date"]
 )
 
-df_stats["joueur"] = (
-    df_stats["joueur"]
+df_stats["player"] = (
+    df_stats["player"]
     .str.strip()
 )
 
@@ -587,13 +678,13 @@ for joueur in ratings.keys():
 
     stats_dates[joueur] = {
 
-        "premier_match":
-            matches_joueur["date"].min().date(),
+        "first_match":
+           matches_joueur["date"].min().strftime("%Y-%m-%d"),
 
-        "dernier_match":
-            matches_joueur["date"].max().date(),
+        "last_match":
+            matches_joueur["date"].max().strftime("%Y-%m-%d"),
 
-        "jours_depuis_dernier_match":
+        "days_since_last_match":
             (
                 df["date"].max()
                 - matches_joueur["date"].max()
@@ -604,11 +695,11 @@ for joueur in ratings.keys():
 stats_joueurs = []
 
 
-for joueur, df_j in df_stats.groupby("joueur"):
+for joueur, df_j in df_stats.groupby("player"):
 
     stats_joueurs.append({
 
-        "joueur": joueur,
+        "player": joueur,
 
         "matches": nb_matchs[joueur],
 
@@ -633,22 +724,22 @@ for joueur, df_j in df_stats.groupby("joueur"):
         ),
 
         
-        "premier_match":
-            stats_dates[joueur]["premier_match"],
+        "first_match":
+            stats_dates[joueur]["first_match"],
 
-        "dernier_match":
-            stats_dates[joueur]["dernier_match"],
+        "last_match":
+            stats_dates[joueur]["last_match"],
 
-        "jours_depuis_dernier_match":
-            stats_dates[joueur]["jours_depuis_dernier_match"],
+        "days_since_last_match":
+            stats_dates[joueur]["days_since_last_match"],
         
-        "taux_victoire_all_time":
+        "winrate_all_time":
             taux_victoire(
                 resultats_joueurs[joueur]
             ),
 
 
-        "taux_victoire_30j":
+        "winrate_last_30_days":
             taux_victoire(
                 [
                     m
@@ -662,32 +753,32 @@ for joueur, df_j in df_stats.groupby("joueur"):
             ),
 
 
-        "pire_ennemi":
+        "worst_enemy":
             detail_pire_ennemi(joueur),
 
 
-        "meilleur_coequipier":
+        "best_teammate":
             detail_coequipier(joueur),
 
 
-        "plus_longue_serie_victoires":
+        "longest_win_streak":
             serie_max(
                 resultats_joueurs[joueur],
                 "V"
             ),
 
 
-        "plus_longue_serie_defaites":
+        "longest_loss_streak":
             serie_max(
                 resultats_joueurs[joueur],
                 "D"
             ),
 
 
-        "score_trueskill_max":
+        "highest_trueskill_score":
             df_j["score"].max(),
         
-        "eligible_classement":
+        "ranking_eligible":
             joueur in joueurs_eligibles
 
     })
@@ -706,117 +797,97 @@ df_stats_joueurs = (
     )
 )
 
-
-df_stats_joueurs.to_csv(
-    OUTPUT_DIR / "players_statistiques.csv",
-    index=False
+rangs = (
+    df_classement
+    .set_index("player")["rank"]
+    .to_dict()
 )
 
-# =====================
-# MATRICES RELATIONS
-# =====================
+df_stats_joueurs["rank"] = (
+    df_stats_joueurs["player"]
+    .map(rangs)
+)
 
-if STATS_SEULEMENT_JOUEURS_ACTIFS:
-    joueurs = sorted(joueurs_eligibles)
-else:
-    joueurs = sorted(ratings.keys())
-
-# ---------------------
-# COEQUIPIERS
-# ---------------------
-
-matrice_coequipiers = []
-
-
-for joueur in joueurs:
-
-    ligne = {
-        "joueur": joueur
-    }
-
-    for autre in joueurs:
-
-        stats = relations[(joueur, autre)]
-
-        if stats["ensemble_matchs"] >= MIN_MATCHS_RELATION:
-
-            ligne[autre] = (
-                f"{stats['ensemble_victoires']}/"
-                f"{stats['ensemble_matchs']} "
-                f"({round(100 * stats['ensemble_victoires'] / stats['ensemble_matchs'], 1)}%)"
-            )    
-
-        else:
-
-            ligne[autre] = None
-
-
-    matrice_coequipiers.append(ligne)
-
-
-
-df_coequipiers = pd.DataFrame(
-    matrice_coequipiers
+df_stats_joueurs_clean = (
+    df_stats_joueurs
+    .astype(object)
+    .where(pd.notnull(df_stats_joueurs), None)
+)
+export_data(
+    df_stats_joueurs_clean,
+    "player_stats"
 )
 
 
-df_coequipiers.to_csv(
-    OUTPUT_DIR / "stats_coequipiers.csv",
-    index=False
-)
+relations_export = []
 
+for (joueur, autre), stats in relations.items():
 
+    # Coéquipiers
+    if stats["ensemble_matchs"] >= MIN_MATCHS_RELATION:
 
-# ---------------------
-# ADVERSAIRES
-# ---------------------
+        relations_export.append({
 
-matrice_adversaires = []
+            "player": joueur,
 
+            "other": autre,
 
-for joueur in joueurs:
+            "type": "teammate",
 
-    ligne = {
-        "joueur": joueur
-    }
+            "matches": stats["ensemble_matchs"],
 
+            "wins": stats["ensemble_victoires"],
 
-    for autre in joueurs:
+            "losses": (
+                stats["ensemble_matchs"]
+                - stats["ensemble_victoires"]
+            ),
 
-        stats = relations[(joueur, autre)]
-
-
-        if stats["contre_matchs"] >= MIN_MATCHS_RELATION:
-
-            # taux de victoire de joueur contre autre
-
-            ligne[autre] = (
-                f"{stats['contre_victoires']}/"
-                f"{stats['contre_matchs']} "
-                f"({round(100 * stats['contre_victoires'] / stats['contre_matchs'], 1)}%)"
+            "winrate": round(
+                100
+                * stats["ensemble_victoires"]
+                / stats["ensemble_matchs"],
+                1
             )
 
-        else:
+        })
 
-            ligne[autre] = None
+    # Adversaires
+    if stats["contre_matchs"] >= MIN_MATCHS_RELATION:
 
+        relations_export.append({
 
-    matrice_adversaires.append(ligne)
+            "player": joueur,
 
+            "other": autre,
 
+            "type": "opponent",
 
-df_adversaires = pd.DataFrame(
-    matrice_adversaires
+            "matches": stats["contre_matchs"],
+
+            "wins": stats["contre_victoires"],
+
+            "losses": (
+                stats["contre_matchs"]
+                - stats["contre_victoires"]
+            ),
+
+            "winrate": round(
+                100
+                * stats["contre_victoires"]
+                / stats["contre_matchs"],
+                1
+            )
+
+        })
+
+df_relations = pd.DataFrame(relations_export)
+
+export_data(
+    df_relations,
+    "player_relations"
 )
 
-
-df_adversaires.to_csv(
-    OUTPUT_DIR / "stats_adversaires.csv",
-    index=False
-)
-
-
-print("🤝 Matrices coéquipiers/adversaires générées")
 
 print(
     "📊 Statistiques joueurs générées"
@@ -825,12 +896,12 @@ print(
 
 
 # =====================
-# EXPORT CSV
+# EXPORT JSON+CSV
 # =====================
 
-df_classement.to_csv(
-    OUTPUT_DIR / "classement_actuel.csv",
-    index=False
+export_data(
+    df_classement,
+    "current_ranking"
 )
 
 
@@ -842,20 +913,135 @@ df_historique_export = pd.DataFrame(
 
 df_historique_export = (
     df_historique_export[
-        df_historique_export["joueur"]
+        df_historique_export["player"]
         .isin(joueurs_eligibles)
     ]
 )
 
 
-df_historique_export.to_csv(
-    OUTPUT_DIR / "historique_classement.csv",
+export_data(
+    df_historique_export,
+    "ranking_history"
+)
+
+# =====================
+# EXPORT PROFILS JOUEURS
+# =====================
+
+profiles = []
+
+
+for joueur in ratings.keys():
+
+    historique_joueur = (
+		df_historique_export[
+			df_historique_export["player"] == joueur
+		]
+		[
+			[
+				"date",
+				"score"
+			]
+		]
+		.assign(
+			date=lambda x: x["date"].dt.strftime("%Y-%m-%d")
+		)
+		.to_dict(
+			orient="records"
+		)
+	)
+
+
+    relations_joueur = (
+        df_relations[
+            df_relations["player"] == joueur
+        ]
+        .to_dict(
+            orient="records"
+        )
+    )
+
+
+    stats_joueur = (
+		df_stats_joueurs
+			.loc[df_stats_joueurs["player"] == joueur]
+			.replace({pd.NA: None, float("nan"): None})
+			.iloc[0]
+			.to_dict()
+	)
+
+
+    profiles.append({
+
+        "player": joueur,
+
+        "stats": stats_joueur,
+
+        "history": historique_joueur,
+
+        "relations": relations_joueur
+
+    })
+
+
+df_profiles = pd.DataFrame(profiles)
+
+with open(
+    OUTPUT_DIR / "player_profiles.json",
+    "w",
+    encoding="utf-8"
+) as f:
+
+    json.dump(
+        profiles,
+        f,
+        ensure_ascii=False,
+        indent=2,
+        default=str
+    )
+
+df_profiles.to_csv(
+    OUTPUT_DIR / "player_profiles.csv",
     index=False
 )
 
 
+# =====================
+# RECENT MATCHES EXPORT
+# =====================
 
-print("✅ Classement généré")
-print(" - resultats/classement_actuel.csv")
-print(" - resultats/historique_classement.csv")
-print(" - resultats/players_statistiques.csv")
+recent_matches = (
+    df
+    .tail(20)
+    .apply(
+        lambda row: {
+
+            "date": row["date"],
+
+            "team_red": [
+                row["rouge_p1"],
+                row["rouge_p2"]
+            ],
+
+            "team_blue": [
+                row["bleu_p1"],
+                row["bleu_p2"]
+            ],
+
+            "winner": "red" if row["vainqueur"] == "rouge" else "blue"
+
+        },
+        axis=1
+    )
+    .tolist()
+)
+
+
+df_recent_matches = pd.DataFrame(
+    recent_matches
+)
+
+export_data(
+    df_recent_matches,
+    "recent_matches"
+)

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Ranking Player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+</head>
+<body>
+<header class="hero">
+	<h1 id="playerName">👤 Player</h1>
+	<p id="playerSubtitle"></p>
+</header>
+<main class="container">
+    <!-- Rivalties -->
+    <section class="card">
+		<h2 id="tableTitle">Ranking</h2>
+	
+		<table class="ranking-table">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Player</th>
+					<th>Winrate</th>
+					<th>Matches</th>
+				</tr>
+			</thead>
+	
+			<tbody id="rankingBody">
+			</tbody>
+		</table>
+		<table id="targetTable" style="display:none">
+			<thead>
+			<tr>
+				<th>Player</th>
+				<th>Record</th>
+				<th>WR</th>
+				<th>Current Nemesis</th>
+				<th>Nemesis Record</th>
+				<th>Nemesis WR</th>
+				<th>Status</th>
+				<th>Wins Needed</th>
+			</tr>
+			</thead>
+			<tbody id="targetBody"></tbody>
+		</table>		
+	</section>
+    <!-- Retour -->
+    <section class="card">
+		<a id="backLink" href="player.html">
+			⬅ Back to <span id="backPlayerName">Player</span>
+		</a>
+		<p></p>
+        <a href="index.html">⬅ Back to 🏆 Ranking</a>
+    </section>
+</main>
+<script src="assets/rivalries.js"></script>
+</body>
+</html>

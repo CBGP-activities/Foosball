@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foosball Website - Add Match</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="hero">
+    <h1>⚽ Foosball Website</h1>
+    <p>Add a new match</p>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>⚽ New Match</h2>
+        <div class="teams-grid">
+            <!-- RED TEAM -->
+            <div class="team-card red">
+                <h3>🔴 Red Team</h3>
+                <label>Player 1</label>
+                <div id="red1" class="player-search"></div>
+
+                <label>Player 2</label>
+                <div id="red2" class="player-search"></div>
+            </div>
+            <!-- BLUE TEAM -->
+            <div class="team-card blue">
+                <h3>🔵 Blue Team</h3>
+                <label>Player 1</label>
+                <div id="blue1" class="player-search"></div>
+                <label>Player 2</label>
+                <div id="blue2" class="player-search"></div>
+            </div>
+        </div>
+        <datalist id="players"></datalist>
+        <hr>
+        <div class="winner-section">
+            <h3>🏆 Winner</h3>
+            <div class="winner-buttons">
+                <button
+                    id="winnerRed"
+                    class="winner-btn">
+                    🔴 Red
+                </button>
+                <button
+                    id="winnerBlue"
+                    class="winner-btn">
+                    🔵 Blue
+                </button>
+            </div>
+        </div>
+        <hr>
+        <div class="date-section">
+            <label for="matchDate">
+                📅 Match date
+            </label>
+            <input
+                id="matchDate"
+                type="date">
+        </div>
+        <hr>
+        <div class="new-player-section">
+            <h3>➕ New player</h3>
+            <div class="new-player-row">
+                <input
+                    id="newPlayer"
+                    type="text"
+                    placeholder="Player name">
+                <button id="addPlayer">
+                    Add
+                </button>
+            </div>
+        </div>
+        <hr>
+        <div style="text-align:center;">
+            <button
+                id="saveMatch"
+                class="save-button">
+                ✔ Save Match
+            </button>
+        </div>
+    </section>
+    <section class="card">
+        <h2>📦 Match preview</h2>
+        <pre id="preview">
+Waiting...
+        </pre>
+    </section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/supabase.js"></script>
+<script src="assets/admin.js"></script>
+</body>
+</html>

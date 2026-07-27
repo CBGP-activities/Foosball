@@ -15,6 +15,9 @@ let selectedPlayers = {
 
 let winner = null;
 
+let editingMatchId = null;
+
+
 
 // =====================================================
 // Initialisation
@@ -23,7 +26,8 @@ let winner = null;
 window.addEventListener("DOMContentLoaded", async () => {
 
     await loadPlayers();
-
+	await loadRecentMatches();
+	
     createPlayerSearch("red1");
     createPlayerSearch("red2");
     createPlayerSearch("blue1");
@@ -35,8 +39,6 @@ window.addEventListener("DOMContentLoaded", async () => {
     initAddPlayer();
 	initSaveButton();
 	
-    updatePreview();
-
 });
 
 
@@ -314,8 +316,6 @@ function selectPlayer(
 
     updateAllSearches();
 
-    updatePreview();
-
 }
 
 
@@ -373,8 +373,6 @@ function initWinnerButtons(){
             "selected"
         );
 
-        updatePreview();
-
     };
 
 
@@ -389,8 +387,6 @@ function initWinnerButtons(){
         red.classList.remove(
             "selected"
         );
-
-        updatePreview();
 
     };
 
@@ -417,50 +413,6 @@ function initDate(){
 }
 
 
-
-// =====================================================
-// Preview JSON
-// =====================================================
-
-function updatePreview(){
-
-
-    const data={
-
-        date:
-        document.getElementById(
-            "matchDate"
-        )?.value,
-
-
-        team_red:[
-            selectedPlayers.red1,
-            selectedPlayers.red2
-        ],
-
-
-        team_blue:[
-            selectedPlayers.blue1,
-            selectedPlayers.blue2
-        ],
-
-
-        winner
-
-    };
-
-
-    document.getElementById(
-        "preview"
-    ).textContent =
-        JSON.stringify(
-            data,
-            null,
-            4
-        );
-
-
-}
 
 // =====================================================
 // Ajout nouveau joueur
@@ -607,10 +559,23 @@ async function saveMatch(){
 	try {
 	
 	
-		const { data, error } =
-			await supabaseClient
+		let data;
+		let error;
+		
+		if (editingMatchId) {
+		
+			({ data, error } = await supabaseClient
 				.from("matches")
-				.insert(match);
+				.update(match)
+				.eq("id", editingMatchId));
+		
+		} else {
+		
+			({ data, error } = await supabaseClient
+				.from("matches")
+				.insert(match));
+		
+		}
 	
 	
 	
@@ -627,16 +592,14 @@ async function saveMatch(){
 		}
 	
 	
-		alert(
-			"✅ Match saved!"
-		);
+		alert("✅ Match saved!");
 		
 		resetMatchForm();
-	
-		console.log(
-			"Saved:",
-			data
-		);
+		
+		await loadRecentMatches();
+		
+		
+		console.log("Saved:", data);
 	
 	
 	}
@@ -649,15 +612,6 @@ async function saveMatch(){
 		);
 	
 	}
-
-    document.getElementById(
-        "preview"
-    ).textContent =
-        JSON.stringify(
-            match,
-            null,
-            4
-        );
 
 
 }
@@ -673,6 +627,11 @@ function initSaveButton(){
 
 function resetMatchForm(){
 
+    editingMatchId = null;
+
+	document.getElementById("saveMatch").textContent =
+		"✔ Save Match";
+    
     selectedPlayers.red1 = null;
     selectedPlayers.red2 = null;
     selectedPlayers.blue1 = null;
@@ -708,6 +667,139 @@ function resetMatchForm(){
 		.querySelector("#red1 .player-input")
 		.focus();
 
-    updatePreview();
+}
+
+
+async function loadRecentMatches() {
+
+    const { data, error } = await supabaseClient
+        .from("matches")
+        .select("*")
+        .order("id", { ascending: false })
+        .limit(5);
+
+    if (error) {
+
+        console.error(error);
+        return;
+
+    }
+
+    const container =
+        document.getElementById("recentMatches");
+
+    container.innerHTML = "";
+
+    data.forEach(match => {
+
+        const card = document.createElement("div");
+
+        card.className = "recent-match";
+
+        card.innerHTML = `
+            <div class="recent-date">
+                📅 ${match.date}
+            </div>
+
+            <div class="recent-red">
+                🔴 ${match.rouge_p1} • ${match.rouge_p2}
+            </div>
+
+            <div class="recent-blue">
+                🔵 ${match.bleu_p1} • ${match.bleu_p2}
+            </div>
+
+            <div class="recent-winner">
+                🏆 Victoire :
+                ${match.vainqueur === "red" ? "🔴 Rouge" : "🔵 Bleu"}
+            </div>
+
+            <div class="recent-actions">
+
+                <button onclick="editMatch(${match.id})">
+                    ✏ Modifier
+                </button>
+
+                <button onclick="deleteMatch(${match.id})">
+                    🗑 Supprimer
+                </button>
+
+            </div>
+        `;
+
+        container.appendChild(card);
+
+    });
+
+}
+
+
+    
+async function editMatch(id){
+
+    const { data, error } = await supabaseClient
+        .from("matches")
+        .select("*")
+        .eq("id", id)
+        .single();
+
+    if(error){
+
+        console.error(error);
+        return;
+
+    }
+
+    editingMatchId = data.id;
+
+    document.getElementById("saveMatch").textContent =
+        "💾 Update Match";
+
+    selectedPlayers.red1 = data.rouge_p1;
+    selectedPlayers.red2 = data.rouge_p2;
+    selectedPlayers.blue1 = data.bleu_p1;
+    selectedPlayers.blue2 = data.bleu_p2;
+
+    document.querySelector("#red1 .player-input").value = data.rouge_p1;
+    document.querySelector("#red2 .player-input").value = data.rouge_p2;
+    document.querySelector("#blue1 .player-input").value = data.bleu_p1;
+    document.querySelector("#blue2 .player-input").value = data.bleu_p2;
+
+    winner = data.vainqueur;
+
+    document.getElementById("winnerRed")
+        .classList.toggle("selected", winner==="red");
+
+    document.getElementById("winnerBlue")
+        .classList.toggle("selected", winner==="blue");
+
+    document.getElementById("matchDate").value =
+        data.date;
+        
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+}
+
+async function deleteMatch(id){
+
+    if(!confirm("Supprimer ce match ?"))
+        return;
+
+    const { error } = await supabaseClient
+        .from("matches")
+        .delete()
+        .eq("id", id);
+
+    if(error){
+
+        alert(error.message);
+        return;
+
+    }
+
+    await loadRecentMatches();
 
 }

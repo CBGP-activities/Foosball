@@ -377,9 +377,6 @@ function initWinnerButtons(){
 	
 	};
 
-
-    };
-
 }
 
 

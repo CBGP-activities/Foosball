@@ -363,6 +363,22 @@ for match_id, row in df.iterrows():
 # JOUEURS ÉLIGIBLES
 # =====================
 
+def load_retired_players(filename=Path("data/retired_players.txt")):
+
+    try:
+        with open(filename, "r", encoding="utf-8") as f:
+
+            return {
+                line.strip()
+                for line in f
+                if line.strip()
+            }
+
+    except FileNotFoundError:
+
+        return set()
+
+
 date_limite = (
     df["date"].max()
     -
@@ -389,6 +405,7 @@ joueurs_actifs = {
     for joueur in joueurs_actifs
 }
 
+retired_players = load_retired_players()
 
 joueurs_eligibles = {
 
@@ -398,6 +415,7 @@ joueurs_eligibles = {
 
     if nb_matchs[joueur] >= MIN_MATCHS_CLASSEMENT
     and joueur in joueurs_actifs
+    and joueur not in retired_players
 
 }
 

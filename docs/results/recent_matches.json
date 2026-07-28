@@ -2,66 +2,6 @@
   {
     "date": "2026-07-23 00:00:00",
     "team_red": [
-      "Armelle",
-      "JulieB"
-    ],
-    "team_blue": [
-      "Jules",
-      "Rémi"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-07-23 00:00:00",
-    "team_red": [
-      "Lily",
-      "Lilou"
-    ],
-    "team_blue": [
-      "ThéoM",
-      "EmmanuelP"
-    ],
-    "winner": "red"
-  },
-  {
-    "date": "2026-07-23 00:00:00",
-    "team_red": [
-      "Jules",
-      "Loïc"
-    ],
-    "team_blue": [
-      "JulieB",
-      "Rémi"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-07-23 00:00:00",
-    "team_red": [
-      "Armelle",
-      "ThéoM"
-    ],
-    "team_blue": [
-      "Lilou",
-      "Lily"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-07-23 00:00:00",
-    "team_red": [
-      "Loïc",
-      "Armelle"
-    ],
-    "team_blue": [
-      "Jules",
-      "JulieB"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-07-23 00:00:00",
-    "team_red": [
       "Loïc",
       "Lily"
     ],
@@ -236,6 +176,66 @@
     "team_blue": [
       "Armelle",
       "Lily"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-07-28 00:00:00",
+    "team_red": [
+      "ThéoM",
+      "Lily"
+    ],
+    "team_blue": [
+      "Paul",
+      "LaureS"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-07-28 00:00:00",
+    "team_red": [
+      "ManonV",
+      "Vadim"
+    ],
+    "team_blue": [
+      "Loïc",
+      "Roland"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-07-28 00:00:00",
+    "team_red": [
+      "Paul",
+      "EmmanuelP"
+    ],
+    "team_blue": [
+      "Lily",
+      "NathV"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-07-28 00:00:00",
+    "team_red": [
+      "ThéoM",
+      "Armelle"
+    ],
+    "team_blue": [
+      "Loïc",
+      "LaureS"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-07-28 00:00:00",
+    "team_red": [
+      "Roland",
+      "Paul"
+    ],
+    "team_blue": [
+      "EmmanuelP",
+      "Sabine"
     ],
     "winner": "blue"
   }

@@ -359,34 +359,24 @@ function initWinnerButtons(){
             "winnerBlue"
         );
 
+	red.onclick = () => {
+	
+		winner = "rouge";
+	
+		red.classList.add("selected");
+		blue.classList.remove("selected");
+	
+	};
+	
+	blue.onclick = () => {
+	
+		winner = "bleu";
+	
+		blue.classList.add("selected");
+		red.classList.remove("selected");
+	
+	};
 
-
-    red.onclick=()=>{
-
-        winner="red";
-
-        red.classList.add(
-            "selected"
-        );
-
-        blue.classList.remove(
-            "selected"
-        );
-
-    };
-
-
-    blue.onclick=()=>{
-
-        winner="blue";
-
-        blue.classList.add(
-            "selected"
-        );
-
-        red.classList.remove(
-            "selected"
-        );
 
     };
 
@@ -710,18 +700,18 @@ async function loadRecentMatches() {
             </div>
 
             <div class="recent-winner">
-                🏆 Victoire :
-                ${match.vainqueur === "red" ? "🔴 Rouge" : "🔵 Bleu"}
+                🏆 Winner :
+                ${match.vainqueur === "rouge" ? "🔴 Red" : "🔵 Blue"}
             </div>
 
             <div class="recent-actions">
 
                 <button onclick="editMatch(${match.id})">
-                    ✏ Modifier
+                    ✏ Edit
                 </button>
 
                 <button onclick="deleteMatch(${match.id})">
-                    🗑 Supprimer
+                    🗑 Delete
                 </button>
 
             </div>
@@ -767,11 +757,11 @@ async function editMatch(id){
 
     winner = data.vainqueur;
 
-    document.getElementById("winnerRed")
-        .classList.toggle("selected", winner==="red");
-
-    document.getElementById("winnerBlue")
-        .classList.toggle("selected", winner==="blue");
+	document.getElementById("winnerRed")
+		.classList.toggle("selected", winner==="rouge");
+	
+	document.getElementById("winnerBlue")
+		.classList.toggle("selected", winner==="bleu");
 
     document.getElementById("matchDate").value =
         data.date;
@@ -785,7 +775,7 @@ async function editMatch(id){
 
 async function deleteMatch(id){
 
-    if(!confirm("Supprimer ce match ?"))
+    if(!confirm("Delete this match?"))
         return;
 
     const { error } = await supabaseClient

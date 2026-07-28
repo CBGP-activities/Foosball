@@ -2,7 +2,7 @@ name: Update TrueSkill tables
 
 on:
   schedule:
-    - cron: "30 14 * * *"
+    - cron: "30 13 * * *"
     - cron: "0 22 * * *"
 
   workflow_dispatch:

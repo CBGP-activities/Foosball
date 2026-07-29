@@ -663,7 +663,7 @@ async function loadRecentMatches() {
         .from("matches")
         .select("*")
         .order("id", { ascending: false })
-        .limit(5);
+        .limit(20);
 
     if (error) {
 

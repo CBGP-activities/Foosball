@@ -2,66 +2,6 @@
   {
     "date": "2026-07-27 00:00:00",
     "team_red": [
-      "ThéoM",
-      "Paul"
-    ],
-    "team_blue": [
-      "ManonV",
-      "Loïc"
-    ],
-    "winner": "red"
-  },
-  {
-    "date": "2026-07-27 00:00:00",
-    "team_red": [
-      "Vadim",
-      "Rémi"
-    ],
-    "team_blue": [
-      "LaureS",
-      "Roland"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-07-27 00:00:00",
-    "team_red": [
-      "ThéoM",
-      "Paul"
-    ],
-    "team_blue": [
-      "ManonV",
-      "Lily"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-07-27 00:00:00",
-    "team_red": [
-      "Paul",
-      "Lily"
-    ],
-    "team_blue": [
-      "Roland",
-      "Rémi"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-07-27 00:00:00",
-    "team_red": [
-      "Roland",
-      "Rémi"
-    ],
-    "team_blue": [
-      "Lily",
-      "Paul"
-    ],
-    "winner": "red"
-  },
-  {
-    "date": "2026-07-27 00:00:00",
-    "team_red": [
       "Armelle",
       "Lily"
     ],
@@ -238,5 +178,65 @@
       "JulieB"
     ],
     "winner": "blue"
+  },
+  {
+    "date": "2026-07-29 00:00:00",
+    "team_red": [
+      "Jules",
+      "Paul"
+    ],
+    "team_blue": [
+      "ThéoM",
+      "Roland"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-07-29 00:00:00",
+    "team_red": [
+      "Jules",
+      "ThéoM"
+    ],
+    "team_blue": [
+      "Vadim",
+      "Roland"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-07-29 00:00:00",
+    "team_red": [
+      "Nicolas",
+      "Loïc"
+    ],
+    "team_blue": [
+      "JulieB",
+      "ManonV"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-07-29 00:00:00",
+    "team_red": [
+      "Lily",
+      "Paul"
+    ],
+    "team_blue": [
+      "Sabine",
+      "Rémi"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-07-29 00:00:00",
+    "team_red": [
+      "EmmanuelP",
+      "Nicolas"
+    ],
+    "team_blue": [
+      "Loïc",
+      "JulieB"
+    ],
+    "winner": "red"
   }
 ]

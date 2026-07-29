@@ -656,6 +656,19 @@ function resetMatchForm(){
 
 }
 
+function formatCreatedAt(createdAt) {
+
+    const date = new Date(createdAt);
+
+    return date.toLocaleTimeString(
+        "fr-FR",
+        {
+            hour: "2-digit",
+            minute: "2-digit"
+        }
+    );
+
+}
 
 async function loadRecentMatches() {
 
@@ -684,9 +697,10 @@ async function loadRecentMatches() {
         card.className = "recent-match";
 
         card.innerHTML = `
-            <div class="recent-date">
-                📅 ${match.date}
-            </div>
+			<div class="recent-date">
+				<span>📅 ${match.date}</span>
+				<span>🕒 ${formatCreatedAt(match.created_at)}</span>
+			</div>
 
             <div class="recent-red">
                 🔴 ${match.rouge_p1} • ${match.rouge_p2}

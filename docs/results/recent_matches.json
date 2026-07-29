@@ -2,18 +2,6 @@
   {
     "date": "2026-07-28 00:00:00",
     "team_red": [
-      "ManonV",
-      "Vadim"
-    ],
-    "team_blue": [
-      "Loïc",
-      "Roland"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-07-28 00:00:00",
-    "team_red": [
       "Paul",
       "EmmanuelP"
     ],
@@ -238,5 +226,17 @@
       "Paul"
     ],
     "winner": "red"
+  },
+  {
+    "date": "2026-07-29 00:00:00",
+    "team_red": [
+      "Paul",
+      "Sabine"
+    ],
+    "team_blue": [
+      "Nicolas",
+      "Lily"
+    ],
+    "winner": "blue"
   }
 ]

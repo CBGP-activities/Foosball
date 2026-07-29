@@ -60,11 +60,11 @@ Armelle,Paul,opponent,7,6,1,85.7
 Rémi,Armelle,teammate,6,6,0,100.0
 Rémi,Armelle,opponent,10,8,2,80.0
 Lily,Paul,teammate,15,9,6,60.0
-Lily,Paul,opponent,35,26,9,74.3
+Lily,Paul,opponent,36,27,9,75.0
 Lily,Armelle,teammate,5,5,0,100.0
 Lily,Armelle,opponent,10,6,4,60.0
 Paul,Lily,teammate,15,9,6,60.0
-Paul,Lily,opponent,35,9,26,25.7
+Paul,Lily,opponent,36,9,27,25.0
 Paul,Armelle,teammate,5,4,1,80.0
 Paul,Armelle,opponent,7,1,6,14.3
 Armelle,Roland,opponent,7,7,0,100.0
@@ -289,9 +289,9 @@ JulieB,BenjaminZ,opponent,9,5,4,55.6
 JulieB,Roland,opponent,7,1,6,14.3
 BenjaminZ,JulieB,opponent,9,4,5,44.4
 Roland,JulieB,opponent,7,6,1,85.7
-Lily,Nicolas,teammate,8,5,3,62.5
+Lily,Nicolas,teammate,9,6,3,66.7
 Lily,Nicolas,opponent,11,11,0,100.0
-Nicolas,Lily,teammate,8,5,3,62.5
+Nicolas,Lily,teammate,9,6,3,66.7
 Nicolas,Lily,opponent,11,0,11,0.0
 Nicolas,Rémi,opponent,7,1,6,14.3
 Nicolas,EmmanuelP,opponent,8,3,5,37.5
@@ -320,9 +320,9 @@ JulieB,LaureS,opponent,5,1,4,20.0
 BenjaminZ,Nicolas,teammate,7,1,6,14.3
 Nicolas,BenjaminZ,teammate,7,1,6,14.3
 Nicolas,Paul,teammate,6,2,4,33.3
-Nicolas,Paul,opponent,12,2,10,16.7
+Nicolas,Paul,opponent,13,3,10,23.1
 Paul,Nicolas,teammate,6,2,4,33.3
-Paul,Nicolas,opponent,12,10,2,83.3
+Paul,Nicolas,opponent,13,10,3,76.9
 Roland,Nicolas,teammate,7,3,4,42.9
 Roland,Nicolas,opponent,9,7,2,77.8
 Nicolas,Roland,teammate,7,3,4,42.9

@@ -552,10 +552,10 @@
     "player": "Lily",
     "other": "Paul",
     "type": "opponent",
-    "matches": 35,
-    "wins": 26,
+    "matches": 36,
+    "wins": 27,
     "losses": 9,
-    "winrate": 74.3
+    "winrate": 75.0
   },
   {
     "player": "Lily",
@@ -588,10 +588,10 @@
     "player": "Paul",
     "other": "Lily",
     "type": "opponent",
-    "matches": 35,
+    "matches": 36,
     "wins": 9,
-    "losses": 26,
-    "winrate": 25.7
+    "losses": 27,
+    "winrate": 25.0
   },
   {
     "player": "Paul",
@@ -2613,10 +2613,10 @@
     "player": "Lily",
     "other": "Nicolas",
     "type": "teammate",
-    "matches": 8,
-    "wins": 5,
+    "matches": 9,
+    "wins": 6,
     "losses": 3,
-    "winrate": 62.5
+    "winrate": 66.7
   },
   {
     "player": "Lily",
@@ -2631,10 +2631,10 @@
     "player": "Nicolas",
     "other": "Lily",
     "type": "teammate",
-    "matches": 8,
-    "wins": 5,
+    "matches": 9,
+    "wins": 6,
     "losses": 3,
-    "winrate": 62.5
+    "winrate": 66.7
   },
   {
     "player": "Nicolas",
@@ -2892,10 +2892,10 @@
     "player": "Nicolas",
     "other": "Paul",
     "type": "opponent",
-    "matches": 12,
-    "wins": 2,
+    "matches": 13,
+    "wins": 3,
     "losses": 10,
-    "winrate": 16.7
+    "winrate": 23.1
   },
   {
     "player": "Paul",
@@ -2910,10 +2910,10 @@
     "player": "Paul",
     "other": "Nicolas",
     "type": "opponent",
-    "matches": 12,
+    "matches": 13,
     "wins": 10,
-    "losses": 2,
-    "winrate": 83.3
+    "losses": 3,
+    "winrate": 76.9
   },
   {
     "player": "Roland",

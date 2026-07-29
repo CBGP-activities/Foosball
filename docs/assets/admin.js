@@ -479,7 +479,12 @@ function initAddPlayer(){
 
 async function saveMatch(){
 
+	const saveButton =
+        document.getElementById("saveMatch");
 
+	if (saveButton.disabled) {
+		return;
+	}
     const date =
         document.getElementById(
             "matchDate"
@@ -512,7 +517,10 @@ async function saveMatch(){
 
     }
 
-
+	saveButton.disabled = true;
+	saveButton.style.opacity = "0.6";
+	saveButton.style.cursor = "wait";
+    saveButton.textContent = "⏳ Saving...";
 
     const match = {
 
@@ -570,6 +578,14 @@ async function saveMatch(){
 		
 			console.error("Supabase error:", error);
 		
+			saveButton.disabled = false;
+			saveButton.style.opacity = "";
+			saveButton.style.cursor = "";
+			saveButton.textContent =
+				editingMatchId
+					? "💾 Update Match"
+					: "✔ Save Match";
+		
 			alert(
 				"❌ " + error.message
 			);
@@ -593,7 +609,15 @@ async function saveMatch(){
 	catch(e){
 	
 		console.error(e);
-	
+		
+		saveButton.disabled = false;
+		saveButton.style.opacity = "";
+		saveButton.style.cursor = "";
+		saveButton.textContent =
+			editingMatchId !== null
+				? "💾 Update Match"
+				: "✔ Save Match";
+		
 		alert(
 			"❌ Connection error"
 		);
@@ -616,8 +640,13 @@ function resetMatchForm(){
 
     editingMatchId = null;
 
-	document.getElementById("saveMatch").textContent =
-		"✔ Save Match";
+	const saveButton =
+		document.getElementById("saveMatch");
+	
+	saveButton.disabled = false;
+	saveButton.style.opacity = "";
+	saveButton.style.cursor = "";
+	saveButton.textContent = "✔ Save Match";
     
     selectedPlayers.red1 = null;
     selectedPlayers.red2 = null;

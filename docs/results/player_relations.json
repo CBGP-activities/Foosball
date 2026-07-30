@@ -12,19 +12,19 @@
     "player": "Lily",
     "other": "Rémi",
     "type": "teammate",
-    "matches": 18,
-    "wins": 17,
+    "matches": 19,
+    "wins": 18,
     "losses": 1,
-    "winrate": 94.4
+    "winrate": 94.7
   },
   {
     "player": "Lily",
     "other": "Rémi",
     "type": "opponent",
-    "matches": 70,
-    "wins": 32,
+    "matches": 71,
+    "wins": 33,
     "losses": 38,
-    "winrate": 45.7
+    "winrate": 46.5
   },
   {
     "player": "Roland",
@@ -75,19 +75,19 @@
     "player": "Rémi",
     "other": "Lily",
     "type": "teammate",
-    "matches": 18,
-    "wins": 17,
+    "matches": 19,
+    "wins": 18,
     "losses": 1,
-    "winrate": 94.4
+    "winrate": 94.7
   },
   {
     "player": "Rémi",
     "other": "Lily",
     "type": "opponent",
-    "matches": 70,
+    "matches": 71,
     "wins": 38,
-    "losses": 32,
-    "winrate": 54.3
+    "losses": 33,
+    "winrate": 53.5
   },
   {
     "player": "ManonV",
@@ -480,17 +480,17 @@
     "player": "Armelle",
     "other": "Rémi",
     "type": "opponent",
-    "matches": 10,
-    "wins": 2,
-    "losses": 8,
-    "winrate": 20.0
+    "matches": 12,
+    "wins": 3,
+    "losses": 9,
+    "winrate": 25.0
   },
   {
     "player": "Armelle",
     "other": "Lily",
     "type": "teammate",
-    "matches": 5,
-    "wins": 5,
+    "matches": 7,
+    "wins": 7,
     "losses": 0,
     "winrate": 100.0
   },
@@ -498,10 +498,10 @@
     "player": "Armelle",
     "other": "Lily",
     "type": "opponent",
-    "matches": 10,
+    "matches": 11,
     "wins": 4,
-    "losses": 6,
-    "winrate": 40.0
+    "losses": 7,
+    "winrate": 36.4
   },
   {
     "player": "Armelle",
@@ -534,10 +534,10 @@
     "player": "Rémi",
     "other": "Armelle",
     "type": "opponent",
-    "matches": 10,
-    "wins": 8,
-    "losses": 2,
-    "winrate": 80.0
+    "matches": 12,
+    "wins": 9,
+    "losses": 3,
+    "winrate": 75.0
   },
   {
     "player": "Lily",
@@ -561,8 +561,8 @@
     "player": "Lily",
     "other": "Armelle",
     "type": "teammate",
-    "matches": 5,
-    "wins": 5,
+    "matches": 7,
+    "wins": 7,
     "losses": 0,
     "winrate": 100.0
   },
@@ -570,10 +570,10 @@
     "player": "Lily",
     "other": "Armelle",
     "type": "opponent",
-    "matches": 10,
-    "wins": 6,
+    "matches": 11,
+    "wins": 7,
     "losses": 4,
-    "winrate": 60.0
+    "winrate": 63.6
   },
   {
     "player": "Paul",
@@ -1137,37 +1137,37 @@
     "player": "Rémi",
     "other": "ManonV",
     "type": "teammate",
-    "matches": 8,
+    "matches": 9,
     "wins": 3,
-    "losses": 5,
-    "winrate": 37.5
+    "losses": 6,
+    "winrate": 33.3
   },
   {
     "player": "Rémi",
     "other": "ManonV",
     "type": "opponent",
-    "matches": 8,
-    "wins": 7,
+    "matches": 9,
+    "wins": 8,
     "losses": 1,
-    "winrate": 87.5
+    "winrate": 88.9
   },
   {
     "player": "ManonV",
     "other": "Rémi",
     "type": "teammate",
-    "matches": 8,
+    "matches": 9,
     "wins": 3,
-    "losses": 5,
-    "winrate": 37.5
+    "losses": 6,
+    "winrate": 33.3
   },
   {
     "player": "ManonV",
     "other": "Rémi",
     "type": "opponent",
-    "matches": 8,
+    "matches": 9,
     "wins": 1,
-    "losses": 7,
-    "winrate": 12.5
+    "losses": 8,
+    "winrate": 11.1
   },
   {
     "player": "Raphaël",
@@ -1578,10 +1578,10 @@
     "player": "ManonV",
     "other": "Lily",
     "type": "opponent",
-    "matches": 8,
+    "matches": 11,
     "wins": 1,
-    "losses": 7,
-    "winrate": 12.5
+    "losses": 10,
+    "winrate": 9.1
   },
   {
     "player": "Lily",
@@ -1614,10 +1614,10 @@
     "player": "Lily",
     "other": "ManonV",
     "type": "opponent",
-    "matches": 8,
-    "wins": 7,
+    "matches": 11,
+    "wins": 10,
     "losses": 1,
-    "winrate": 87.5
+    "winrate": 90.9
   },
   {
     "player": "ManonV",
@@ -2640,8 +2640,8 @@
     "player": "Lily",
     "other": "Nicolas",
     "type": "opponent",
-    "matches": 11,
-    "wins": 11,
+    "matches": 12,
+    "wins": 12,
     "losses": 0,
     "winrate": 100.0
   },
@@ -2658,9 +2658,9 @@
     "player": "Nicolas",
     "other": "Lily",
     "type": "opponent",
-    "matches": 11,
+    "matches": 12,
     "wins": 0,
-    "losses": 11,
+    "losses": 12,
     "winrate": 0.0
   },
   {

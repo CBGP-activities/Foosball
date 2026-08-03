@@ -2,66 +2,6 @@
   {
     "date": "2026-07-30 00:00:00",
     "team_red": [
-      "Lilou",
-      "LaureS"
-    ],
-    "team_blue": [
-      "Lily",
-      "Rémi"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-07-30 00:00:00",
-    "team_red": [
-      "Roland",
-      "ThéoM"
-    ],
-    "team_blue": [
-      "Vadim",
-      "Nicolas"
-    ],
-    "winner": "red"
-  },
-  {
-    "date": "2026-07-30 00:00:00",
-    "team_red": [
-      "Loïc",
-      "JulieB"
-    ],
-    "team_blue": [
-      "Paul",
-      "Rémi"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-07-30 00:00:00",
-    "team_red": [
-      "ThéoM",
-      "Lilou"
-    ],
-    "team_blue": [
-      "Lily",
-      "Nicolas"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-07-30 00:00:00",
-    "team_red": [
-      "Rémi",
-      "Loïc"
-    ],
-    "team_blue": [
-      "JulieB",
-      "Roland"
-    ],
-    "winner": "red"
-  },
-  {
-    "date": "2026-07-30 00:00:00",
-    "team_red": [
       "Armelle",
       "ManonV"
     ],
@@ -238,5 +178,65 @@
       "EmmanuelP"
     ],
     "winner": "red"
+  },
+  {
+    "date": "2026-08-03 00:00:00",
+    "team_red": [
+      "Jules",
+      "Lily"
+    ],
+    "team_blue": [
+      "Vadim",
+      "ThéoM"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-08-03 00:00:00",
+    "team_red": [
+      "Jules",
+      "ThéoM"
+    ],
+    "team_blue": [
+      "Lily",
+      "Vadim"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-08-03 00:00:00",
+    "team_red": [
+      "Vadim",
+      "Jules"
+    ],
+    "team_blue": [
+      "Lily",
+      "Armelle"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-08-03 00:00:00",
+    "team_red": [
+      "Jules",
+      "NathV"
+    ],
+    "team_blue": [
+      "Armelle",
+      "Lily"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-08-03 00:00:00",
+    "team_red": [
+      "Jules",
+      "NathV"
+    ],
+    "team_blue": [
+      "Lily",
+      "Armelle"
+    ],
+    "winner": "blue"
   }
 ]

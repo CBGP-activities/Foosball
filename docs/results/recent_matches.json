@@ -2,18 +2,6 @@
   {
     "date": "2026-07-31 00:00:00",
     "team_red": [
-      "Lily",
-      "Lilou"
-    ],
-    "team_blue": [
-      "Paul",
-      "Sabine"
-    ],
-    "winner": "red"
-  },
-  {
-    "date": "2026-07-31 00:00:00",
-    "team_red": [
       "NathV",
       "EmmanuelP"
     ],
@@ -236,6 +224,18 @@
     "team_blue": [
       "Paul",
       "Julia"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-08-05 00:00:00",
+    "team_red": [
+      "Paul",
+      "Jules"
+    ],
+    "team_blue": [
+      "Lilou",
+      "Vadim"
     ],
     "winner": "blue"
   }

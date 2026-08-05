@@ -192,10 +192,10 @@
     "player": "Lilou",
     "other": "Paul",
     "type": "opponent",
-    "matches": 45,
-    "wins": 28,
+    "matches": 46,
+    "wins": 29,
     "losses": 17,
-    "winrate": 62.2
+    "winrate": 63.0
   },
   {
     "player": "Lilou",
@@ -237,10 +237,10 @@
     "player": "Paul",
     "other": "Lilou",
     "type": "opponent",
-    "matches": 45,
+    "matches": 46,
     "wins": 17,
-    "losses": 28,
-    "winrate": 37.8
+    "losses": 29,
+    "winrate": 37.0
   },
   {
     "player": "Paul",
@@ -732,10 +732,10 @@
     "player": "Lilou",
     "other": "Jules",
     "type": "opponent",
-    "matches": 33,
-    "wins": 15,
+    "matches": 34,
+    "wins": 16,
     "losses": 18,
-    "winrate": 45.5
+    "winrate": 47.1
   },
   {
     "player": "Raphaël",
@@ -840,10 +840,10 @@
     "player": "Jules",
     "other": "Lilou",
     "type": "opponent",
-    "matches": 33,
+    "matches": 34,
     "wins": 18,
-    "losses": 15,
-    "winrate": 54.5
+    "losses": 16,
+    "winrate": 52.9
   },
   {
     "player": "Jules",
@@ -1056,10 +1056,10 @@
     "player": "Jules",
     "other": "Paul",
     "type": "teammate",
-    "matches": 10,
+    "matches": 11,
     "wins": 1,
-    "losses": 9,
-    "winrate": 10.0
+    "losses": 10,
+    "winrate": 9.1
   },
   {
     "player": "Jules",
@@ -1101,10 +1101,10 @@
     "player": "Paul",
     "other": "Jules",
     "type": "teammate",
-    "matches": 10,
+    "matches": 11,
     "wins": 1,
-    "losses": 9,
-    "winrate": 10.0
+    "losses": 10,
+    "winrate": 9.1
   },
   {
     "player": "Paul",

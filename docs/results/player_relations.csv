@@ -20,12 +20,12 @@ Roland,Lilou,opponent,13,11,2,84.6
 Roland,Paul,teammate,17,7,10,41.2
 Roland,Paul,opponent,30,17,13,56.7
 Lilou,Paul,teammate,14,5,9,35.7
-Lilou,Paul,opponent,45,28,17,62.2
+Lilou,Paul,opponent,46,29,17,63.0
 Lilou,ManonV,opponent,25,19,6,76.0
 Lilou,Roland,teammate,9,4,5,44.4
 Lilou,Roland,opponent,13,2,11,15.4
 Paul,Lilou,teammate,14,5,9,35.7
-Paul,Lilou,opponent,45,17,28,37.8
+Paul,Lilou,opponent,46,17,29,37.0
 Paul,ManonV,opponent,14,8,6,57.1
 Paul,Roland,teammate,17,7,10,41.2
 Paul,Roland,opponent,30,13,17,43.3
@@ -80,7 +80,7 @@ Lilou,Armelle,opponent,12,5,7,41.7
 Lilou,Rémi,teammate,30,17,13,56.7
 Lilou,Rémi,opponent,39,5,34,12.8
 Lilou,Jules,teammate,18,4,14,22.2
-Lilou,Jules,opponent,33,15,18,45.5
+Lilou,Jules,opponent,34,16,18,47.1
 Raphaël,Rémi,teammate,12,11,1,91.7
 Raphaël,Rémi,opponent,21,7,14,33.3
 Raphaël,Jules,teammate,6,4,2,66.7
@@ -92,7 +92,7 @@ Rémi,Raphaël,opponent,21,14,7,66.7
 Jules,Rémi,teammate,17,12,5,70.6
 Jules,Rémi,opponent,36,9,27,25.0
 Jules,Lilou,teammate,18,4,14,22.2
-Jules,Lilou,opponent,33,18,15,54.5
+Jules,Lilou,opponent,34,18,16,52.9
 Jules,Raphaël,teammate,6,4,2,66.7
 Jules,Raphaël,opponent,23,4,19,17.4
 BenjaminC,Paul,opponent,8,4,4,50.0
@@ -116,12 +116,12 @@ BenjaminC,Jules,opponent,9,5,4,55.6
 Roland,Jules,teammate,8,3,5,37.5
 Roland,Jules,opponent,14,9,5,64.3
 ManonV,Jules,opponent,13,5,8,38.5
-Jules,Paul,teammate,10,1,9,10.0
+Jules,Paul,teammate,11,1,10,9.1
 Jules,Paul,opponent,15,4,11,26.7
 Jules,Roland,teammate,8,3,5,37.5
 Jules,Roland,opponent,14,5,9,35.7
 Jules,ManonV,opponent,13,8,5,61.5
-Paul,Jules,teammate,10,1,9,10.0
+Paul,Jules,teammate,11,1,10,9.1
 Paul,Jules,opponent,15,11,4,73.3
 Jules,Julia,opponent,7,1,6,14.3
 Julia,Jules,opponent,7,6,1,85.7

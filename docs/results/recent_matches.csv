@@ -1,5 +1,4 @@
 date,team_red,team_blue,winner
-2026-07-31,"['Lily', 'Lilou']","['Paul', 'Sabine']",red
 2026-07-31,"['NathV', 'EmmanuelP']","['Vadim', 'ThéoM']",blue
 2026-07-31,"['Lilou', 'Nicolas']","['Paul', 'Sabine']",blue
 2026-07-31,"['NathV', 'EmmanuelP']","['LaureS', 'Lily']",blue
@@ -19,3 +18,4 @@ date,team_red,team_blue,winner
 2026-08-04,"['Lily', 'Jules']","['Julia', 'Armelle']",red
 2026-08-05,"['Julia', 'ThéoM']","['Paul', 'Lilou']",red
 2026-08-05,"['Jules', 'Vadim']","['Paul', 'Julia']",blue
+2026-08-05,"['Paul', 'Jules']","['Lilou', 'Vadim']",blue

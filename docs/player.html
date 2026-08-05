@@ -13,8 +13,17 @@
 </head>
 <body>
 <header class="hero">
-    <h1 id="playerName">👤 Player</h1>
-    <p id="playerSubtitle"></p>
+    <div class="player-header-card">
+        <img id="playerPhoto"
+             src="assets/players/default.png"
+             alt="Player photo">
+        <div class="player-header-info">
+            <h1 id="playerName">Player</h1>
+            <p id="playerComment" class="player-comment">
+                No description.
+            </p>
+        </div>
+    </div>
 </header>
 <main class="container">
     <!-- Retour -->
@@ -22,6 +31,7 @@
         <a href="index.html">⬅ Back to 🏆 Ranking</a>
     </section>
     <!-- Résumé -->
+    
     <section class="card">
         <h2>🏆 Profile</h2>
         <div class="stats">

@@ -1,5 +1,6 @@
 let profiles = [];
 let relations = [];
+let playerInfos = [];
 
 window.addEventListener("DOMContentLoaded", async () => {
 
@@ -43,6 +44,12 @@ async function loadData(){
 
     relations =
         await response2.json();
+        
+    const response3 =
+		await fetch("results/player_infos.json");
+	
+	playerInfos =
+		await response3.json();
 
 }
 
@@ -54,11 +61,7 @@ function renderProfile(profile) {
 
 
     document.getElementById("playerName").textContent =
-        "👤 " + profile.player;
-
-
-    document.getElementById("playerSubtitle").textContent =
-        `${s.matches} matches`;
+        profile.player;
 
 
     document.getElementById("rank").textContent =
@@ -127,7 +130,32 @@ function renderProfile(profile) {
 		window.location.href =
 			`rivalries.html?player=${encodeURIComponent(profile.player)}&view=nemesisTargets`;
 	};
-
+	
+	const photo = document.getElementById("playerPhoto");
+	const comment = document.getElementById("playerComment");
+	const headerCard = document.querySelector(".player-header-card");
+	
+	const info = playerInfos.find(
+		p => p.player === profile.player
+	);
+	
+	// Photo
+	if (info?.photo) {
+		photo.src = info.photo;
+		photo.style.display = "block";
+		headerCard.classList.remove("no-photo");
+	} else {
+		photo.style.display = "none";
+		headerCard.classList.add("no-photo");
+	}
+	
+	// Commentaire
+	if (info?.comment && info.comment.trim() !== "") {
+		comment.textContent = info.comment;
+		comment.style.display = "block";
+	} else {
+		comment.style.display = "none";
+	}
 }
 
 

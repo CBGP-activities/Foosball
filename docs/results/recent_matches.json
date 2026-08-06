@@ -2,78 +2,6 @@
   {
     "date": "2026-07-31 00:00:00",
     "team_red": [
-      "NathV",
-      "EmmanuelP"
-    ],
-    "team_blue": [
-      "Vadim",
-      "ThéoM"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-07-31 00:00:00",
-    "team_red": [
-      "Lilou",
-      "Nicolas"
-    ],
-    "team_blue": [
-      "Paul",
-      "Sabine"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-07-31 00:00:00",
-    "team_red": [
-      "NathV",
-      "EmmanuelP"
-    ],
-    "team_blue": [
-      "LaureS",
-      "Lily"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-07-31 00:00:00",
-    "team_red": [
-      "Lilou",
-      "Paul"
-    ],
-    "team_blue": [
-      "ThéoM",
-      "Nicolas"
-    ],
-    "winner": "red"
-  },
-  {
-    "date": "2026-07-31 00:00:00",
-    "team_red": [
-      "Lilou",
-      "ThéoM"
-    ],
-    "team_blue": [
-      "Paul",
-      "JulieB"
-    ],
-    "winner": "red"
-  },
-  {
-    "date": "2026-07-31 00:00:00",
-    "team_red": [
-      "NathV",
-      "Sabine"
-    ],
-    "team_blue": [
-      "LaureS",
-      "Lily"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-07-31 00:00:00",
-    "team_red": [
       "Paul",
       "ThéoM"
     ],
@@ -236,6 +164,78 @@
     "team_blue": [
       "Lilou",
       "Vadim"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-08-06 00:00:00",
+    "team_red": [
+      "Lily",
+      "Julia"
+    ],
+    "team_blue": [
+      "ThéoM",
+      "BenjaminZ"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-08-06 00:00:00",
+    "team_red": [
+      "BenjaminZ",
+      "Vadim"
+    ],
+    "team_blue": [
+      "Julia",
+      "Lily"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-08-06 00:00:00",
+    "team_red": [
+      "Lily",
+      "Vadim"
+    ],
+    "team_blue": [
+      "BenjaminZ",
+      "Julia"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-08-06 00:00:00",
+    "team_red": [
+      "Lily",
+      "BenjaminZ"
+    ],
+    "team_blue": [
+      "Julia",
+      "Vadim"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-08-06 00:00:00",
+    "team_red": [
+      "BenjaminZ",
+      "Lily"
+    ],
+    "team_blue": [
+      "Julia",
+      "Vadim"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-08-06 00:00:00",
+    "team_red": [
+      "Julia",
+      "Lily"
+    ],
+    "team_blue": [
+      "Vadim",
+      "BenjaminZ"
     ],
     "winner": "blue"
   }

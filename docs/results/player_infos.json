@@ -4,4 +4,9 @@
     "photo": "assets/players/Rémi.jpg",
     "comment": "Ma signature c'est la délicatesse."
   }
+  {
+    "player": "Lily",
+    "photo":"assets/players/Lily.jpg"
+    "comment":"Y'avait un trou ! 😊"
+  }
 ]

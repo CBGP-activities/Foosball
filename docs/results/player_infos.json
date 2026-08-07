@@ -8,5 +8,9 @@
     "player": "Lily",
     "photo":"assets/players/Lily.jpg.JPG",
     "comment":"Y'avait un trou ! 😊"
+  },
+  {
+    "player": "Paul",
+    "photo":"assets/players/Paul.jpg",
   }
 ]

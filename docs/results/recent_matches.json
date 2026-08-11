@@ -3,30 +3,6 @@
     "date": "2026-08-06 00:00:00",
     "team_red": [
       "Lily",
-      "Julia"
-    ],
-    "team_blue": [
-      "ThéoM",
-      "BenjaminZ"
-    ],
-    "winner": "red"
-  },
-  {
-    "date": "2026-08-06 00:00:00",
-    "team_red": [
-      "BenjaminZ",
-      "Vadim"
-    ],
-    "team_blue": [
-      "Julia",
-      "Lily"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-08-06 00:00:00",
-    "team_red": [
-      "Lily",
       "Vadim"
     ],
     "team_blue": [
@@ -238,5 +214,29 @@
       "Sabine"
     ],
     "winner": "blue"
+  },
+  {
+    "date": "2026-08-11 00:00:00",
+    "team_red": [
+      "NathV",
+      "ThéoM"
+    ],
+    "team_blue": [
+      "Sabine",
+      "Lily"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-08-11 00:00:00",
+    "team_red": [
+      "Lily",
+      "Sabine"
+    ],
+    "team_blue": [
+      "ThéoM",
+      "NathV"
+    ],
+    "winner": "red"
   }
 ]

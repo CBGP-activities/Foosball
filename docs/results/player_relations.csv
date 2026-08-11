@@ -1,8 +1,8 @@
 player,other,type,matches,wins,losses,winrate
 NathV,Lily,teammate,5,3,2,60.0
-NathV,Lily,opponent,11,1,10,9.1
+NathV,Lily,opponent,13,2,11,15.4
 Lily,NathV,teammate,5,3,2,60.0
-Lily,NathV,opponent,11,10,1,90.9
+Lily,NathV,opponent,13,11,2,84.6
 Lily,Roland,opponent,30,20,10,66.7
 Lily,Rémi,teammate,19,18,1,94.7
 Lily,Rémi,opponent,71,33,38,46.5
@@ -228,9 +228,9 @@ Lily,Julia,opponent,9,9,0,100.0
 Julia,Lily,teammate,6,3,3,50.0
 Julia,Lily,opponent,9,0,9,0.0
 Lily,ThéoM,teammate,9,4,5,44.4
-Lily,ThéoM,opponent,27,21,6,77.8
+Lily,ThéoM,opponent,29,22,7,75.9
 ThéoM,Lily,teammate,9,4,5,44.4
-ThéoM,Lily,opponent,27,6,21,22.2
+ThéoM,Lily,opponent,29,7,22,24.1
 ThéoM,Lilou,opponent,9,3,6,33.3
 Lilou,ThéoM,opponent,9,6,3,66.7
 Rémi,JulieB,teammate,11,6,5,54.5
@@ -265,9 +265,9 @@ Loïc,Lily,teammate,12,7,5,58.3
 Loïc,Lily,opponent,13,3,10,23.1
 Lily,Loïc,teammate,12,7,5,58.3
 Lily,Loïc,opponent,13,10,3,76.9
-Lily,Sabine,teammate,5,3,2,60.0
+Lily,Sabine,teammate,7,4,3,57.1
 Lily,Sabine,opponent,8,6,2,75.0
-Sabine,Lily,teammate,5,3,2,60.0
+Sabine,Lily,teammate,7,4,3,57.1
 Sabine,Lily,opponent,8,2,6,25.0
 Loïc,EmmanuelP,teammate,6,3,3,50.0
 Loïc,EmmanuelP,opponent,9,4,5,44.4

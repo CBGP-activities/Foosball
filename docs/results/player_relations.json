@@ -12,10 +12,10 @@
     "player": "NathV",
     "other": "Lily",
     "type": "opponent",
-    "matches": 11,
-    "wins": 1,
-    "losses": 10,
-    "winrate": 9.1
+    "matches": 13,
+    "wins": 2,
+    "losses": 11,
+    "winrate": 15.4
   },
   {
     "player": "Lily",
@@ -30,10 +30,10 @@
     "player": "Lily",
     "other": "NathV",
     "type": "opponent",
-    "matches": 11,
-    "wins": 10,
-    "losses": 1,
-    "winrate": 90.9
+    "matches": 13,
+    "wins": 11,
+    "losses": 2,
+    "winrate": 84.6
   },
   {
     "player": "Lily",
@@ -2064,10 +2064,10 @@
     "player": "Lily",
     "other": "ThéoM",
     "type": "opponent",
-    "matches": 27,
-    "wins": 21,
-    "losses": 6,
-    "winrate": 77.8
+    "matches": 29,
+    "wins": 22,
+    "losses": 7,
+    "winrate": 75.9
   },
   {
     "player": "ThéoM",
@@ -2082,10 +2082,10 @@
     "player": "ThéoM",
     "other": "Lily",
     "type": "opponent",
-    "matches": 27,
-    "wins": 6,
-    "losses": 21,
-    "winrate": 22.2
+    "matches": 29,
+    "wins": 7,
+    "losses": 22,
+    "winrate": 24.1
   },
   {
     "player": "ThéoM",
@@ -2397,10 +2397,10 @@
     "player": "Lily",
     "other": "Sabine",
     "type": "teammate",
-    "matches": 5,
-    "wins": 3,
-    "losses": 2,
-    "winrate": 60.0
+    "matches": 7,
+    "wins": 4,
+    "losses": 3,
+    "winrate": 57.1
   },
   {
     "player": "Lily",
@@ -2415,10 +2415,10 @@
     "player": "Sabine",
     "other": "Lily",
     "type": "teammate",
-    "matches": 5,
-    "wins": 3,
-    "losses": 2,
-    "winrate": 60.0
+    "matches": 7,
+    "wins": 4,
+    "losses": 3,
+    "winrate": 57.1
   },
   {
     "player": "Sabine",

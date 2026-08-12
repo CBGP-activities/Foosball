@@ -6,11 +6,16 @@
   },
   {
     "player": "Lily",
-    "photo":"assets/players/Lily.jpg.JPG",
+    "photo":"assets/players/Lily.jpg",
     "comment":"Y'avait un trou ! 😊"
   },
   {
     "player": "Paul",
     "photo":"assets/players/Paul.jpg"
+  },
+  {
+    "player": "ThéoM",
+    "photo":"assets/players/ThéoM.jpg",
+    "comment":"\"Certains d'entre vous mourront, mais c'est un sacrifice que je suis prêt à faire.\" Lord Farquaad"
   }
 ]

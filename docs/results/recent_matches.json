@@ -1,65 +1,5 @@
 [
   {
-    "date": "2026-08-13 00:00:00",
-    "team_red": [
-      "Lily",
-      "Sabine"
-    ],
-    "team_blue": [
-      "ManonV",
-      "Julia"
-    ],
-    "winner": "red"
-  },
-  {
-    "date": "2026-08-13 00:00:00",
-    "team_red": [
-      "Lily",
-      "Sabine"
-    ],
-    "team_blue": [
-      "ManonV",
-      "Julia"
-    ],
-    "winner": "red"
-  },
-  {
-    "date": "2026-08-13 00:00:00",
-    "team_red": [
-      "Julia",
-      "Sabine"
-    ],
-    "team_blue": [
-      "ManonV",
-      "Lily"
-    ],
-    "winner": "red"
-  },
-  {
-    "date": "2026-08-14 00:00:00",
-    "team_red": [
-      "Roland",
-      "BenjaminZ"
-    ],
-    "team_blue": [
-      "ThéoM",
-      "Vadim"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-08-14 00:00:00",
-    "team_red": [
-      "Lilou",
-      "PhilippeA"
-    ],
-    "team_blue": [
-      "Julia",
-      "ManonV"
-    ],
-    "winner": "red"
-  },
-  {
     "date": "2026-08-14 00:00:00",
     "team_red": [
       "Vadim",
@@ -238,5 +178,65 @@
       "Sabine"
     ],
     "winner": "red"
+  },
+  {
+    "date": "2026-08-17 00:00:00",
+    "team_red": [
+      "BenjaminZ",
+      "Rémi"
+    ],
+    "team_blue": [
+      "Lily",
+      "Sabine"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-08-17 00:00:00",
+    "team_red": [
+      "Armelle",
+      "Lily"
+    ],
+    "team_blue": [
+      "BenjaminZ",
+      "Sabine"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-08-17 00:00:00",
+    "team_red": [
+      "Armelle",
+      "BenjaminZ"
+    ],
+    "team_blue": [
+      "Lily",
+      "Sabine"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-08-17 00:00:00",
+    "team_red": [
+      "Armelle",
+      "BenjaminZ"
+    ],
+    "team_blue": [
+      "Rémi",
+      "Sabine"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-08-17 00:00:00",
+    "team_red": [
+      "Armelle",
+      "BenjaminZ"
+    ],
+    "team_blue": [
+      "Lily",
+      "Rémi"
+    ],
+    "winner": "blue"
   }
 ]

@@ -2,9 +2,9 @@ name: Update TrueSkill tables
 
 on:
   schedule:
-    - cron: "30 14 * * *"
+    - cron: "30 14 * * 1-5"
       timezone: "Europe/Paris"
-    - cron: "0 23 * * *"
+    - cron: "0 23 * * 1-5"
       timezone: "Europe/Paris"
 
   workflow_dispatch:

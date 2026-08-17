@@ -32,53 +32,67 @@
     </section>
     <!-- Résumé -->
     
-    <section class="card">
-        <h2>🏆 Profile</h2>
-        <div class="stats">
-            <div>
-                <span id="rank">-</span>
-                <small>Rank</small>
-            </div>
-            <div>
-                <span id="score">-</span>
-                <small>Score</small>
-            </div>
-            <div>
-                <span id="matches">-</span>
-                <small>Matches</small>
-            </div>
-            <div>
-                <span id="winrate">-</span>
-                <small>Win rate</small>
-            </div>
-            <div class="stat-card" id="nemesisCountCard">
+	<section class="card">
+		<h2>🏆 Profile</h2>
+	
+		<div class="stats">
+	
+			<div>
+				<span id="rank">-</span>
+				<small>Rank</small>
+			</div>
+	
+			<div>
+				<span id="score">-</span>
+				<small>Score</small>
+			</div>
+	
+			<div>
+				<span id="matches">-</span>
+				<small>Matches</small>
+			</div>
+	
+			<div>
+				<span id="winrate">-</span>
+				<small>Win rate</small>
+			</div>
+	
+			<div>
+				<span id="recentWinrate">-</span>
+				<small>Last 10 win rate</small>
+			</div>
+	
+			<div class="stat-card" id="nemesisCountCard">
 				<span id="nemesisCount">-</span>
 				<small>Nemesis ratio</small>
 			</div>
-        </div>
-        <br>
-        <table>
-            <tbody>
-            <tr>
-                <td>μ</td>
-                <td id="mu"></td>
-            </tr>
-            <tr>
-                <td>σ</td>
-                <td id="sigma"></td>
-            </tr>
-            <tr>
-                <td>First match</td>
-                <td id="firstMatch"></td>
-            </tr>
-            <tr>
-                <td>Last match</td>
-                <td id="lastMatch"></td>
-            </tr>
-            </tbody>
-        </table>
-    </section>
-    
+	
+		</div>
+	
+		<br>
+	
+		<table>
+			<tbody>
+			<tr>
+				<td>μ</td>
+				<td id="mu"></td>
+			</tr>
+			<tr>
+				<td>σ</td>
+				<td id="sigma"></td>
+			</tr>
+			<tr>
+				<td>First match</td>
+				<td id="firstMatch"></td>
+			</tr>
+			<tr>
+				<td>Last match</td>
+				<td id="lastMatch"></td>
+			</tr>
+			</tbody>
+		</table>
+	</section>
+   
     <!-- Relations -->
     <section class="card">
 
@@ -127,7 +141,18 @@
             </div>
         </div>
     </section>
+	
+	<!-- Last 10 matches -->
+	<section class="card">
+		<h2>⚽ Last 10 matches</h2>
+	
+		<table class="matches-table">
+			<tbody id="playerRecentMatches"></tbody>
+		</table>
+	</section>
+
 </main>
-<script src="assets/player.js"></script>
-</body>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/supabase.js"></script>
+<script src="assets/player.js"></script></body>
 </html>

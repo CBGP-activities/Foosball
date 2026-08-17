@@ -677,3 +677,18 @@ pre{
 .player-header-card.no-photo .player-header-info{
     text-align:center;
 }
+
+.ranking-movement {
+    display: inline-block;
+    margin-left: 6px;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+.ranking-up {
+    color: #2a9d8f;
+}
+
+.ranking-down {
+    color: #e63946;
+}

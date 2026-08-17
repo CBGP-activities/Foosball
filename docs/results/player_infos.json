@@ -17,5 +17,10 @@
     "player": "ThéoM",
     "photo":"assets/players/ThéoM.jpg",
     "comment":"\"Certains d'entre vous mourront, mais c'est un sacrifice que je suis prêt à faire.\" Lord Farquaad"
+  },
+  {
+    "player": "Vadim",
+    "photo":"assets/players/Vadim.png",
+    "comment":"J'aime pas quand les balles partent pas droit. J'aime pas quand elles vont trop vite. J'aime pas perdre aux demis. J'aime bien marquer mais ça n'arrive jamais."
   }
 ]

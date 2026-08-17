@@ -86,44 +86,266 @@ function updateHeader() {
 
 }
 
+
+// =====================================================
+// Evolution du classement
+// Compare le classement actuel avec celui de la fin
+// de la journée précédente
+// =====================================================
+
+function getRankingMovements() {
+
+    // -------------------------------------------------
+    // 1. Récupérer toutes les dates disponibles
+    // -------------------------------------------------
+
+    const dates = [
+        ...new Set(
+            history.map(row =>
+                row.date.substring(0, 10)
+            )
+        )
+    ].sort();
+
+
+    // Pas assez d'historique
+    if (dates.length < 2) {
+        return {};
+    }
+
+
+    // -------------------------------------------------
+    // 2. Dates actuelle et précédente
+    // -------------------------------------------------
+
+    const currentDate =
+        dates[dates.length - 1];
+
+    const previousDate =
+        dates[dates.length - 2];
+
+
+    // -------------------------------------------------
+    // 3. Dernier match de chaque journée
+    // -------------------------------------------------
+
+    const currentRows =
+        history.filter(row =>
+            row.date.substring(0, 10) === currentDate
+        );
+
+
+    const previousRows =
+        history.filter(row =>
+            row.date.substring(0, 10) === previousDate
+        );
+
+
+    if (!currentRows.length || !previousRows.length) {
+        return {};
+    }
+
+
+    const currentMatchId =
+        Math.max(
+            ...currentRows.map(row =>
+                Number(row.match_id)
+            )
+        );
+
+
+    const previousMatchId =
+        Math.max(
+            ...previousRows.map(row =>
+                Number(row.match_id)
+            )
+        );
+
+
+    // -------------------------------------------------
+    // 4. Récupérer les joueurs du dernier snapshot
+    // -------------------------------------------------
+
+    const currentSnapshot =
+        currentRows.filter(row =>
+            Number(row.match_id) === currentMatchId
+        );
+
+
+    const previousSnapshot =
+        previousRows.filter(row =>
+            Number(row.match_id) === previousMatchId
+        );
+
+
+    // -------------------------------------------------
+    // 5. Construire les classements
+    // -------------------------------------------------
+
+    const currentRanking =
+        currentSnapshot
+            .slice()
+            .sort((a, b) =>
+                Number(b.score) - Number(a.score)
+            );
+
+
+    const previousRanking =
+        previousSnapshot
+            .slice()
+            .sort((a, b) =>
+                Number(b.score) - Number(a.score)
+            );
+
+
+    // -------------------------------------------------
+    // 6. Créer un dictionnaire :
+    //
+    // joueur -> rang précédent
+    // -------------------------------------------------
+
+    const previousRanks = {};
+
+
+    previousRanking.forEach((row, index) => {
+
+        previousRanks[row.player] =
+            index + 1;
+
+    });
+
+
+    // -------------------------------------------------
+    // 7. Comparer avec le classement actuel
+    // -------------------------------------------------
+
+    const movements = {};
+
+
+    currentRanking.forEach((row, index) => {
+
+        const currentRank =
+            index + 1;
+
+        const previousRank =
+            previousRanks[row.player];
+
+        // Nouveau joueur :
+        // pas de comparaison possible
+        if (previousRank === undefined) {
+            return;
+        }
+
+		// Le joueur monte
+		if (currentRank < previousRank) {
+		
+			movements[row.player] =
+				previousRank - currentRank;
+		
+		}
+		
+		// Le joueur descend
+		else if (currentRank > previousRank) {
+		
+			movements[row.player] =
+				-(currentRank - previousRank);
+		
+		}
+        
+        // Même position :
+        // on ne met volontairement rien
+
+    });
+
+
+    return movements;
+}
+
 // =====================================================
 // Classement
 // =====================================================
 
 function renderRanking() {
 
-    const tbody = document.getElementById("rankingBody");
+    const tbody =
+        document.getElementById("rankingBody");
 
     tbody.innerHTML = "";
 
+    // Mouvements depuis la fin de la veille
+    const movements =
+        getRankingMovements();
+
     ranking.forEach((row, i) => {
 
-        const tr = document.createElement("tr");
+        const tr =
+            document.createElement("tr");
 
-        if(i===0) tr.classList.add("top1");
-        if(i===1) tr.classList.add("top2");
-        if(i===2) tr.classList.add("top3");
+
+        // Podium
+        if (i === 0)
+            tr.classList.add("top1");
+
+        if (i === 1)
+            tr.classList.add("top2");
+
+        if (i === 2)
+            tr.classList.add("top3");
+
+
+        // -----------------------------
+        // Indicateur de mouvement
+        // -----------------------------
+
+		let movement = "";
+		
+		const change = movements[row.player];
+		
+		if (change > 0) {
+		
+			movement = `
+				<span
+					class="ranking-movement ranking-up"
+					title="${change} place${change > 1 ? "s" : ""} gained"
+				>
+					+${change}
+				</span>
+			`;
+		
+		}
+		else if (change < 0) {
+		
+			movement = `
+				<span
+					class="ranking-movement ranking-down"
+					title="${Math.abs(change)} place${Math.abs(change) > 1 ? "s" : ""} lost"
+				>
+					${change}
+				</span>
+			`;
+		
+		}
 
         tr.innerHTML = `
             <td>${row.rank}</td>
-            <td>${row.player}</td>
-			<td>${Number(row.score).toFixed(2)}</td>
-			<td>${Number(row.mu).toFixed(2)}</td>
-			<td>${Number(row.sigma).toFixed(2)}</td>
+            <td>
+                ${row.player}
+                ${movement}
+            </td>
+            <td>${Number(row.score).toFixed(2)}</td>
+            <td>${Number(row.mu).toFixed(2)}</td>
+            <td>${Number(row.sigma).toFixed(2)}</td>
             <td>${row.matches}</td>
         `;
-        
-		tr.style.cursor = "pointer";
-		
-		tr.addEventListener("click", () => {
-			window.location.href =
-				`player.html?player=${encodeURIComponent(row.player)}`;
-		});
-		
+
+        tr.style.cursor = "pointer";
+
+        tr.addEventListener("click", () => {
+            window.location.href =
+                `player.html?player=${encodeURIComponent(row.player)}`;
+        });
         tbody.appendChild(tr);
-
     });
-
 }
 
 // =====================================================

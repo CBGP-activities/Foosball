@@ -27,6 +27,8 @@ window.addEventListener("DOMContentLoaded", async () => {
 
     renderProfile(profile);
     renderRelationCards(playerRelations);
+    
+    await loadPlayerRecentMatches(profile.player);
 });
 
 
@@ -374,4 +376,204 @@ function countEligibleOpponents(playerName) {
     return opponents.size;
 
 }
+
+async function loadPlayerRecentMatches(playerName) {
+
+    const { data, error } = await supabaseClient
+        .from("matches")
+        .select("*")
+        .or(
+            `rouge_p1.eq.${playerName},` +
+            `rouge_p2.eq.${playerName},` +
+            `bleu_p1.eq.${playerName},` +
+            `bleu_p2.eq.${playerName}`
+        )
+        .order("id", { ascending: false })
+        .limit(10);
+
+
+    if (error) {
+
+        console.error(
+            "Error loading player matches:",
+            error
+        );
+
+        document.getElementById(
+            "playerRecentMatches"
+        ).innerHTML = `
+            <tr>
+                <td colspan="3">
+                    Unable to load matches.
+                </td>
+            </tr>
+        `;
+
+        return;
+    }
+
+
+    renderPlayerRecentMatches(
+        data || [],
+        playerName
+    );
+
+}
+
+
+function renderPlayerRecentMatches(
+    matches,
+    playerName
+) {
+
+    const tbody =
+        document.getElementById(
+            "playerRecentMatches"
+        );
+
+
+    tbody.innerHTML = "";
+
+
+    if (!matches.length) {
+
+        tbody.innerHTML = `
+            <tr>
+                <td colspan="3" style="
+                    text-align:center;
+                    color:var(--muted);
+                ">
+                    No matches found.
+                </td>
+            </tr>
+        `;
+
+        document.getElementById(
+            "recentWinrate"
+        ).textContent = "-";
+
+        return;
+
+    }
+
+
+    // =====================================================
+    // WIN RATE - LAST 10 MATCHES
+    // =====================================================
+
+    let wins = 0;
+
+
+    matches.forEach(match => {
+
+        const playerIsRed =
+            match.rouge_p1 === playerName ||
+            match.rouge_p2 === playerName;
+
+
+        const playerIsBlue =
+            match.bleu_p1 === playerName ||
+            match.bleu_p2 === playerName;
+
+
+        const playerWon =
+            (playerIsRed && match.vainqueur === "rouge") ||
+            (playerIsBlue && match.vainqueur === "bleu");
+
+
+        if (playerWon) {
+
+            wins++;
+
+        }
+
+    });
+
+
+    const winrate =
+        (100 * wins) / matches.length;
+
+
+    document.getElementById(
+        "recentWinrate"
+    ).textContent =
+        winrate.toFixed(1) + "%";
+
+
+    // =====================================================
+    // AFFICHAGE DES MATCHS
+    // Même affichage que index.html
+    // =====================================================
+
+    matches.forEach(match => {
+
+            const tr =
+                document.createElement("tr");
+
+
+            const redWinner =
+                match.vainqueur === "rouge";
+
+
+            const blueWinner =
+                match.vainqueur === "bleu";
+
+
+            tr.innerHTML = `
+
+                <td class="match-date">
+                    ${formatDate(match.date)}
+                </td>
+
+
+                <td class="${
+                    redWinner
+                        ? "winner"
+                        : ""
+                }">
+
+                    🔴
+                    ${match.rouge_p1}
+                    /
+                    ${match.rouge_p2}
+
+                </td>
+
+
+                <td class="${
+                    blueWinner
+                        ? "winner"
+                        : ""
+                }">
+
+                    🔵
+                    ${match.bleu_p1}
+                    /
+                    ${match.bleu_p2}
+
+                </td>
+
+            `;
+
+
+            tbody.appendChild(tr);
+
+        });
+
+}
+
+
+// =====================================================
+// HELPERS
+// =====================================================
+
+function formatDate(dateString) {
+
+    return new Date(dateString)
+        .toLocaleDateString(
+            "fr-FR"
+        );
+
+}
+
 

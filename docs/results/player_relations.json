@@ -66,10 +66,10 @@
     "player": "Lily",
     "other": "Rémi",
     "type": "opponent",
-    "matches": 71,
+    "matches": 73,
     "wins": 33,
-    "losses": 38,
-    "winrate": 46.5
+    "losses": 40,
+    "winrate": 45.2
   },
   {
     "player": "Roland",
@@ -138,10 +138,10 @@
     "player": "Rémi",
     "other": "Lily",
     "type": "opponent",
-    "matches": 71,
-    "wins": 38,
+    "matches": 73,
+    "wins": 40,
     "losses": 33,
-    "winrate": 53.5
+    "winrate": 54.8
   },
   {
     "player": "ManonV",
@@ -363,10 +363,10 @@
     "player": "Julia",
     "other": "Roland",
     "type": "opponent",
-    "matches": 11,
+    "matches": 14,
     "wins": 3,
-    "losses": 8,
-    "winrate": 27.3
+    "losses": 11,
+    "winrate": 21.4
   },
   {
     "player": "Julia",
@@ -399,10 +399,10 @@
     "player": "Roland",
     "other": "Julia",
     "type": "opponent",
-    "matches": 11,
-    "wins": 8,
+    "matches": 14,
+    "wins": 11,
     "losses": 3,
-    "winrate": 72.7
+    "winrate": 78.6
   },
   {
     "player": "Lilou",
@@ -1722,19 +1722,19 @@
     "player": "Roland",
     "other": "ThéoM",
     "type": "teammate",
-    "matches": 15,
-    "wins": 10,
+    "matches": 16,
+    "wins": 11,
     "losses": 5,
-    "winrate": 66.7
+    "winrate": 68.8
   },
   {
     "player": "Roland",
     "other": "ThéoM",
     "type": "opponent",
-    "matches": 13,
+    "matches": 14,
     "wins": 8,
-    "losses": 5,
-    "winrate": 61.5
+    "losses": 6,
+    "winrate": 57.1
   },
   {
     "player": "Paul",
@@ -1785,19 +1785,19 @@
     "player": "ThéoM",
     "other": "Roland",
     "type": "teammate",
-    "matches": 15,
-    "wins": 10,
+    "matches": 16,
+    "wins": 11,
     "losses": 5,
-    "winrate": 66.7
+    "winrate": 68.8
   },
   {
     "player": "ThéoM",
     "other": "Roland",
     "type": "opponent",
-    "matches": 13,
-    "wins": 5,
+    "matches": 14,
+    "wins": 6,
     "losses": 8,
-    "winrate": 38.5
+    "winrate": 42.9
   },
   {
     "player": "Rémi",
@@ -1893,37 +1893,37 @@
     "player": "Roland",
     "other": "BenjaminZ",
     "type": "teammate",
-    "matches": 9,
-    "wins": 8,
+    "matches": 10,
+    "wins": 9,
     "losses": 1,
-    "winrate": 88.9
+    "winrate": 90.0
   },
   {
     "player": "Roland",
     "other": "BenjaminZ",
     "type": "opponent",
-    "matches": 13,
-    "wins": 4,
-    "losses": 9,
-    "winrate": 30.8
+    "matches": 17,
+    "wins": 7,
+    "losses": 10,
+    "winrate": 41.2
   },
   {
     "player": "BenjaminZ",
     "other": "Roland",
     "type": "teammate",
-    "matches": 9,
-    "wins": 8,
+    "matches": 10,
+    "wins": 9,
     "losses": 1,
-    "winrate": 88.9
+    "winrate": 90.0
   },
   {
     "player": "BenjaminZ",
     "other": "Roland",
     "type": "opponent",
-    "matches": 13,
-    "wins": 9,
-    "losses": 4,
-    "winrate": 69.2
+    "matches": 17,
+    "wins": 10,
+    "losses": 7,
+    "winrate": 58.8
   },
   {
     "player": "BenjaminZ",
@@ -2100,10 +2100,10 @@
     "player": "Lily",
     "other": "ThéoM",
     "type": "opponent",
-    "matches": 33,
+    "matches": 35,
     "wins": 24,
-    "losses": 9,
-    "winrate": 72.7
+    "losses": 11,
+    "winrate": 68.6
   },
   {
     "player": "ThéoM",
@@ -2118,10 +2118,10 @@
     "player": "ThéoM",
     "other": "Lily",
     "type": "opponent",
-    "matches": 33,
-    "wins": 9,
+    "matches": 35,
+    "wins": 11,
     "losses": 24,
-    "winrate": 27.3
+    "winrate": 31.4
   },
   {
     "player": "ThéoM",
@@ -2703,10 +2703,10 @@
     "player": "Rémi",
     "other": "ThéoM",
     "type": "teammate",
-    "matches": 7,
-    "wins": 4,
+    "matches": 9,
+    "wins": 6,
     "losses": 3,
-    "winrate": 57.1
+    "winrate": 66.7
   },
   {
     "player": "Rémi",
@@ -2721,10 +2721,10 @@
     "player": "ThéoM",
     "other": "Rémi",
     "type": "teammate",
-    "matches": 7,
-    "wins": 4,
+    "matches": 9,
+    "wins": 6,
     "losses": 3,
-    "winrate": 57.1
+    "winrate": 66.7
   },
   {
     "player": "ThéoM",
@@ -2770,6 +2770,24 @@
     "wins": 7,
     "losses": 9,
     "winrate": 43.8
+  },
+  {
+    "player": "ThéoM",
+    "other": "BenjaminZ",
+    "type": "opponent",
+    "matches": 5,
+    "wins": 3,
+    "losses": 2,
+    "winrate": 60.0
+  },
+  {
+    "player": "BenjaminZ",
+    "other": "ThéoM",
+    "type": "opponent",
+    "matches": 5,
+    "wins": 2,
+    "losses": 3,
+    "winrate": 40.0
   },
   {
     "player": "Jules",
@@ -3027,19 +3045,19 @@
     "player": "Julia",
     "other": "BenjaminZ",
     "type": "opponent",
-    "matches": 7,
+    "matches": 8,
     "wins": 2,
-    "losses": 5,
-    "winrate": 28.6
+    "losses": 6,
+    "winrate": 25.0
   },
   {
     "player": "BenjaminZ",
     "other": "Julia",
     "type": "opponent",
-    "matches": 7,
-    "wins": 5,
+    "matches": 8,
+    "wins": 6,
     "losses": 2,
-    "winrate": 71.4
+    "winrate": 75.0
   },
   {
     "player": "LaureS",
@@ -3296,11 +3314,29 @@
   {
     "player": "Vadim",
     "other": "Lily",
+    "type": "teammate",
+    "matches": 5,
+    "wins": 3,
+    "losses": 2,
+    "winrate": 60.0
+  },
+  {
+    "player": "Vadim",
+    "other": "Lily",
     "type": "opponent",
     "matches": 11,
     "wins": 3,
     "losses": 8,
     "winrate": 27.3
+  },
+  {
+    "player": "Lily",
+    "other": "Vadim",
+    "type": "teammate",
+    "matches": 5,
+    "wins": 3,
+    "losses": 2,
+    "winrate": 60.0
   },
   {
     "player": "Lily",
@@ -3312,6 +3348,24 @@
     "winrate": 72.7
   },
   {
+    "player": "Vadim",
+    "other": "Roland",
+    "type": "opponent",
+    "matches": 6,
+    "wins": 1,
+    "losses": 5,
+    "winrate": 16.7
+  },
+  {
+    "player": "Roland",
+    "other": "Vadim",
+    "type": "opponent",
+    "matches": 6,
+    "wins": 5,
+    "losses": 1,
+    "winrate": 83.3
+  },
+  {
     "player": "ThéoM",
     "other": "Vadim",
     "type": "teammate",
@@ -3324,10 +3378,10 @@
     "player": "ThéoM",
     "other": "Vadim",
     "type": "opponent",
-    "matches": 7,
-    "wins": 3,
+    "matches": 9,
+    "wins": 5,
     "losses": 4,
-    "winrate": 42.9
+    "winrate": 55.6
   },
   {
     "player": "Vadim",
@@ -3342,10 +3396,10 @@
     "player": "Vadim",
     "other": "ThéoM",
     "type": "opponent",
-    "matches": 7,
+    "matches": 9,
     "wins": 4,
-    "losses": 3,
-    "winrate": 57.1
+    "losses": 5,
+    "winrate": 44.4
   },
   {
     "player": "Vadim",
@@ -3369,23 +3423,14 @@
     "player": "BenjaminZ",
     "other": "Vadim",
     "type": "opponent",
-    "matches": 5,
-    "wins": 2,
+    "matches": 6,
+    "wins": 3,
     "losses": 3,
-    "winrate": 40.0
+    "winrate": 50.0
   },
   {
     "player": "Vadim",
     "other": "BenjaminZ",
-    "type": "opponent",
-    "matches": 5,
-    "wins": 3,
-    "losses": 2,
-    "winrate": 60.0
-  },
-  {
-    "player": "BenjaminZ",
-    "other": "Sabine",
     "type": "opponent",
     "matches": 6,
     "wins": 3,
@@ -3393,12 +3438,21 @@
     "winrate": 50.0
   },
   {
+    "player": "BenjaminZ",
+    "other": "Sabine",
+    "type": "opponent",
+    "matches": 8,
+    "wins": 4,
+    "losses": 4,
+    "winrate": 50.0
+  },
+  {
     "player": "Sabine",
     "other": "BenjaminZ",
     "type": "opponent",
-    "matches": 6,
-    "wins": 3,
-    "losses": 3,
+    "matches": 8,
+    "wins": 4,
+    "losses": 4,
     "winrate": 50.0
   }
 ]

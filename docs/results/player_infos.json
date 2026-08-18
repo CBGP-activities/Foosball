@@ -22,5 +22,10 @@
     "player": "Vadim",
     "photo":"assets/players/Vadim.png",
     "comment":"J'aime pas quand les balles partent pas droit. J'aime pas quand elles vont trop vite. J'aime pas perdre aux demis. J'aime bien marquer mais ça n'arrive jamais."
+  },
+  {
+    "player": "Sabine",
+    "photo":"assets/players/Sabine.jpg",
+    "comment":"J’angoisse à mort mais c’est mon point fort 💪"
   }
 ]

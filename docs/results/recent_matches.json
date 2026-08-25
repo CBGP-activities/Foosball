@@ -2,66 +2,6 @@
   {
     "date": "2026-08-18 00:00:00",
     "team_red": [
-      "Armelle",
-      "BenjaminZ"
-    ],
-    "team_blue": [
-      "ThéoM",
-      "Roland"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-08-18 00:00:00",
-    "team_red": [
-      "Roland",
-      "ThéoM"
-    ],
-    "team_blue": [
-      "Rémi",
-      "BenjaminZ"
-    ],
-    "winner": "red"
-  },
-  {
-    "date": "2026-08-18 00:00:00",
-    "team_red": [
-      "Rémi",
-      "BenjaminZ"
-    ],
-    "team_blue": [
-      "Lily",
-      "ThéoM"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-08-18 00:00:00",
-    "team_red": [
-      "Armelle",
-      "ManonV"
-    ],
-    "team_blue": [
-      "Lily",
-      "Roland"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-08-18 00:00:00",
-    "team_red": [
-      "BenjaminZ",
-      "Armelle"
-    ],
-    "team_blue": [
-      "Lily",
-      "ThéoM"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-08-18 00:00:00",
-    "team_red": [
       "Roland",
       "ManonV"
     ],
@@ -238,5 +178,65 @@
       "Roland"
     ],
     "winner": "red"
+  },
+  {
+    "date": "2026-08-25 00:00:00",
+    "team_red": [
+      "JulienF",
+      "Rémi"
+    ],
+    "team_blue": [
+      "Lily",
+      "LaureS"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-08-25 00:00:00",
+    "team_red": [
+      "Rémi",
+      "EmmanuelP"
+    ],
+    "team_blue": [
+      "Lily",
+      "LaureS"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-08-25 00:00:00",
+    "team_red": [
+      "Julia",
+      "BenjaminZ"
+    ],
+    "team_blue": [
+      "Roland",
+      "Lilou"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-08-25 00:00:00",
+    "team_red": [
+      "Rémi",
+      "ThéoM"
+    ],
+    "team_blue": [
+      "EmmanuelP",
+      "Lily"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-08-25 00:00:00",
+    "team_red": [
+      "Rémi",
+      "Lilou"
+    ],
+    "team_blue": [
+      "Roland",
+      "ThéoM"
+    ],
+    "winner": "blue"
   }
 ]

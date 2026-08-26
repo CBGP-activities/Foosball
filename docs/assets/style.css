@@ -692,3 +692,19 @@ pre{
 .ranking-down {
     color: #e63946;
 }
+
+.score-movement {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 1em;
+    opacity: 0.5;
+    font-weight: 600;
+}
+
+.score-up {
+    color: #2a9d8f;
+}
+
+.score-down {
+    color: #e63946;
+}

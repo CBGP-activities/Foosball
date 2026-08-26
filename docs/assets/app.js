@@ -93,11 +93,7 @@ function updateHeader() {
 // de la journée précédente
 // =====================================================
 
-function getRankingMovements() {
-
-    // -------------------------------------------------
-    // 1. Récupérer toutes les dates disponibles
-    // -------------------------------------------------
+function getRankingAndScoreMovements() {
 
     const dates = [
         ...new Set(
@@ -107,88 +103,67 @@ function getRankingMovements() {
         )
     ].sort();
 
-
-    // Pas assez d'historique
     if (dates.length < 2) {
-        return {};
+        return {
+            ranking: {},
+            score: {}
+        };
     }
 
-
-    // -------------------------------------------------
-    // 2. Dates actuelle et précédente
-    // -------------------------------------------------
-
-    const currentDate =
-        dates[dates.length - 1];
-
-    const previousDate =
-        dates[dates.length - 2];
-
-
-    // -------------------------------------------------
-    // 3. Dernier match de chaque journée
-    // -------------------------------------------------
+    const currentDate = dates[dates.length - 1];
+    const previousDate = dates[dates.length - 2];
 
     const currentRows =
         history.filter(row =>
             row.date.substring(0, 10) === currentDate
         );
 
-
     const previousRows =
         history.filter(row =>
             row.date.substring(0, 10) === previousDate
         );
 
-
     if (!currentRows.length || !previousRows.length) {
-        return {};
+        return {
+            ranking: {},
+            score: {}
+        };
     }
-
 
     const currentMatchId =
         Math.max(
-            ...currentRows.map(row =>
-                Number(row.match_id)
-            )
+            ...currentRows.map(row => Number(row.match_id))
         );
-
 
     const previousMatchId =
         Math.max(
-            ...previousRows.map(row =>
-                Number(row.match_id)
-            )
+            ...previousRows.map(row => Number(row.match_id))
         );
-
-
-    // -------------------------------------------------
-    // 4. Récupérer les joueurs du dernier snapshot
-    // -------------------------------------------------
 
     const currentSnapshot =
         currentRows.filter(row =>
             Number(row.match_id) === currentMatchId
         );
 
-
     const previousSnapshot =
         previousRows.filter(row =>
             Number(row.match_id) === previousMatchId
         );
 
+    // -------------------------------------------------
+    // Snapshot précédent sous forme de dictionnaire
+    // joueur -> données
+    // -------------------------------------------------
+
+    const previousPlayers = {};
+
+    previousSnapshot.forEach(row => {
+        previousPlayers[row.player] = row;
+    });
 
     // -------------------------------------------------
-    // 5. Construire les classements
+    // Classement précédent
     // -------------------------------------------------
-
-    const currentRanking =
-        currentSnapshot
-            .slice()
-            .sort((a, b) =>
-                Number(b.score) - Number(a.score)
-            );
-
 
     const previousRanking =
         previousSnapshot
@@ -197,69 +172,66 @@ function getRankingMovements() {
                 Number(b.score) - Number(a.score)
             );
 
-
-    // -------------------------------------------------
-    // 6. Créer un dictionnaire :
-    //
-    // joueur -> rang précédent
-    // -------------------------------------------------
-
     const previousRanks = {};
 
-
     previousRanking.forEach((row, index) => {
-
-        previousRanks[row.player] =
-            index + 1;
-
+        previousRanks[row.player] = index + 1;
     });
 
-
     // -------------------------------------------------
-    // 7. Comparer avec le classement actuel
+    // Comparaison
     // -------------------------------------------------
 
-    const movements = {};
+    const rankingMovements = {};
+    const scoreMovements = {};
 
+    const currentRanking =
+        currentSnapshot
+            .slice()
+            .sort((a, b) =>
+                Number(b.score) - Number(a.score)
+            );
 
     currentRanking.forEach((row, index) => {
 
-        const currentRank =
-            index + 1;
+        const currentRank = index + 1;
+        const previousPlayer = previousPlayers[row.player];
+
+        // Nouveau joueur
+        if (!previousPlayer) {
+            return;
+        }
 
         const previousRank =
             previousRanks[row.player];
 
-        // Nouveau joueur :
-        // pas de comparaison possible
-        if (previousRank === undefined) {
-            return;
+        // Delta de classement
+        if (currentRank < previousRank) {
+
+            rankingMovements[row.player] =
+                previousRank - currentRank;
+
+        }
+        else if (currentRank > previousRank) {
+
+            rankingMovements[row.player] =
+                -(currentRank - previousRank);
+
         }
 
-		// Le joueur monte
-		if (currentRank < previousRank) {
-		
-			movements[row.player] =
-				previousRank - currentRank;
-		
-		}
-		
-		// Le joueur descend
-		else if (currentRank > previousRank) {
-		
-			movements[row.player] =
-				-(currentRank - previousRank);
-		
-		}
-        
-        // Même position :
-        // on ne met volontairement rien
+        // Delta de score
+        scoreMovements[row.player] =
+            Number(row.score) -
+            Number(previousPlayer.score);
 
     });
 
-
-    return movements;
+    return {
+        ranking: rankingMovements,
+        score: scoreMovements
+    };
 }
+
 
 // =====================================================
 // Classement
@@ -274,7 +246,14 @@ function renderRanking() {
 
     // Mouvements depuis la fin de la veille
     const movements =
-        getRankingMovements();
+		getRankingAndScoreMovements();
+	
+	const rankingMovements =
+		movements.ranking;
+	
+	const scoreMovements =
+		movements.score;
+
 
     ranking.forEach((row, i) => {
 
@@ -299,7 +278,7 @@ function renderRanking() {
 
 		let movement = "";
 		
-		const change = movements[row.player];
+		const change = rankingMovements[row.player];
 		
 		if (change > 0) {
 		
@@ -326,13 +305,46 @@ function renderRanking() {
 		
 		}
 
+		// -----------------------------
+		// Delta du score
+		// -----------------------------
+		
+		let scoreDelta = "";
+
+		const scoreChange =
+			scoreMovements[row.player];
+		
+		if (scoreChange !== undefined && scoreChange !== 0) {
+		
+			const sign =
+				scoreChange > 0 ? "+" : "";
+		
+			const colorClass =
+				scoreChange > 0
+					? "score-up"
+					: "score-down";
+		
+			scoreDelta = `
+				<span
+					class="score-movement ${colorClass}"
+					title="Score change since yesterday"
+				>
+					(${sign}${scoreChange.toFixed(2)})
+				</span>
+			`;
+		}
+
+
         tr.innerHTML = `
             <td>${row.rank}</td>
             <td>
                 ${row.player}
                 ${movement}
             </td>
-            <td>${Number(row.score).toFixed(2)}</td>
+			<td>
+				${Number(row.score).toFixed(2)}
+				${scoreDelta}
+			</td>
             <td>${Number(row.mu).toFixed(2)}</td>
             <td>${Number(row.sigma).toFixed(2)}</td>
             <td>${row.matches}</td>
@@ -580,3 +592,4 @@ function formatDate(dateString) {
         );
 
 }
+

@@ -11,7 +11,8 @@
   },
   {
     "player": "Paul",
-    "photo":"assets/players/Paul.jpg"
+    "photo":"assets/players/Paul.jpg",
+    "comment":"J’ai tout appris sur YouTube 🤓"
   },
   {
     "player": "ThéoM",
@@ -27,5 +28,10 @@
     "player": "Sabine",
     "photo":"assets/players/Sabine.jpg",
     "comment":"J’angoisse à mort mais c’est mon point fort 💪"
+  },
+  {
+    "player": "Roland",
+    "photo":"assets/players/Roland.jpg",
+    "comment":"Un jour j'arriverai à battre le fantôme de Raphaël !!!"
   }
 ]

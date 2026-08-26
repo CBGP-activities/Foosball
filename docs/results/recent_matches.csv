@@ -1,10 +1,4 @@
 date,team_red,team_blue,winner
-2026-08-19,"['Lily', 'Julia']","['Vadim', 'ManonV']",red
-2026-08-19,"['Lily', 'ManonV']","['ThéoM', 'Vadim']",blue
-2026-08-20,"['Roland', 'ManonV']","['BenjaminZ', 'Vadim']",red
-2026-08-20,"['Lily', 'Rémi']","['BenjaminZ', 'Roland']",red
-2026-08-24,"['Lily', 'Rémi']","['LaureS', 'ThéoM']",red
-2026-08-24,"['Vadim', 'Julia']","['BenjaminZ', 'Lilou']",blue
 2026-08-24,"['Roland', 'LaureS']","['Rémi', 'ManonV']",blue
 2026-08-24,"['Lily', 'ThéoM']","['BenjaminZ', 'Rémi']",blue
 2026-08-24,"['Roland', 'Lilou']","['Lily', 'ThéoM']",blue
@@ -19,3 +13,9 @@ date,team_red,team_blue,winner
 2026-08-25,"['Rémi', 'Roland']","['Lily', 'ThéoM']",blue
 2026-08-25,"['Armelle', 'BenjaminZ']","['Roland', 'ThéoM']",blue
 2026-08-25,"['Armelle', 'ThéoM']","['Roland', 'BenjaminZ']",blue
+2026-08-26,"['BenjaminZ', 'Julia']","['Roland', 'Vadim']",blue
+2026-08-26,"['Julia', 'Paul']","['Vadim', 'Roland']",blue
+2026-08-26,"['BenjaminZ', 'Paul']","['Vadim', 'Lily']",blue
+2026-08-26,"['EmmanuelP', 'Julia']","['Lily', 'Roland']",blue
+2026-08-26,"['EmmanuelP', 'BenjaminZ']","['Paul', 'Vadim']",blue
+2026-08-26,"['Roland', 'Paul']","['ThéoM', 'Lily']",blue

@@ -1,65 +1,5 @@
 [
   {
-    "date": "2026-08-24 00:00:00",
-    "team_red": [
-      "Roland",
-      "LaureS"
-    ],
-    "team_blue": [
-      "Rémi",
-      "ManonV"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-08-24 00:00:00",
-    "team_red": [
-      "Lily",
-      "ThéoM"
-    ],
-    "team_blue": [
-      "BenjaminZ",
-      "Rémi"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-08-24 00:00:00",
-    "team_red": [
-      "Roland",
-      "Lilou"
-    ],
-    "team_blue": [
-      "Lily",
-      "ThéoM"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-08-24 00:00:00",
-    "team_red": [
-      "BenjaminZ",
-      "Rémi"
-    ],
-    "team_blue": [
-      "Roland",
-      "ThéoM"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-08-24 00:00:00",
-    "team_red": [
-      "Rémi",
-      "ThéoM"
-    ],
-    "team_blue": [
-      "BenjaminZ",
-      "Roland"
-    ],
-    "winner": "red"
-  },
-  {
     "date": "2026-08-25 00:00:00",
     "team_red": [
       "JulienF",
@@ -238,5 +178,65 @@
       "Lily"
     ],
     "winner": "blue"
+  },
+  {
+    "date": "2026-08-26 00:00:00",
+    "team_red": [
+      "ThéoM",
+      "EmmanuelP"
+    ],
+    "team_blue": [
+      "NathV",
+      "Paul"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-08-26 00:00:00",
+    "team_red": [
+      "Roland",
+      "BenjaminZ"
+    ],
+    "team_blue": [
+      "Lily",
+      "NathV"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-08-26 00:00:00",
+    "team_red": [
+      "Lily",
+      "NathV"
+    ],
+    "team_blue": [
+      "Roland",
+      "ThéoM"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-08-26 00:00:00",
+    "team_red": [
+      "Lily",
+      "Roland"
+    ],
+    "team_blue": [
+      "NathV",
+      "BenjaminZ"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-08-26 00:00:00",
+    "team_red": [
+      "EmmanuelP",
+      "ThéoM"
+    ],
+    "team_blue": [
+      "BenjaminZ",
+      "Roland"
+    ],
+    "winner": "red"
   }
 ]

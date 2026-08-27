@@ -2,66 +2,6 @@
   {
     "date": "2026-08-25 00:00:00",
     "team_red": [
-      "JulienF",
-      "Rémi"
-    ],
-    "team_blue": [
-      "Lily",
-      "LaureS"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-08-25 00:00:00",
-    "team_red": [
-      "Rémi",
-      "EmmanuelP"
-    ],
-    "team_blue": [
-      "Lily",
-      "LaureS"
-    ],
-    "winner": "red"
-  },
-  {
-    "date": "2026-08-25 00:00:00",
-    "team_red": [
-      "Julia",
-      "BenjaminZ"
-    ],
-    "team_blue": [
-      "Roland",
-      "Lilou"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-08-25 00:00:00",
-    "team_red": [
-      "Rémi",
-      "ThéoM"
-    ],
-    "team_blue": [
-      "EmmanuelP",
-      "Lily"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-08-25 00:00:00",
-    "team_red": [
-      "Rémi",
-      "Lilou"
-    ],
-    "team_blue": [
-      "Roland",
-      "ThéoM"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-08-25 00:00:00",
-    "team_red": [
       "Roland",
       "BenjaminZ"
     ],
@@ -236,6 +176,66 @@
     "team_blue": [
       "BenjaminZ",
       "Roland"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-08-27 00:00:00",
+    "team_red": [
+      "Lily",
+      "Rémi"
+    ],
+    "team_blue": [
+      "Paul",
+      "LaureS"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-08-27 00:00:00",
+    "team_red": [
+      "Julia",
+      "Lily"
+    ],
+    "team_blue": [
+      "Roland",
+      "LaureS"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-08-27 00:00:00",
+    "team_red": [
+      "LaureS",
+      "Rémi"
+    ],
+    "team_blue": [
+      "Julia",
+      "Roland"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-08-27 00:00:00",
+    "team_red": [
+      "Lily",
+      "Rémi"
+    ],
+    "team_blue": [
+      "Julia",
+      "Roland"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-08-27 00:00:00",
+    "team_red": [
+      "Lily",
+      "Roland"
+    ],
+    "team_blue": [
+      "Julia",
+      "LaureS"
     ],
     "winner": "red"
   }

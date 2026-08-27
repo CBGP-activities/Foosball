@@ -33,5 +33,10 @@
     "player": "Roland",
     "photo":"assets/players/Roland.jpg",
     "comment":"Un jour j'arriverai à battre le fantôme de Raphaël !!!"
+  },
+  {
+    "player": "LaureS",
+    "photo":"assets/players/LaureS.jpg",
+    "comment":"\"Quand on a pas de technique, on y va à la zob\" Perceval, Kaamelott"
   }
 ]

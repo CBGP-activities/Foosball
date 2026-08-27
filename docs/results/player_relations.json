@@ -246,10 +246,10 @@
     "player": "Roland",
     "other": "Paul",
     "type": "opponent",
-    "matches": 31,
-    "wins": 18,
+    "matches": 33,
+    "wins": 20,
     "losses": 13,
-    "winrate": 58.1
+    "winrate": 60.6
   },
   {
     "player": "Lilou",
@@ -336,10 +336,10 @@
     "player": "Paul",
     "other": "Roland",
     "type": "opponent",
-    "matches": 31,
+    "matches": 33,
     "wins": 13,
-    "losses": 18,
-    "winrate": 41.9
+    "losses": 20,
+    "winrate": 39.4
   },
   {
     "player": "Lily",
@@ -381,10 +381,10 @@
     "player": "Julia",
     "other": "Roland",
     "type": "teammate",
-    "matches": 5,
-    "wins": 2,
+    "matches": 7,
+    "wins": 4,
     "losses": 3,
-    "winrate": 40.0
+    "winrate": 57.1
   },
   {
     "player": "Julia",
@@ -426,19 +426,19 @@
     "player": "Julia",
     "other": "Paul",
     "type": "opponent",
-    "matches": 8,
-    "wins": 5,
+    "matches": 10,
+    "wins": 7,
     "losses": 3,
-    "winrate": 62.5
+    "winrate": 70.0
   },
   {
     "player": "Roland",
     "other": "Julia",
     "type": "teammate",
-    "matches": 5,
-    "wins": 2,
+    "matches": 7,
+    "wins": 4,
     "losses": 3,
-    "winrate": 40.0
+    "winrate": 57.1
   },
   {
     "player": "Roland",
@@ -480,10 +480,10 @@
     "player": "Paul",
     "other": "Julia",
     "type": "opponent",
-    "matches": 8,
+    "matches": 10,
     "wins": 3,
-    "losses": 5,
-    "winrate": 37.5
+    "losses": 7,
+    "winrate": 30.0
   },
   {
     "player": "Lilou",
@@ -651,10 +651,10 @@
     "player": "Armelle",
     "other": "Paul",
     "type": "teammate",
-    "matches": 7,
+    "matches": 9,
     "wins": 6,
-    "losses": 1,
-    "winrate": 85.7
+    "losses": 3,
+    "winrate": 66.7
   },
   {
     "player": "Armelle",
@@ -741,10 +741,10 @@
     "player": "Paul",
     "other": "Armelle",
     "type": "teammate",
-    "matches": 7,
+    "matches": 9,
     "wins": 6,
-    "losses": 1,
-    "winrate": 85.7
+    "losses": 3,
+    "winrate": 66.7
   },
   {
     "player": "Paul",
@@ -759,10 +759,10 @@
     "player": "Armelle",
     "other": "Roland",
     "type": "opponent",
-    "matches": 11,
+    "matches": 13,
     "wins": 7,
-    "losses": 4,
-    "winrate": 63.6
+    "losses": 6,
+    "winrate": 53.8
   },
   {
     "player": "Armelle",
@@ -795,10 +795,10 @@
     "player": "Roland",
     "other": "Armelle",
     "type": "opponent",
-    "matches": 11,
-    "wins": 4,
+    "matches": 13,
+    "wins": 6,
     "losses": 7,
-    "winrate": 36.4
+    "winrate": 46.2
   },
   {
     "player": "Lilou",

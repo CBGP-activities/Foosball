@@ -6,11 +6,15 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import json
 from supabase import create_client
+from itertools import combinations
+from datetime import timedelta
+
+
 
 # =====================
 # PARAMÈTRES
 # =====================
-USE_SUPABASE = True
+USE_SUPABASE = False
 INPUT_EXCEL = Path("data/matchs.xlsx")
 SHEET_NAME = "matchs"
 if USE_SUPABASE:
@@ -926,6 +930,658 @@ export_data(
     df_relations,
     "player_relations"
 )
+
+# =====================
+# WEEKLY SUMMARY EXPORT
+# =====================
+
+
+def get_week_range(date):
+
+    monday = (
+        date
+        -
+        pd.Timedelta(
+            days=date.weekday()
+        )
+    )
+
+    friday = monday + pd.Timedelta(days=4)
+
+    return monday, friday
+
+
+
+def generate_weekly_summary():
+
+
+    weeks = []
+
+
+    first_date = df["date"].min()
+
+    today = pd.Timestamp.today()
+
+
+    current_monday, current_friday = get_week_range(
+        first_date
+    )
+
+
+
+    while current_friday < today:
+
+
+
+        matches_week = df[
+            (df["date"] >= current_monday)
+            &
+            (df["date"] <= current_friday)
+        ].copy()
+
+
+
+        if len(matches_week) > 0:
+
+
+
+            summary = {
+
+
+                "week_start":
+                    current_monday.strftime(
+                        "%Y-%m-%d"
+                    ),
+
+
+                "week_end":
+                    current_friday.strftime(
+                        "%Y-%m-%d"
+                    ),
+
+
+                "matches_played":
+                    len(matches_week),
+
+
+                "new_players": [],
+
+
+                "most_active": [],
+
+
+                "most_wins": [],
+
+
+                "best_trueskill_gain": [],
+
+
+                "ranking_climbers": [],
+
+
+                "hot_streak": []
+
+            }
+
+
+
+            # =====================
+            # Stats joueurs semaine
+            # =====================
+
+
+            weekly_players = defaultdict(
+
+                lambda:
+                {
+                    "matches":0,
+                    "wins":0
+                }
+
+            )
+
+
+
+            for _, match in matches_week.iterrows():
+
+
+
+                players = [
+
+                    match["rouge_p1"],
+                    match["rouge_p2"],
+                    match["bleu_p1"],
+                    match["bleu_p2"]
+
+                ]
+
+
+
+                for player in players:
+
+                    weekly_players[player]["matches"] += 1
+
+
+
+
+                winners = (
+
+                    [
+                        match["rouge_p1"],
+                        match["rouge_p2"]
+                    ]
+
+                    if match["vainqueur"]=="rouge"
+
+                    else
+
+                    [
+                        match["bleu_p1"],
+                        match["bleu_p2"]
+                    ]
+
+                )
+
+
+
+                for player in winners:
+
+                    weekly_players[player]["wins"] += 1
+
+
+
+
+
+            # =====================
+            # Nouveaux joueurs
+            # =====================
+
+
+            for player in weekly_players:
+
+
+
+                first_match = df[
+
+                    (
+                    df["rouge_p1"] == player
+                    )
+                    |
+                    (
+                    df["rouge_p2"] == player
+                    )
+                    |
+                    (
+                    df["bleu_p1"] == player
+                    )
+                    |
+                    (
+                    df["bleu_p2"] == player
+                    )
+
+                ]["date"].min()
+
+
+
+                if (
+                    first_match >= current_monday
+                    and
+                    first_match <= current_friday
+                ):
+
+
+                    summary["new_players"].append({
+
+                        "player": player,
+
+                        "matches":
+                            weekly_players[player]["matches"]
+
+                    })
+
+
+
+
+
+
+            # =====================
+            # Most active
+            # =====================
+
+
+            summary["most_active"] = sorted(
+
+
+                [
+
+                    {
+                        "player":player,
+
+                        "matches":
+                            values["matches"]
+                    }
+
+
+                    for player,values
+                    in weekly_players.items()
+
+                ],
+
+
+                key=lambda x:x["matches"],
+
+                reverse=True
+
+
+            )[:3]
+
+
+
+
+
+
+            # =====================
+            # Most victories
+            # =====================
+
+
+            summary["most_wins"] = sorted(
+
+
+                [
+
+                    {
+                        "player":player,
+
+                        "wins":
+                            values["wins"],
+
+                        "matches":
+                            values["matches"]
+
+                    }
+
+
+                    for player,values
+                    in weekly_players.items()
+
+                ],
+
+
+                key=lambda x:x["wins"],
+
+                reverse=True
+
+
+            )[:3]
+
+
+
+
+
+
+            # =====================
+            # TrueSkill gain
+            # =====================
+
+
+            score_start = {}
+
+            score_end = {}
+
+
+            hist_week = pd.DataFrame(
+                historique
+            )
+
+
+            hist_week["date"] = pd.to_datetime(
+                hist_week["date"]
+            )
+
+
+
+            for player, rows in hist_week.groupby("player"):
+
+
+
+                rows = rows.sort_values(
+                    "date"
+                )
+
+
+
+                before = rows[
+
+                    rows["date"] < current_monday
+
+                ]
+
+
+
+                after = rows[
+
+                    rows["date"] <= current_friday
+
+                ]
+
+
+
+                if (
+                    len(before)
+                    and
+                    len(after)
+                ):
+
+
+                    score_start[player] = (
+                        before.iloc[-1]["score"]
+                    )
+
+
+                    score_end[player] = (
+                        after.iloc[-1]["score"]
+                    )
+
+
+
+
+
+            summary["best_trueskill_gain"] = sorted(
+
+
+                [
+
+                    {
+
+                        "player":player,
+
+                        "gain":
+                            round(
+                                score_end[player]
+                                -
+                                score_start[player],
+                                2
+                            )
+
+                    }
+
+
+                    for player in score_end
+
+
+                ],
+
+
+                key=lambda x:x["gain"],
+
+                reverse=True
+
+
+            )[:3]
+
+
+            # =====================
+            # Ranking climbers
+            # =====================
+
+            hist_week = pd.DataFrame(historique)
+
+            hist_week["date"] = pd.to_datetime(
+                hist_week["date"]
+            )
+
+
+            ranking_before = {}
+            ranking_after = {}
+
+
+            # classement juste avant la semaine
+
+            before_week = hist_week[
+                hist_week["date"] < current_monday
+            ]
+
+
+            if len(before_week):
+
+                last_before = (
+                    before_week
+                    .sort_values("date")
+                    .groupby("player")
+                    .last()
+                )
+
+
+                ranking_before = (
+                    last_before
+                    .sort_values(
+                        "score",
+                        ascending=False
+                    )
+                    .index
+                    .tolist()
+                )
+
+
+
+            # classement à la fin de la semaine
+
+            after_week = hist_week[
+                hist_week["date"] <= current_friday
+            ]
+
+
+            if len(after_week):
+
+                last_after = (
+                    after_week
+                    .sort_values("date")
+                    .groupby("player")
+                    .last()
+                )
+
+
+                ranking_after = (
+                    last_after
+                    .sort_values(
+                        "score",
+                        ascending=False
+                    )
+                    .index
+                    .tolist()
+                )
+
+
+
+            climbers = []
+
+
+            for player in ranking_after:
+
+
+                if player in ranking_before:
+
+
+                    old_rank = (
+                        ranking_before.index(player)
+                        + 1
+                    )
+
+
+                    new_rank = (
+                        ranking_after.index(player)
+                        + 1
+                    )
+
+
+                    gain = old_rank - new_rank
+
+
+                    if gain > 0:
+
+
+                        climbers.append({
+
+                            "player": player,
+
+                            "places": gain,
+
+                            "old_rank": old_rank,
+
+                            "new_rank": new_rank
+
+                        })
+
+
+
+            summary["ranking_climbers"] = sorted(
+
+                climbers,
+
+                key=lambda x:x["places"],
+
+                reverse=True
+
+            )[:3]
+
+
+
+            # =====================
+            # Hot streak
+            # =====================
+
+
+            streaks=[]
+
+
+
+            for player,matches in resultats_joueurs.items():
+
+
+
+                current = 0
+
+                best = 0
+
+
+
+                for match in sorted(
+
+                    matches,
+
+                    key=lambda x:x["date"]
+
+                ):
+
+
+
+                    if (
+
+                        current_monday
+                        <=
+                        match["date"]
+                        <=
+                        current_friday
+
+                        and
+
+                        match["resultat"]=="V"
+
+                    ):
+
+
+                        current += 1
+
+                        best = max(
+                            best,
+                            current
+                        )
+
+
+                    else:
+
+                        current = 0
+
+
+
+
+
+                streaks.append({
+
+                    "player":player,
+
+                    "wins":best
+
+                })
+
+
+
+
+
+
+            summary["hot_streak"] = sorted(
+
+
+                streaks,
+
+
+                key=lambda x:x["wins"],
+
+                reverse=True
+
+
+            )[:3]
+
+
+
+
+
+
+            weeks.append(summary)
+
+
+
+
+
+        current_monday += pd.Timedelta(
+            days=7
+        )
+
+
+        current_friday += pd.Timedelta(
+            days=7
+        )
+
+
+
+
+
+    with open(
+
+        OUTPUT_DIR / "weekly_summary.json",
+
+        "w",
+
+        encoding="utf-8"
+
+    ) as f:
+
+
+        json.dump(
+
+            weeks,
+
+            f,
+
+            indent=2,
+
+            ensure_ascii=False
+
+        )
+
+
+generate_weekly_summary()
 
 
 print(

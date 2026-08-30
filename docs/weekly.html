@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foosball Weekly Summary</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="hero">
+<h1>📰 Foosball Weekly Summary</h1>
+<p>The story of the week</p>
+</header>
+<main class="container">
+<section class="card">
+<a href="index.html">
+⬅ Back to 🏆 Ranking
+</a>
+</section>
+<div class="weekly-header-grid">
+
+    <section class="card">
+        <h2 id="weekTitle">
+            Loading...
+        </h2>
+
+        <p id="intro">
+        </p>
+    </section>
+
+
+    <section class="card week-selector-card">
+
+		<h2>
+			📅 Select a week
+		</h2>
+	
+	
+		<div class="week-select-row">
+	
+			<select id="weekSelector"></select>
+	
+		</div>
+	
+	
+		<div class="week-buttons-row">
+	
+			<button id="prevWeek">
+				⬅ Previous
+			</button>
+	
+			<button id="nextWeek">
+				Next ➡
+			</button>
+	
+		</div>
+	
+	</section>
+
+
+</div>
+
+<div id="weeklyContent">
+</div>
+</main>
+<script src="assets/weekly.js">
+</script>
+</body>
+</html>

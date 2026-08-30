@@ -1,0 +1,1845 @@
+[
+  {
+    "week_start": "2026-01-26",
+    "week_end": "2026-01-30",
+    "matches_played": 40,
+    "new_players": [
+      {
+        "player": "NathV",
+        "matches": 3
+      },
+      {
+        "player": "Lily",
+        "matches": 6
+      },
+      {
+        "player": "Roland",
+        "matches": 10
+      },
+      {
+        "player": "Rémi",
+        "matches": 22
+      },
+      {
+        "player": "ManonV",
+        "matches": 11
+      },
+      {
+        "player": "Lilou",
+        "matches": 26
+      },
+      {
+        "player": "Paul",
+        "matches": 13
+      },
+      {
+        "player": "Anne-Laure P",
+        "matches": 1
+      },
+      {
+        "player": "Raphaël",
+        "matches": 22
+      },
+      {
+        "player": "Benoit",
+        "matches": 3
+      },
+      {
+        "player": "Julia",
+        "matches": 6
+      },
+      {
+        "player": "Armelle",
+        "matches": 11
+      },
+      {
+        "player": "Jules",
+        "matches": 16
+      },
+      {
+        "player": "BenjaminC",
+        "matches": 5
+      },
+      {
+        "player": "Jasmine",
+        "matches": 1
+      },
+      {
+        "player": "Tanguy",
+        "matches": 1
+      },
+      {
+        "player": "Marguerite",
+        "matches": 2
+      },
+      {
+        "player": "Tom",
+        "matches": 1
+      }
+    ],
+    "most_active": [
+      {
+        "player": "Lilou",
+        "matches": 26
+      },
+      {
+        "player": "Rémi",
+        "matches": 22
+      },
+      {
+        "player": "Raphaël",
+        "matches": 22
+      }
+    ],
+    "most_wins": [
+      {
+        "player": "Rémi",
+        "wins": 19,
+        "matches": 22
+      },
+      {
+        "player": "Raphaël",
+        "wins": 15,
+        "matches": 22
+      },
+      {
+        "player": "Lilou",
+        "wins": 7,
+        "matches": 26
+      }
+    ],
+    "best_trueskill_gain": [],
+    "ranking_climbers": [],
+    "hot_streak": [
+      {
+        "player": "Rémi",
+        "wins": 10
+      },
+      {
+        "player": "Raphaël",
+        "wins": 5
+      },
+      {
+        "player": "Roland",
+        "wins": 4
+      }
+    ]
+  },
+  {
+    "week_start": "2026-02-02",
+    "week_end": "2026-02-06",
+    "matches_played": 73,
+    "new_players": [
+      {
+        "player": "LaureS",
+        "matches": 2
+      },
+      {
+        "player": "Sabine",
+        "matches": 3
+      },
+      {
+        "player": "SimonB",
+        "matches": 1
+      },
+      {
+        "player": "Loïc",
+        "matches": 3
+      },
+      {
+        "player": "JulieB",
+        "matches": 1
+      },
+      {
+        "player": "ThéoM",
+        "matches": 2
+      },
+      {
+        "player": "Mountassira",
+        "matches": 3
+      },
+      {
+        "player": "EmmanuelP",
+        "matches": 5
+      },
+      {
+        "player": "VincentD",
+        "matches": 1
+      },
+      {
+        "player": "BenjaminZ",
+        "matches": 1
+      },
+      {
+        "player": "Maximilien",
+        "matches": 3
+      }
+    ],
+    "most_active": [
+      {
+        "player": "Lilou",
+        "matches": 48
+      },
+      {
+        "player": "Lily",
+        "matches": 45
+      },
+      {
+        "player": "Jules",
+        "matches": 39
+      }
+    ],
+    "most_wins": [
+      {
+        "player": "Lily",
+        "wins": 31,
+        "matches": 45
+      },
+      {
+        "player": "Rémi",
+        "wins": 25,
+        "matches": 38
+      },
+      {
+        "player": "Raphaël",
+        "wins": 23,
+        "matches": 36
+      }
+    ],
+    "best_trueskill_gain": [
+      {
+        "player": "Lily",
+        "gain": 20.91
+      },
+      {
+        "player": "Lilou",
+        "gain": 17.47
+      },
+      {
+        "player": "Raphaël",
+        "gain": 13.08
+      }
+    ],
+    "ranking_climbers": [
+      {
+        "player": "Lily",
+        "places": 9,
+        "old_rank": 12,
+        "new_rank": 3
+      },
+      {
+        "player": "BenjaminC",
+        "places": 3,
+        "old_rank": 8,
+        "new_rank": 5
+      },
+      {
+        "player": "Lilou",
+        "places": 3,
+        "old_rank": 13,
+        "new_rank": 10
+      }
+    ],
+    "hot_streak": [
+      {
+        "player": "Lily",
+        "wins": 10
+      },
+      {
+        "player": "Raphaël",
+        "wins": 8
+      },
+      {
+        "player": "Roland",
+        "wins": 5
+      }
+    ]
+  },
+  {
+    "week_start": "2026-02-09",
+    "week_end": "2026-02-13",
+    "matches_played": 19,
+    "new_players": [
+      {
+        "player": "Anna",
+        "matches": 1
+      },
+      {
+        "player": "PhilippeA",
+        "matches": 3
+      }
+    ],
+    "most_active": [
+      {
+        "player": "Roland",
+        "matches": 7
+      },
+      {
+        "player": "Lilou",
+        "matches": 7
+      },
+      {
+        "player": "Lily",
+        "matches": 6
+      }
+    ],
+    "most_wins": [
+      {
+        "player": "Roland",
+        "wins": 5,
+        "matches": 7
+      },
+      {
+        "player": "Lilou",
+        "wins": 5,
+        "matches": 7
+      },
+      {
+        "player": "Lily",
+        "wins": 5,
+        "matches": 6
+      }
+    ],
+    "best_trueskill_gain": [
+      {
+        "player": "LaureS",
+        "gain": 11.97
+      },
+      {
+        "player": "Loïc",
+        "gain": 7.92
+      },
+      {
+        "player": "Tanguy",
+        "gain": 4.93
+      }
+    ],
+    "ranking_climbers": [
+      {
+        "player": "LaureS",
+        "places": 11,
+        "old_rank": 26,
+        "new_rank": 15
+      },
+      {
+        "player": "Tanguy",
+        "places": 7,
+        "old_rank": 16,
+        "new_rank": 9
+      },
+      {
+        "player": "Loïc",
+        "places": 6,
+        "old_rank": 29,
+        "new_rank": 23
+      }
+    ],
+    "hot_streak": [
+      {
+        "player": "Lily",
+        "wins": 5
+      },
+      {
+        "player": "Roland",
+        "wins": 4
+      },
+      {
+        "player": "Lilou",
+        "wins": 3
+      }
+    ]
+  },
+  {
+    "week_start": "2026-02-16",
+    "week_end": "2026-02-20",
+    "matches_played": 29,
+    "new_players": [
+      {
+        "player": "DenisB",
+        "matches": 2
+      }
+    ],
+    "most_active": [
+      {
+        "player": "Lily",
+        "matches": 20
+      },
+      {
+        "player": "Raphaël",
+        "matches": 18
+      },
+      {
+        "player": "Paul",
+        "matches": 15
+      }
+    ],
+    "most_wins": [
+      {
+        "player": "Lily",
+        "wins": 11,
+        "matches": 20
+      },
+      {
+        "player": "Paul",
+        "wins": 11,
+        "matches": 15
+      },
+      {
+        "player": "Raphaël",
+        "wins": 8,
+        "matches": 18
+      }
+    ],
+    "best_trueskill_gain": [
+      {
+        "player": "EmmanuelP",
+        "gain": 7.43
+      },
+      {
+        "player": "Paul",
+        "gain": 5.08
+      },
+      {
+        "player": "Armelle",
+        "gain": 4.11
+      }
+    ],
+    "ranking_climbers": [
+      {
+        "player": "EmmanuelP",
+        "places": 10,
+        "old_rank": 26,
+        "new_rank": 16
+      },
+      {
+        "player": "ThéoM",
+        "places": 6,
+        "old_rank": 25,
+        "new_rank": 19
+      },
+      {
+        "player": "Paul",
+        "places": 4,
+        "old_rank": 10,
+        "new_rank": 6
+      }
+    ],
+    "hot_streak": [
+      {
+        "player": "Paul",
+        "wins": 5
+      },
+      {
+        "player": "Raphaël",
+        "wins": 4
+      },
+      {
+        "player": "Lily",
+        "wins": 3
+      }
+    ]
+  },
+  {
+    "week_start": "2026-02-23",
+    "week_end": "2026-02-27",
+    "matches_played": 16,
+    "new_players": [],
+    "most_active": [
+      {
+        "player": "Paul",
+        "matches": 9
+      },
+      {
+        "player": "Lilou",
+        "matches": 9
+      },
+      {
+        "player": "Lily",
+        "matches": 9
+      }
+    ],
+    "most_wins": [
+      {
+        "player": "Lily",
+        "wins": 7,
+        "matches": 9
+      },
+      {
+        "player": "Lilou",
+        "wins": 6,
+        "matches": 9
+      },
+      {
+        "player": "Paul",
+        "wins": 4,
+        "matches": 9
+      }
+    ],
+    "best_trueskill_gain": [
+      {
+        "player": "PhilippeA",
+        "gain": 4.67
+      },
+      {
+        "player": "ThéoM",
+        "gain": 4.59
+      },
+      {
+        "player": "Benoit",
+        "gain": 2.56
+      }
+    ],
+    "ranking_climbers": [
+      {
+        "player": "Loïc",
+        "places": 7,
+        "old_rank": 27,
+        "new_rank": 20
+      },
+      {
+        "player": "PhilippeA",
+        "places": 6,
+        "old_rank": 18,
+        "new_rank": 12
+      },
+      {
+        "player": "Julia",
+        "places": 2,
+        "old_rank": 12,
+        "new_rank": 10
+      }
+    ],
+    "hot_streak": [
+      {
+        "player": "Lilou",
+        "wins": 4
+      },
+      {
+        "player": "Lily",
+        "wins": 3
+      },
+      {
+        "player": "Raphaël",
+        "wins": 3
+      }
+    ]
+  },
+  {
+    "week_start": "2026-03-02",
+    "week_end": "2026-03-06",
+    "matches_played": 8,
+    "new_players": [
+      {
+        "player": "Max",
+        "matches": 1
+      }
+    ],
+    "most_active": [
+      {
+        "player": "Jules",
+        "matches": 5
+      },
+      {
+        "player": "Lilou",
+        "matches": 4
+      },
+      {
+        "player": "Lily",
+        "matches": 4
+      }
+    ],
+    "most_wins": [
+      {
+        "player": "Lilou",
+        "wins": 4,
+        "matches": 4
+      },
+      {
+        "player": "Lily",
+        "wins": 4,
+        "matches": 4
+      },
+      {
+        "player": "Raphaël",
+        "wins": 2,
+        "matches": 3
+      }
+    ],
+    "best_trueskill_gain": [
+      {
+        "player": "Benoit",
+        "gain": 6.28
+      },
+      {
+        "player": "ThéoM",
+        "gain": 2.64
+      },
+      {
+        "player": "ManonV",
+        "gain": 0.69
+      }
+    ],
+    "ranking_climbers": [
+      {
+        "player": "Benoit",
+        "places": 9,
+        "old_rank": 14,
+        "new_rank": 5
+      },
+      {
+        "player": "JulieB",
+        "places": 3,
+        "old_rank": 30,
+        "new_rank": 27
+      },
+      {
+        "player": "VincentD",
+        "places": 2,
+        "old_rank": 15,
+        "new_rank": 13
+      }
+    ],
+    "hot_streak": [
+      {
+        "player": "Lily",
+        "wins": 4
+      },
+      {
+        "player": "Lilou",
+        "wins": 4
+      },
+      {
+        "player": "Rémi",
+        "wins": 1
+      }
+    ]
+  },
+  {
+    "week_start": "2026-03-23",
+    "week_end": "2026-03-27",
+    "matches_played": 12,
+    "new_players": [],
+    "most_active": [
+      {
+        "player": "Roland",
+        "matches": 7
+      },
+      {
+        "player": "BenjaminC",
+        "matches": 7
+      },
+      {
+        "player": "Lily",
+        "matches": 7
+      }
+    ],
+    "most_wins": [
+      {
+        "player": "Lily",
+        "wins": 7,
+        "matches": 7
+      },
+      {
+        "player": "BenjaminC",
+        "wins": 5,
+        "matches": 7
+      },
+      {
+        "player": "LaureS",
+        "wins": 4,
+        "matches": 5
+      }
+    ],
+    "best_trueskill_gain": [
+      {
+        "player": "LaureS",
+        "gain": 7.89
+      },
+      {
+        "player": "BenjaminC",
+        "gain": 4.04
+      },
+      {
+        "player": "PhilippeA",
+        "gain": 1.85
+      }
+    ],
+    "ranking_climbers": [
+      {
+        "player": "LaureS",
+        "places": 5,
+        "old_rank": 18,
+        "new_rank": 13
+      },
+      {
+        "player": "BenjaminC",
+        "places": 4,
+        "old_rank": 9,
+        "new_rank": 5
+      },
+      {
+        "player": "PhilippeA",
+        "places": 1,
+        "old_rank": 12,
+        "new_rank": 11
+      }
+    ],
+    "hot_streak": [
+      {
+        "player": "Lily",
+        "wins": 7
+      },
+      {
+        "player": "LaureS",
+        "wins": 4
+      },
+      {
+        "player": "BenjaminC",
+        "wins": 3
+      }
+    ]
+  },
+  {
+    "week_start": "2026-03-30",
+    "week_end": "2026-04-03",
+    "matches_played": 20,
+    "new_players": [],
+    "most_active": [
+      {
+        "player": "BenjaminC",
+        "matches": 10
+      },
+      {
+        "player": "Rémi",
+        "matches": 10
+      },
+      {
+        "player": "Jules",
+        "matches": 8
+      }
+    ],
+    "most_wins": [
+      {
+        "player": "Rémi",
+        "wins": 6,
+        "matches": 10
+      },
+      {
+        "player": "Jules",
+        "wins": 5,
+        "matches": 8
+      },
+      {
+        "player": "ThéoM",
+        "wins": 4,
+        "matches": 7
+      }
+    ],
+    "best_trueskill_gain": [
+      {
+        "player": "BenjaminZ",
+        "gain": 6.39
+      },
+      {
+        "player": "EmmanuelP",
+        "gain": 3.78
+      },
+      {
+        "player": "JulieB",
+        "gain": 3.57
+      }
+    ],
+    "ranking_climbers": [
+      {
+        "player": "BenjaminZ",
+        "places": 8,
+        "old_rank": 22,
+        "new_rank": 14
+      },
+      {
+        "player": "LaureS",
+        "places": 7,
+        "old_rank": 13,
+        "new_rank": 6
+      },
+      {
+        "player": "EmmanuelP",
+        "places": 5,
+        "old_rank": 18,
+        "new_rank": 13
+      }
+    ],
+    "hot_streak": [
+      {
+        "player": "ThéoM",
+        "wins": 4
+      },
+      {
+        "player": "EmmanuelP",
+        "wins": 3
+      },
+      {
+        "player": "Lily",
+        "wins": 2
+      }
+    ]
+  },
+  {
+    "week_start": "2026-06-08",
+    "week_end": "2026-06-12",
+    "matches_played": 35,
+    "new_players": [
+      {
+        "player": "Nicolas",
+        "matches": 9
+      }
+    ],
+    "most_active": [
+      {
+        "player": "ThéoM",
+        "matches": 24
+      },
+      {
+        "player": "Rémi",
+        "matches": 22
+      },
+      {
+        "player": "Lily",
+        "matches": 21
+      }
+    ],
+    "most_wins": [
+      {
+        "player": "Rémi",
+        "wins": 16,
+        "matches": 22
+      },
+      {
+        "player": "ThéoM",
+        "wins": 11,
+        "matches": 24
+      },
+      {
+        "player": "Lily",
+        "wins": 11,
+        "matches": 21
+      }
+    ],
+    "best_trueskill_gain": [
+      {
+        "player": "JulieB",
+        "gain": 4.13
+      },
+      {
+        "player": "Loïc",
+        "gain": 4.06
+      },
+      {
+        "player": "ThéoM",
+        "gain": 3.85
+      }
+    ],
+    "ranking_climbers": [
+      {
+        "player": "ThéoM",
+        "places": 7,
+        "old_rank": 19,
+        "new_rank": 12
+      },
+      {
+        "player": "Loïc",
+        "places": 4,
+        "old_rank": 21,
+        "new_rank": 17
+      },
+      {
+        "player": "LaureS",
+        "places": 1,
+        "old_rank": 6,
+        "new_rank": 5
+      }
+    ],
+    "hot_streak": [
+      {
+        "player": "Rémi",
+        "wins": 6
+      },
+      {
+        "player": "BenjaminC",
+        "wins": 4
+      },
+      {
+        "player": "Loïc",
+        "wins": 3
+      }
+    ]
+  },
+  {
+    "week_start": "2026-06-15",
+    "week_end": "2026-06-19",
+    "matches_played": 28,
+    "new_players": [
+      {
+        "player": "Solal",
+        "matches": 1
+      },
+      {
+        "player": "SayaCopainManon",
+        "matches": 1
+      },
+      {
+        "player": "JulienM",
+        "matches": 1
+      }
+    ],
+    "most_active": [
+      {
+        "player": "Roland",
+        "matches": 16
+      },
+      {
+        "player": "Nicolas",
+        "matches": 13
+      },
+      {
+        "player": "ThéoM",
+        "matches": 12
+      }
+    ],
+    "most_wins": [
+      {
+        "player": "Roland",
+        "wins": 8,
+        "matches": 16
+      },
+      {
+        "player": "ThéoM",
+        "wins": 6,
+        "matches": 12
+      },
+      {
+        "player": "Loïc",
+        "wins": 6,
+        "matches": 8
+      }
+    ],
+    "best_trueskill_gain": [
+      {
+        "player": "BenjaminZ",
+        "gain": 4.23
+      },
+      {
+        "player": "Julia",
+        "gain": 3.57
+      },
+      {
+        "player": "Nicolas",
+        "gain": 2.89
+      }
+    ],
+    "ranking_climbers": [
+      {
+        "player": "BenjaminZ",
+        "places": 5,
+        "old_rank": 14,
+        "new_rank": 9
+      },
+      {
+        "player": "JulieB",
+        "places": 4,
+        "old_rank": 22,
+        "new_rank": 18
+      },
+      {
+        "player": "BenjaminC",
+        "places": 2,
+        "old_rank": 6,
+        "new_rank": 4
+      }
+    ],
+    "hot_streak": [
+      {
+        "player": "Roland",
+        "wins": 3
+      },
+      {
+        "player": "Rémi",
+        "wins": 3
+      },
+      {
+        "player": "Paul",
+        "wins": 3
+      }
+    ]
+  },
+  {
+    "week_start": "2026-06-22",
+    "week_end": "2026-06-26",
+    "matches_played": 24,
+    "new_players": [],
+    "most_active": [
+      {
+        "player": "Nicolas",
+        "matches": 14
+      },
+      {
+        "player": "Loïc",
+        "matches": 13
+      },
+      {
+        "player": "Roland",
+        "matches": 9
+      }
+    ],
+    "most_wins": [
+      {
+        "player": "Roland",
+        "wins": 7,
+        "matches": 9
+      },
+      {
+        "player": "Paul",
+        "wins": 5,
+        "matches": 7
+      },
+      {
+        "player": "Loïc",
+        "wins": 5,
+        "matches": 13
+      }
+    ],
+    "best_trueskill_gain": [
+      {
+        "player": "Nicolas",
+        "gain": 3.6
+      },
+      {
+        "player": "Solal",
+        "gain": 1.24
+      },
+      {
+        "player": "Roland",
+        "gain": 0.79
+      }
+    ],
+    "ranking_climbers": [
+      {
+        "player": "Solal",
+        "places": 5,
+        "old_rank": 32,
+        "new_rank": 27
+      },
+      {
+        "player": "Nicolas",
+        "places": 4,
+        "old_rank": 29,
+        "new_rank": 25
+      },
+      {
+        "player": "Roland",
+        "places": 1,
+        "old_rank": 5,
+        "new_rank": 4
+      }
+    ],
+    "hot_streak": [
+      {
+        "player": "Roland",
+        "wins": 6
+      },
+      {
+        "player": "Rémi",
+        "wins": 3
+      },
+      {
+        "player": "Lilou",
+        "wins": 3
+      }
+    ]
+  },
+  {
+    "week_start": "2026-06-29",
+    "week_end": "2026-07-03",
+    "matches_played": 26,
+    "new_players": [
+      {
+        "player": "Aude",
+        "matches": 2
+      }
+    ],
+    "most_active": [
+      {
+        "player": "Nicolas",
+        "matches": 16
+      },
+      {
+        "player": "Lilou",
+        "matches": 15
+      },
+      {
+        "player": "Loïc",
+        "matches": 11
+      }
+    ],
+    "most_wins": [
+      {
+        "player": "Lilou",
+        "wins": 10,
+        "matches": 15
+      },
+      {
+        "player": "Lily",
+        "wins": 9,
+        "matches": 10
+      },
+      {
+        "player": "Rémi",
+        "wins": 6,
+        "matches": 8
+      }
+    ],
+    "best_trueskill_gain": [
+      {
+        "player": "Solal",
+        "gain": 8.82
+      },
+      {
+        "player": "Sabine",
+        "gain": 2.33
+      },
+      {
+        "player": "JulieB",
+        "gain": 0.88
+      }
+    ],
+    "ranking_climbers": [
+      {
+        "player": "Solal",
+        "places": 4,
+        "old_rank": 27,
+        "new_rank": 23
+      },
+      {
+        "player": "EmmanuelP",
+        "places": 3,
+        "old_rank": 17,
+        "new_rank": 14
+      },
+      {
+        "player": "Sabine",
+        "places": 3,
+        "old_rank": 30,
+        "new_rank": 27
+      }
+    ],
+    "hot_streak": [
+      {
+        "player": "Lily",
+        "wins": 7
+      },
+      {
+        "player": "Lilou",
+        "wins": 7
+      },
+      {
+        "player": "Rémi",
+        "wins": 4
+      }
+    ]
+  },
+  {
+    "week_start": "2026-07-06",
+    "week_end": "2026-07-10",
+    "matches_played": 19,
+    "new_players": [],
+    "most_active": [
+      {
+        "player": "JulieB",
+        "matches": 9
+      },
+      {
+        "player": "Lily",
+        "matches": 8
+      },
+      {
+        "player": "Roland",
+        "matches": 8
+      }
+    ],
+    "most_wins": [
+      {
+        "player": "Lily",
+        "wins": 7,
+        "matches": 8
+      },
+      {
+        "player": "Roland",
+        "wins": 6,
+        "matches": 8
+      },
+      {
+        "player": "Jules",
+        "wins": 4,
+        "matches": 6
+      }
+    ],
+    "best_trueskill_gain": [
+      {
+        "player": "JulieB",
+        "gain": 1.59
+      },
+      {
+        "player": "Roland",
+        "gain": 1.16
+      },
+      {
+        "player": "Armelle",
+        "gain": 1.09
+      }
+    ],
+    "ranking_climbers": [
+      {
+        "player": "Armelle",
+        "places": 3,
+        "old_rank": 12,
+        "new_rank": 9
+      },
+      {
+        "player": "Paul",
+        "places": 1,
+        "old_rank": 8,
+        "new_rank": 7
+      },
+      {
+        "player": "Julia",
+        "places": 1,
+        "old_rank": 16,
+        "new_rank": 15
+      }
+    ],
+    "hot_streak": [
+      {
+        "player": "Roland",
+        "wins": 6
+      },
+      {
+        "player": "Lily",
+        "wins": 4
+      },
+      {
+        "player": "JulieB",
+        "wins": 4
+      }
+    ]
+  },
+  {
+    "week_start": "2026-07-13",
+    "week_end": "2026-07-17",
+    "matches_played": 24,
+    "new_players": [],
+    "most_active": [
+      {
+        "player": "Lily",
+        "matches": 13
+      },
+      {
+        "player": "Lilou",
+        "matches": 12
+      },
+      {
+        "player": "Nicolas",
+        "matches": 10
+      }
+    ],
+    "most_wins": [
+      {
+        "player": "Lily",
+        "wins": 9,
+        "matches": 13
+      },
+      {
+        "player": "Rémi",
+        "wins": 7,
+        "matches": 9
+      },
+      {
+        "player": "Paul",
+        "wins": 6,
+        "matches": 9
+      }
+    ],
+    "best_trueskill_gain": [
+      {
+        "player": "Nicolas",
+        "gain": 1.25
+      },
+      {
+        "player": "Rémi",
+        "gain": 0.74
+      },
+      {
+        "player": "Jules",
+        "gain": 0.56
+      }
+    ],
+    "ranking_climbers": [
+      {
+        "player": "Lilou",
+        "places": 1,
+        "old_rank": 12,
+        "new_rank": 11
+      },
+      {
+        "player": "Julia",
+        "places": 1,
+        "old_rank": 15,
+        "new_rank": 14
+      },
+      {
+        "player": "JulieB",
+        "places": 1,
+        "old_rank": 17,
+        "new_rank": 16
+      }
+    ],
+    "hot_streak": [
+      {
+        "player": "Lily",
+        "wins": 4
+      },
+      {
+        "player": "Rémi",
+        "wins": 4
+      },
+      {
+        "player": "Paul",
+        "wins": 4
+      }
+    ]
+  },
+  {
+    "week_start": "2026-07-20",
+    "week_end": "2026-07-24",
+    "matches_played": 34,
+    "new_players": [
+      {
+        "player": "Morgane",
+        "matches": 2
+      }
+    ],
+    "most_active": [
+      {
+        "player": "Lily",
+        "matches": 24
+      },
+      {
+        "player": "Rémi",
+        "matches": 21
+      },
+      {
+        "player": "Loïc",
+        "matches": 20
+      }
+    ],
+    "most_wins": [
+      {
+        "player": "Rémi",
+        "wins": 16,
+        "matches": 21
+      },
+      {
+        "player": "Lily",
+        "wins": 15,
+        "matches": 24
+      },
+      {
+        "player": "Lilou",
+        "wins": 9,
+        "matches": 12
+      }
+    ],
+    "best_trueskill_gain": [
+      {
+        "player": "ManonV",
+        "gain": 2.11
+      },
+      {
+        "player": "EmmanuelP",
+        "gain": 0.87
+      },
+      {
+        "player": "Rémi",
+        "gain": 0.7
+      }
+    ],
+    "ranking_climbers": [
+      {
+        "player": "Lilou",
+        "places": 2,
+        "old_rank": 11,
+        "new_rank": 9
+      },
+      {
+        "player": "EmmanuelP",
+        "places": 2,
+        "old_rank": 15,
+        "new_rank": 13
+      },
+      {
+        "player": "Aude",
+        "places": 2,
+        "old_rank": 30,
+        "new_rank": 28
+      }
+    ],
+    "hot_streak": [
+      {
+        "player": "Rémi",
+        "wins": 6
+      },
+      {
+        "player": "Lily",
+        "wins": 5
+      },
+      {
+        "player": "Lilou",
+        "wins": 4
+      }
+    ]
+  },
+  {
+    "week_start": "2026-07-27",
+    "week_end": "2026-07-31",
+    "matches_played": 51,
+    "new_players": [
+      {
+        "player": "Vadim",
+        "matches": 6
+      }
+    ],
+    "most_active": [
+      {
+        "player": "Paul",
+        "matches": 25
+      },
+      {
+        "player": "Lily",
+        "matches": 23
+      },
+      {
+        "player": "ThéoM",
+        "matches": 20
+      }
+    ],
+    "most_wins": [
+      {
+        "player": "Lily",
+        "wins": 19,
+        "matches": 23
+      },
+      {
+        "player": "ThéoM",
+        "wins": 13,
+        "matches": 20
+      },
+      {
+        "player": "Roland",
+        "wins": 10,
+        "matches": 18
+      }
+    ],
+    "best_trueskill_gain": [
+      {
+        "player": "Sabine",
+        "gain": 5.13
+      },
+      {
+        "player": "LaureS",
+        "gain": 1.59
+      },
+      {
+        "player": "Armelle",
+        "gain": 1.2
+      }
+    ],
+    "ranking_climbers": [
+      {
+        "player": "Sabine",
+        "places": 4,
+        "old_rank": 27,
+        "new_rank": 23
+      },
+      {
+        "player": "ThéoM",
+        "places": 3,
+        "old_rank": 11,
+        "new_rank": 8
+      },
+      {
+        "player": "JulieB",
+        "places": 2,
+        "old_rank": 17,
+        "new_rank": 15
+      }
+    ],
+    "hot_streak": [
+      {
+        "player": "Lily",
+        "wins": 9
+      },
+      {
+        "player": "Rémi",
+        "wins": 9
+      },
+      {
+        "player": "ThéoM",
+        "wins": 5
+      }
+    ]
+  },
+  {
+    "week_start": "2026-08-03",
+    "week_end": "2026-08-07",
+    "matches_played": 20,
+    "new_players": [],
+    "most_active": [
+      {
+        "player": "Lily",
+        "matches": 15
+      },
+      {
+        "player": "Vadim",
+        "matches": 10
+      },
+      {
+        "player": "Julia",
+        "matches": 10
+      }
+    ],
+    "most_wins": [
+      {
+        "player": "Lily",
+        "wins": 13,
+        "matches": 15
+      },
+      {
+        "player": "Armelle",
+        "wins": 7,
+        "matches": 9
+      },
+      {
+        "player": "Vadim",
+        "wins": 4,
+        "matches": 10
+      }
+    ],
+    "best_trueskill_gain": [
+      {
+        "player": "Vadim",
+        "gain": 7.14
+      },
+      {
+        "player": "NathV",
+        "gain": 1.88
+      },
+      {
+        "player": "Sabine",
+        "gain": 1.49
+      }
+    ],
+    "ranking_climbers": [
+      {
+        "player": "Vadim",
+        "places": 8,
+        "old_rank": 27,
+        "new_rank": 19
+      },
+      {
+        "player": "Sabine",
+        "places": 3,
+        "old_rank": 23,
+        "new_rank": 20
+      },
+      {
+        "player": "NathV",
+        "places": 3,
+        "old_rank": 32,
+        "new_rank": 29
+      }
+    ],
+    "hot_streak": [
+      {
+        "player": "Lily",
+        "wins": 12
+      },
+      {
+        "player": "Julia",
+        "wins": 4
+      },
+      {
+        "player": "Armelle",
+        "wins": 4
+      }
+    ]
+  },
+  {
+    "week_start": "2026-08-10",
+    "week_end": "2026-08-14",
+    "matches_played": 31,
+    "new_players": [],
+    "most_active": [
+      {
+        "player": "Lily",
+        "matches": 25
+      },
+      {
+        "player": "BenjaminZ",
+        "matches": 15
+      },
+      {
+        "player": "Sabine",
+        "matches": 14
+      }
+    ],
+    "most_wins": [
+      {
+        "player": "Lily",
+        "wins": 17,
+        "matches": 25
+      },
+      {
+        "player": "BenjaminZ",
+        "wins": 10,
+        "matches": 15
+      },
+      {
+        "player": "ThéoM",
+        "wins": 7,
+        "matches": 13
+      }
+    ],
+    "best_trueskill_gain": [
+      {
+        "player": "NathV",
+        "gain": 8.16
+      },
+      {
+        "player": "Vadim",
+        "gain": 4.73
+      },
+      {
+        "player": "Sabine",
+        "gain": 3.02
+      }
+    ],
+    "ranking_climbers": [
+      {
+        "player": "Vadim",
+        "places": 8,
+        "old_rank": 19,
+        "new_rank": 11
+      },
+      {
+        "player": "NathV",
+        "places": 8,
+        "old_rank": 29,
+        "new_rank": 21
+      },
+      {
+        "player": "BenjaminZ",
+        "places": 2,
+        "old_rank": 12,
+        "new_rank": 10
+      }
+    ],
+    "hot_streak": [
+      {
+        "player": "BenjaminZ",
+        "wins": 6
+      },
+      {
+        "player": "Lily",
+        "wins": 5
+      },
+      {
+        "player": "ThéoM",
+        "wins": 4
+      }
+    ]
+  },
+  {
+    "week_start": "2026-08-17",
+    "week_end": "2026-08-21",
+    "matches_played": 32,
+    "new_players": [],
+    "most_active": [
+      {
+        "player": "BenjaminZ",
+        "matches": 22
+      },
+      {
+        "player": "Roland",
+        "matches": 17
+      },
+      {
+        "player": "Lily",
+        "matches": 16
+      }
+    ],
+    "most_wins": [
+      {
+        "player": "Roland",
+        "wins": 13,
+        "matches": 17
+      },
+      {
+        "player": "ThéoM",
+        "wins": 12,
+        "matches": 14
+      },
+      {
+        "player": "Lily",
+        "wins": 12,
+        "matches": 16
+      }
+    ],
+    "best_trueskill_gain": [
+      {
+        "player": "ThéoM",
+        "gain": 2.39
+      },
+      {
+        "player": "Roland",
+        "gain": 1.58
+      },
+      {
+        "player": "PhilippeA",
+        "gain": 1.53
+      }
+    ],
+    "ranking_climbers": [
+      {
+        "player": "PhilippeA",
+        "places": 8,
+        "old_rank": 20,
+        "new_rank": 12
+      },
+      {
+        "player": "BenjaminZ",
+        "places": 2,
+        "old_rank": 10,
+        "new_rank": 8
+      },
+      {
+        "player": "Sabine",
+        "places": 2,
+        "old_rank": 19,
+        "new_rank": 17
+      }
+    ],
+    "hot_streak": [
+      {
+        "player": "Lily",
+        "wins": 11
+      },
+      {
+        "player": "ThéoM",
+        "wins": 7
+      },
+      {
+        "player": "Rémi",
+        "wins": 6
+      }
+    ]
+  },
+  {
+    "week_start": "2026-08-24",
+    "week_end": "2026-08-28",
+    "matches_played": 38,
+    "new_players": [
+      {
+        "player": "JulienF",
+        "matches": 1
+      }
+    ],
+    "most_active": [
+      {
+        "player": "Roland",
+        "matches": 24
+      },
+      {
+        "player": "Lily",
+        "matches": 18
+      },
+      {
+        "player": "BenjaminZ",
+        "matches": 18
+      }
+    ],
+    "most_wins": [
+      {
+        "player": "Roland",
+        "wins": 15,
+        "matches": 24
+      },
+      {
+        "player": "Lily",
+        "wins": 13,
+        "matches": 18
+      },
+      {
+        "player": "Rémi",
+        "wins": 11,
+        "matches": 16
+      }
+    ],
+    "best_trueskill_gain": [
+      {
+        "player": "EmmanuelP",
+        "gain": 1.27
+      },
+      {
+        "player": "Roland",
+        "gain": 0.92
+      },
+      {
+        "player": "ThéoM",
+        "gain": 0.84
+      }
+    ],
+    "ranking_climbers": [
+      {
+        "player": "EmmanuelP",
+        "places": 5,
+        "old_rank": 15,
+        "new_rank": 10
+      },
+      {
+        "player": "ThéoM",
+        "places": 1,
+        "old_rank": 7,
+        "new_rank": 6
+      },
+      {
+        "player": "Benoit",
+        "places": 1,
+        "old_rank": 10,
+        "new_rank": 9
+      }
+    ],
+    "hot_streak": [
+      {
+        "player": "Rémi",
+        "wins": 6
+      },
+      {
+        "player": "Lily",
+        "wins": 5
+      },
+      {
+        "player": "Roland",
+        "wins": 5
+      }
+    ]
+  }
+]

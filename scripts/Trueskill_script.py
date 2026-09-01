@@ -14,7 +14,7 @@ from datetime import timedelta
 # =====================
 # PARAMÈTRES
 # =====================
-USE_SUPABASE = False
+USE_SUPABASE = True
 INPUT_EXCEL = Path("data/matchs.xlsx")
 SHEET_NAME = "matchs"
 if USE_SUPABASE:

@@ -1361,15 +1361,15 @@
     "best_trueskill_gain": [
       {
         "player": "ManonV",
-        "gain": 2.11
+        "gain": 1.57
       },
       {
         "player": "EmmanuelP",
         "gain": 0.87
       },
       {
-        "player": "LaureS",
-        "gain": 0.86
+        "player": "Rémi",
+        "gain": 0.7
       }
     ],
     "ranking_climbers": [
@@ -1706,7 +1706,7 @@
     "best_trueskill_gain": [
       {
         "player": "ThéoM",
-        "gain": 2.07
+        "gain": 1.79
       },
       {
         "player": "PhilippeA",
@@ -1845,7 +1845,7 @@
   {
     "week_start": "2026-08-31",
     "week_end": "2026-09-04",
-    "matches_played": 48,
+    "matches_played": 49,
     "new_players": [],
     "most_active": [
       {
@@ -1854,28 +1854,28 @@
       },
       {
         "player": "Lily",
-        "matches": 22
+        "matches": 23
       },
       {
         "player": "ThéoM",
-        "matches": 19
+        "matches": 20
       }
     ],
     "most_wins": [
+      {
+        "player": "Lily",
+        "wins": 18,
+        "matches": 23
+      },
       {
         "player": "Roland",
         "wins": 17,
         "matches": 23
       },
       {
-        "player": "Lily",
-        "wins": 17,
-        "matches": 22
-      },
-      {
         "player": "ThéoM",
-        "wins": 11,
-        "matches": 19
+        "wins": 12,
+        "matches": 20
       }
     ],
     "best_trueskill_gain": [
@@ -1885,7 +1885,7 @@
       },
       {
         "player": "BenjaminZ",
-        "gain": 0.62
+        "gain": 0.6
       },
       {
         "player": "Vadim",

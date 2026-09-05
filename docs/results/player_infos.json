@@ -38,5 +38,15 @@
     "player": "LaureS",
     "photo":"assets/players/LaureS.jpg",
     "comment":"\"Quand on a pas de technique, on y va à la zob\" Perceval, Kaamelott"
+  },
+  {
+    "player": "Jules",
+    "photo":"assets/players/Jules.jpg",
+    "comment":"\"Plutôt le spectacle que la victoire\" Le sorcier de Vesoul"
+  },
+  {
+    "player": "Julia",
+    "photo":"assets/players/Julia.jpg",
+    "comment":"\"Ça m'arrive de me faire battre mais pas en finale de tournois 😈\" La championne en titre"
   }
 ]

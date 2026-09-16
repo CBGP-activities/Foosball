@@ -213,11 +213,11 @@
       },
       {
         "player": "Lilou",
-        "gain": 16.71
+        "gain": 17.72
       },
       {
         "player": "Raphaël",
-        "gain": 11.96
+        "gain": 12.13
       }
     ],
     "ranking_climbers": [
@@ -930,7 +930,7 @@
       },
       {
         "player": "Nicolas",
-        "gain": 3.81
+        "gain": 3.78
       },
       {
         "player": "Julia",
@@ -1015,7 +1015,7 @@
       },
       {
         "player": "Nicolas",
-        "gain": 2.77
+        "gain": 3.02
       },
       {
         "player": "Roland",
@@ -1108,8 +1108,8 @@
         "gain": 2.33
       },
       {
-        "player": "Armelle",
-        "gain": 1.09
+        "player": "JulieB",
+        "gain": 0.86
       }
     ],
     "ranking_climbers": [
@@ -1193,8 +1193,8 @@
         "gain": 1.16
       },
       {
-        "player": "Nicolas",
-        "gain": 1.15
+        "player": "Armelle",
+        "gain": 1.09
       }
     ],
     "ranking_climbers": [
@@ -1271,7 +1271,7 @@
     "best_trueskill_gain": [
       {
         "player": "Nicolas",
-        "gain": 0.99
+        "gain": 1.02
       },
       {
         "player": "Rémi",
@@ -1279,7 +1279,7 @@
       },
       {
         "player": "Jules",
-        "gain": 0.56
+        "gain": 0.42
       }
     ],
     "ranking_climbers": [
@@ -1365,11 +1365,11 @@
       },
       {
         "player": "EmmanuelP",
-        "gain": 0.87
+        "gain": 1.39
       },
       {
-        "player": "Rémi",
-        "gain": 0.7
+        "player": "LaureS",
+        "gain": 0.86
       }
     ],
     "ranking_climbers": [
@@ -1454,12 +1454,12 @@
         "gain": 4.09
       },
       {
-        "player": "LaureS",
-        "gain": 1.58
+        "player": "NathV",
+        "gain": 1.76
       },
       {
-        "player": "ThéoM",
-        "gain": 1.24
+        "player": "LaureS",
+        "gain": 1.59
       }
     ],
     "ranking_climbers": [
@@ -1544,7 +1544,7 @@
       },
       {
         "player": "NathV",
-        "gain": 1.88
+        "gain": 1.29
       }
     ],
     "ranking_climbers": [
@@ -1706,11 +1706,11 @@
     "best_trueskill_gain": [
       {
         "player": "ThéoM",
-        "gain": 2.39
+        "gain": 1.79
       },
       {
         "player": "Roland",
-        "gain": 1.73
+        "gain": 1.75
       },
       {
         "player": "PhilippeA",
@@ -1796,11 +1796,11 @@
     "best_trueskill_gain": [
       {
         "player": "EmmanuelP",
-        "gain": 1.43
+        "gain": 1.27
       },
       {
         "player": "Roland",
-        "gain": 0.92
+        "gain": 0.91
       },
       {
         "player": "ThéoM",
@@ -1885,7 +1885,7 @@
       },
       {
         "player": "BenjaminZ",
-        "gain": 0.92
+        "gain": 0.9
       },
       {
         "player": "NathV",
@@ -1966,15 +1966,15 @@
     "best_trueskill_gain": [
       {
         "player": "Sabine",
-        "gain": 0.89
+        "gain": 0.75
       },
       {
         "player": "Vadim",
         "gain": 0.6
       },
       {
-        "player": "ThéoM",
-        "gain": 0.46
+        "player": "Rémi",
+        "gain": 0.37
       }
     ],
     "ranking_climbers": [

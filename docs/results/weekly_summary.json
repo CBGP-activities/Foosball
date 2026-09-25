@@ -1455,7 +1455,7 @@
       },
       {
         "player": "NathV",
-        "gain": 3.03
+        "gain": 1.76
       },
       {
         "player": "LaureS",
@@ -1539,12 +1539,12 @@
         "gain": 7.14
       },
       {
-        "player": "Armelle",
-        "gain": 1.92
-      },
-      {
         "player": "Sabine",
         "gain": 1.49
+      },
+      {
+        "player": "NathV",
+        "gain": 1.29
       }
     ],
     "ranking_climbers": [
@@ -2101,6 +2101,91 @@
       {
         "player": "Roland",
         "wins": 3
+      }
+    ]
+  },
+  {
+    "week_start": "2026-09-21",
+    "week_end": "2026-09-25",
+    "matches_played": 30,
+    "new_players": [],
+    "most_active": [
+      {
+        "player": "ThéoM",
+        "matches": 17
+      },
+      {
+        "player": "Joris",
+        "matches": 12
+      },
+      {
+        "player": "Rémi",
+        "matches": 12
+      }
+    ],
+    "most_wins": [
+      {
+        "player": "ThéoM",
+        "wins": 12,
+        "matches": 17
+      },
+      {
+        "player": "Rémi",
+        "wins": 11,
+        "matches": 12
+      },
+      {
+        "player": "Lily",
+        "wins": 7,
+        "matches": 11
+      }
+    ],
+    "best_trueskill_gain": [
+      {
+        "player": "Joris",
+        "gain": 9.48
+      },
+      {
+        "player": "Loïc",
+        "gain": 0.6
+      },
+      {
+        "player": "ThéoM",
+        "gain": 0.47
+      }
+    ],
+    "ranking_climbers": [
+      {
+        "player": "Joris",
+        "places": 13,
+        "old_rank": 43,
+        "new_rank": 30
+      },
+      {
+        "player": "Sabine",
+        "places": 2,
+        "old_rank": 18,
+        "new_rank": 16
+      },
+      {
+        "player": "Benoit",
+        "places": 1,
+        "old_rank": 11,
+        "new_rank": 10
+      }
+    ],
+    "hot_streak": [
+      {
+        "player": "Rémi",
+        "wins": 6
+      },
+      {
+        "player": "ThéoM",
+        "wins": 5
+      },
+      {
+        "player": "Jules",
+        "wins": 4
       }
     ]
   }

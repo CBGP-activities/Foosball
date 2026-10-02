@@ -53,8 +53,8 @@
     "longest_win_streak": 8,
     "longest_loss_streak": 7,
     "highest_trueskill_score": 26.854541302195656,
-    "ranking_eligible": false,
-    "rank": null
+    "ranking_eligible": true,
+    "rank": 3.0
   },
   {
     "player": "Roland",
@@ -73,7 +73,7 @@
     "longest_loss_streak": 6,
     "highest_trueskill_score": 26.22490223322914,
     "ranking_eligible": true,
-    "rank": 3.0
+    "rank": 4.0
   },
   {
     "player": "ThéoM",
@@ -92,7 +92,7 @@
     "longest_loss_streak": 7,
     "highest_trueskill_score": 23.194113859632424,
     "ranking_eligible": true,
-    "rank": 4.0
+    "rank": 5.0
   },
   {
     "player": "BenjaminC",
@@ -111,7 +111,7 @@
     "longest_loss_streak": 3,
     "highest_trueskill_score": 22.072144453380634,
     "ranking_eligible": true,
-    "rank": 5.0
+    "rank": 6.0
   },
   {
     "player": "LaureS",
@@ -130,7 +130,7 @@
     "longest_loss_streak": 4,
     "highest_trueskill_score": 21.10018602745009,
     "ranking_eligible": true,
-    "rank": 6.0
+    "rank": 7.0
   },
   {
     "player": "Paul",
@@ -149,7 +149,7 @@
     "longest_loss_streak": 8,
     "highest_trueskill_score": 18.416956866192812,
     "ranking_eligible": true,
-    "rank": 7.0
+    "rank": 8.0
   },
   {
     "player": "Vadim",
@@ -168,7 +168,7 @@
     "longest_loss_streak": 6,
     "highest_trueskill_score": 18.56956773351443,
     "ranking_eligible": true,
-    "rank": 8.0
+    "rank": 9.0
   },
   {
     "player": "Benoit",
@@ -206,7 +206,7 @@
     "longest_loss_streak": 17,
     "highest_trueskill_score": 19.662334707721193,
     "ranking_eligible": true,
-    "rank": 9.0
+    "rank": 10.0
   },
   {
     "player": "EmmanuelP",
@@ -225,7 +225,7 @@
     "longest_loss_streak": 5,
     "highest_trueskill_score": 17.94446062899782,
     "ranking_eligible": true,
-    "rank": 10.0
+    "rank": 11.0
   },
   {
     "player": "Armelle",
@@ -244,7 +244,7 @@
     "longest_loss_streak": 12,
     "highest_trueskill_score": 18.73022461953596,
     "ranking_eligible": true,
-    "rank": 11.0
+    "rank": 12.0
   },
   {
     "player": "Timothée",
@@ -282,7 +282,7 @@
     "longest_loss_streak": 2,
     "highest_trueskill_score": 16.57573654250824,
     "ranking_eligible": true,
-    "rank": 12.0
+    "rank": 13.0
   },
   {
     "player": "Sabine",
@@ -301,7 +301,7 @@
     "longest_loss_streak": 5,
     "highest_trueskill_score": 16.571899172434282,
     "ranking_eligible": true,
-    "rank": 13.0
+    "rank": 14.0
   },
   {
     "player": "Jules",
@@ -320,7 +320,7 @@
     "longest_loss_streak": 9,
     "highest_trueskill_score": 17.36408529973549,
     "ranking_eligible": true,
-    "rank": 14.0
+    "rank": 15.0
   },
   {
     "player": "Loïc",
@@ -339,7 +339,7 @@
     "longest_loss_streak": 5,
     "highest_trueskill_score": 15.663300648064409,
     "ranking_eligible": true,
-    "rank": 15.0
+    "rank": 16.0
   },
   {
     "player": "Lilou",
@@ -358,7 +358,7 @@
     "longest_loss_streak": 13,
     "highest_trueskill_score": 17.10049108559355,
     "ranking_eligible": true,
-    "rank": 16.0
+    "rank": 17.0
   },
   {
     "player": "JulieB",
@@ -377,7 +377,7 @@
     "longest_loss_streak": 6,
     "highest_trueskill_score": 14.982737877869257,
     "ranking_eligible": true,
-    "rank": 17.0
+    "rank": 18.0
   },
   {
     "player": "Julia",
@@ -396,7 +396,7 @@
     "longest_loss_streak": 11,
     "highest_trueskill_score": 15.89428643704698,
     "ranking_eligible": true,
-    "rank": 18.0
+    "rank": 19.0
   },
   {
     "player": "NathV",
@@ -415,7 +415,7 @@
     "longest_loss_streak": 8,
     "highest_trueskill_score": 14.01682018121707,
     "ranking_eligible": true,
-    "rank": 19.0
+    "rank": 20.0
   },
   {
     "player": "VincentD",
@@ -452,8 +452,8 @@
     "longest_win_streak": 2,
     "longest_loss_streak": 5,
     "highest_trueskill_score": 14.50823478003159,
-    "ranking_eligible": false,
-    "rank": null
+    "ranking_eligible": true,
+    "rank": 21.0
   },
   {
     "player": "ManonV",
@@ -472,7 +472,7 @@
     "longest_loss_streak": 7,
     "highest_trueskill_score": 10.915585709931674,
     "ranking_eligible": true,
-    "rank": 20.0
+    "rank": 22.0
   },
   {
     "player": "Tanguy",
@@ -548,7 +548,7 @@
     "longest_loss_streak": 10,
     "highest_trueskill_score": 8.319123944072995,
     "ranking_eligible": true,
-    "rank": 21.0
+    "rank": 23.0
   },
   {
     "player": "Joris",
@@ -567,7 +567,7 @@
     "longest_loss_streak": 9,
     "highest_trueskill_score": 6.657798898341866,
     "ranking_eligible": true,
-    "rank": 22.0
+    "rank": 24.0
   },
   {
     "player": "SimonB",

@@ -9,7 +9,7 @@
       "score": 14.01682018121707,
       "first_match": "2026-01-26",
       "last_match": "2026-09-29",
-      "days_since_last_match": 6,
+      "days_since_last_match": 7,
       "winrate_all_time": 0.2608695652173913,
       "winrate_last_30_days": 0.42857142857142855,
       "worst_enemy": "ThéoM (8/8 100.0%)",
@@ -3020,6 +3020,34 @@
       {
         "date": "2026-10-05",
         "score": 14.01682018121707
+      },
+      {
+        "date": "2026-10-06",
+        "score": 14.01682018121707
+      },
+      {
+        "date": "2026-10-06",
+        "score": 14.01682018121707
+      },
+      {
+        "date": "2026-10-06",
+        "score": 14.01682018121707
+      },
+      {
+        "date": "2026-10-06",
+        "score": 14.01682018121707
+      },
+      {
+        "date": "2026-10-06",
+        "score": 14.01682018121707
+      },
+      {
+        "date": "2026-10-06",
+        "score": 14.01682018121707
+      },
+      {
+        "date": "2026-10-06",
+        "score": 14.01682018121707
       }
     ],
     "relations": [
@@ -3134,7 +3162,7 @@
       "score": 28.904609824878804,
       "first_match": "2026-01-26",
       "last_match": "2026-10-02",
-      "days_since_last_match": 3,
+      "days_since_last_match": 4,
       "winrate_all_time": 0.7025495750708215,
       "winrate_last_30_days": 0.6923076923076923,
       "worst_enemy": "Raphaël (21/36 58.3%)",
@@ -6145,6 +6173,34 @@
       {
         "date": "2026-10-05",
         "score": 28.904609824878804
+      },
+      {
+        "date": "2026-10-06",
+        "score": 28.904609824878804
+      },
+      {
+        "date": "2026-10-06",
+        "score": 28.904609824878804
+      },
+      {
+        "date": "2026-10-06",
+        "score": 28.904609824878804
+      },
+      {
+        "date": "2026-10-06",
+        "score": 28.904609824878804
+      },
+      {
+        "date": "2026-10-06",
+        "score": 28.904609824878804
+      },
+      {
+        "date": "2026-10-06",
+        "score": 28.904609824878804
+      },
+      {
+        "date": "2026-10-06",
+        "score": 28.904609824878804
       }
     ],
     "relations": [
@@ -6523,15 +6579,15 @@
     "player": "Roland",
     "stats": {
       "player": "Roland",
-      "matches": 225,
-      "mu": 28.81700461862177,
-      "sigma": 1.1243892268564641,
-      "score": 25.443836938052378,
+      "matches": 228,
+      "mu": 29.009929937667813,
+      "sigma": 1.121321128431265,
+      "score": 25.64596655237402,
       "first_match": "2026-01-26",
-      "last_match": "2026-10-05",
+      "last_match": "2026-10-06",
       "days_since_last_match": 0,
-      "winrate_all_time": 0.6222222222222222,
-      "winrate_last_30_days": 0.6666666666666666,
+      "winrate_all_time": 0.6271929824561403,
+      "winrate_last_30_days": 0.6875,
       "worst_enemy": "BenjaminC (8/9 88.9%)",
       "best_teammate": "Lily (14/16 87.5%)",
       "longest_win_streak": 9,
@@ -9540,6 +9596,34 @@
       {
         "date": "2026-10-05",
         "score": 25.443836938052378
+      },
+      {
+        "date": "2026-10-06",
+        "score": 25.443836938052378
+      },
+      {
+        "date": "2026-10-06",
+        "score": 25.443836938052378
+      },
+      {
+        "date": "2026-10-06",
+        "score": 25.45741720305893
+      },
+      {
+        "date": "2026-10-06",
+        "score": 25.45741720305893
+      },
+      {
+        "date": "2026-10-06",
+        "score": 25.585362213719826
+      },
+      {
+        "date": "2026-10-06",
+        "score": 25.585362213719826
+      },
+      {
+        "date": "2026-10-06",
+        "score": 25.64596655237402
       }
     ],
     "relations": [
@@ -9619,10 +9703,10 @@
         "player": "Roland",
         "other": "Lilou",
         "type": "opponent",
-        "matches": 25,
-        "wins": 23,
+        "matches": 26,
+        "wins": 24,
         "losses": 2,
-        "winrate": 92.0
+        "winrate": 92.3
       },
       {
         "player": "Roland",
@@ -9637,10 +9721,10 @@
         "player": "Roland",
         "other": "Paul",
         "type": "opponent",
-        "matches": 45,
-        "wins": 30,
+        "matches": 47,
+        "wins": 32,
         "losses": 15,
-        "winrate": 66.7
+        "winrate": 68.1
       },
       {
         "player": "Roland",
@@ -9682,19 +9766,19 @@
         "player": "Roland",
         "other": "Jules",
         "type": "teammate",
-        "matches": 17,
-        "wins": 10,
+        "matches": 18,
+        "wins": 11,
         "losses": 7,
-        "winrate": 58.8
+        "winrate": 61.1
       },
       {
         "player": "Roland",
         "other": "Jules",
         "type": "opponent",
-        "matches": 23,
-        "wins": 16,
+        "matches": 24,
+        "wins": 17,
         "losses": 7,
-        "winrate": 69.6
+        "winrate": 70.8
       },
       {
         "player": "Roland",
@@ -9727,19 +9811,19 @@
         "player": "Roland",
         "other": "ThéoM",
         "type": "teammate",
-        "matches": 34,
-        "wins": 26,
+        "matches": 35,
+        "wins": 27,
         "losses": 8,
-        "winrate": 76.5
+        "winrate": 77.1
       },
       {
         "player": "Roland",
         "other": "ThéoM",
         "type": "opponent",
-        "matches": 38,
-        "wins": 19,
+        "matches": 39,
+        "wins": 20,
         "losses": 19,
-        "winrate": 50.0
+        "winrate": 51.3
       },
       {
         "player": "Roland",
@@ -9763,19 +9847,19 @@
         "player": "Roland",
         "other": "BenjaminZ",
         "type": "teammate",
-        "matches": 24,
-        "wins": 15,
+        "matches": 25,
+        "wins": 16,
         "losses": 9,
-        "winrate": 62.5
+        "winrate": 64.0
       },
       {
         "player": "Roland",
         "other": "BenjaminZ",
         "type": "opponent",
-        "matches": 47,
-        "wins": 33,
+        "matches": 48,
+        "wins": 34,
         "losses": 14,
-        "winrate": 70.2
+        "winrate": 70.8
       },
       {
         "player": "Roland",
@@ -9861,7 +9945,7 @@
       "score": 32.62162299003769,
       "first_match": "2026-01-26",
       "last_match": "2026-10-05",
-      "days_since_last_match": 0,
+      "days_since_last_match": 1,
       "winrate_all_time": 0.7427385892116183,
       "winrate_last_30_days": 0.8372093023255814,
       "worst_enemy": "Lily (45/99 45.5%)",
@@ -12872,6 +12956,34 @@
       {
         "date": "2026-10-05",
         "score": 32.62162299003769
+      },
+      {
+        "date": "2026-10-06",
+        "score": 32.62162299003769
+      },
+      {
+        "date": "2026-10-06",
+        "score": 32.62162299003769
+      },
+      {
+        "date": "2026-10-06",
+        "score": 32.62162299003769
+      },
+      {
+        "date": "2026-10-06",
+        "score": 32.62162299003769
+      },
+      {
+        "date": "2026-10-06",
+        "score": 32.62162299003769
+      },
+      {
+        "date": "2026-10-06",
+        "score": 32.62162299003769
+      },
+      {
+        "date": "2026-10-06",
+        "score": 32.62162299003769
       }
     ],
     "relations": [
@@ -13202,7 +13314,7 @@
       "score": 10.71039413240002,
       "first_match": "2026-01-27",
       "last_match": "2026-09-29",
-      "days_since_last_match": 6,
+      "days_since_last_match": 7,
       "winrate_all_time": 0.30578512396694213,
       "winrate_last_30_days": 0.24,
       "worst_enemy": "Lily (26/28 92.9%)",
@@ -16205,6 +16317,34 @@
       {
         "date": "2026-10-05",
         "score": 10.71039413240002
+      },
+      {
+        "date": "2026-10-06",
+        "score": 10.71039413240002
+      },
+      {
+        "date": "2026-10-06",
+        "score": 10.71039413240002
+      },
+      {
+        "date": "2026-10-06",
+        "score": 10.71039413240002
+      },
+      {
+        "date": "2026-10-06",
+        "score": 10.71039413240002
+      },
+      {
+        "date": "2026-10-06",
+        "score": 10.71039413240002
+      },
+      {
+        "date": "2026-10-06",
+        "score": 10.71039413240002
+      },
+      {
+        "date": "2026-10-06",
+        "score": 10.71039413240002
       }
     ],
     "relations": [
@@ -16439,22 +16579,22 @@
     "player": "Lilou",
     "stats": {
       "player": "Lilou",
-      "matches": 216,
-      "mu": 19.194744071771893,
-      "sigma": 1.1548614245715778,
-      "score": 15.73015979805716,
+      "matches": 221,
+      "mu": 18.90001960179683,
+      "sigma": 1.1496265711302962,
+      "score": 15.451139888405944,
       "first_match": "2026-01-27",
-      "last_match": "2026-10-05",
+      "last_match": "2026-10-06",
       "days_since_last_match": 0,
-      "winrate_all_time": 0.4305555555555556,
-      "winrate_last_30_days": 0.4117647058823529,
-      "worst_enemy": "Roland (23/25 92.0%)",
+      "winrate_all_time": 0.42081447963800905,
+      "winrate_last_30_days": 0.3181818181818182,
+      "worst_enemy": "Roland (24/26 92.3%)",
       "best_teammate": "Lily (27/38 71.1%)",
       "longest_win_streak": 7,
       "longest_loss_streak": 13,
       "highest_trueskill_score": 17.10049108559355,
       "ranking_eligible": true,
-      "rank": 16.0
+      "rank": 18.0
     },
     "history": [
       {
@@ -19448,6 +19588,34 @@
       {
         "date": "2026-10-05",
         "score": 15.73015979805716
+      },
+      {
+        "date": "2026-10-06",
+        "score": 15.697127720741285
+      },
+      {
+        "date": "2026-10-06",
+        "score": 15.674834728635105
+      },
+      {
+        "date": "2026-10-06",
+        "score": 15.674834728635105
+      },
+      {
+        "date": "2026-10-06",
+        "score": 15.58514455137301
+      },
+      {
+        "date": "2026-10-06",
+        "score": 15.58514455137301
+      },
+      {
+        "date": "2026-10-06",
+        "score": 15.506545319202967
+      },
+      {
+        "date": "2026-10-06",
+        "score": 15.451139888405944
       }
     ],
     "relations": [
@@ -19455,19 +19623,19 @@
         "player": "Lilou",
         "other": "Paul",
         "type": "teammate",
-        "matches": 15,
+        "matches": 16,
         "wins": 5,
-        "losses": 10,
-        "winrate": 33.3
+        "losses": 11,
+        "winrate": 31.2
       },
       {
         "player": "Lilou",
         "other": "Paul",
         "type": "opponent",
-        "matches": 53,
+        "matches": 54,
         "wins": 29,
-        "losses": 24,
-        "winrate": 54.7
+        "losses": 25,
+        "winrate": 53.7
       },
       {
         "player": "Lilou",
@@ -19491,10 +19659,10 @@
         "player": "Lilou",
         "other": "Roland",
         "type": "opponent",
-        "matches": 25,
+        "matches": 26,
         "wins": 2,
-        "losses": 23,
-        "winrate": 8.0
+        "losses": 24,
+        "winrate": 7.7
       },
       {
         "player": "Lilou",
@@ -19590,10 +19758,10 @@
         "player": "Lilou",
         "other": "Jules",
         "type": "opponent",
-        "matches": 40,
+        "matches": 42,
         "wins": 19,
-        "losses": 21,
-        "winrate": 47.5
+        "losses": 23,
+        "winrate": 45.2
       },
       {
         "player": "Lilou",
@@ -19608,10 +19776,10 @@
         "player": "Lilou",
         "other": "BenjaminC",
         "type": "opponent",
-        "matches": 6,
+        "matches": 9,
         "wins": 4,
-        "losses": 2,
-        "winrate": 66.7
+        "losses": 5,
+        "winrate": 44.4
       },
       {
         "player": "Lilou",
@@ -19680,19 +19848,19 @@
         "player": "Lilou",
         "other": "Loïc",
         "type": "teammate",
-        "matches": 13,
+        "matches": 14,
         "wins": 4,
-        "losses": 9,
-        "winrate": 30.8
+        "losses": 10,
+        "winrate": 28.6
       },
       {
         "player": "Lilou",
         "other": "Loïc",
         "type": "opponent",
-        "matches": 13,
+        "matches": 15,
         "wins": 8,
-        "losses": 5,
-        "winrate": 61.5
+        "losses": 7,
+        "winrate": 53.3
       },
       {
         "player": "Lilou",
@@ -19727,20 +19895,20 @@
     "player": "Paul",
     "stats": {
       "player": "Paul",
-      "matches": 197,
-      "mu": 22.18290282772963,
-      "sigma": 1.1469509304621912,
-      "score": 18.74205003634306,
+      "matches": 200,
+      "mu": 22.01924546482009,
+      "sigma": 1.1429813700733147,
+      "score": 18.590301354600147,
       "first_match": "2026-01-27",
-      "last_match": "2026-10-05",
+      "last_match": "2026-10-06",
       "days_since_last_match": 0,
-      "winrate_all_time": 0.4619289340101523,
-      "winrate_last_30_days": 0.5588235294117647,
+      "winrate_all_time": 0.46,
+      "winrate_last_30_days": 0.5405405405405406,
       "worst_enemy": "Rémi (19/23 82.6%)",
-      "best_teammate": "Rémi (8/11 72.7%)",
+      "best_teammate": "BenjaminC (4/5 80.0%)",
       "longest_win_streak": 6,
       "longest_loss_streak": 8,
-      "highest_trueskill_score": 18.74205003634306,
+      "highest_trueskill_score": 18.758198031267213,
       "ranking_eligible": true,
       "rank": 8.0
     },
@@ -22736,6 +22904,34 @@
       {
         "date": "2026-10-05",
         "score": 18.74205003634306
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.74205003634306
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.758198031267213
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.758198031267213
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.758198031267213
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.645300475136604
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.645300475136604
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.590301354600147
       }
     ],
     "relations": [
@@ -22743,19 +22939,19 @@
         "player": "Paul",
         "other": "Lilou",
         "type": "teammate",
-        "matches": 15,
+        "matches": 16,
         "wins": 5,
-        "losses": 10,
-        "winrate": 33.3
+        "losses": 11,
+        "winrate": 31.2
       },
       {
         "player": "Paul",
         "other": "Lilou",
         "type": "opponent",
-        "matches": 53,
-        "wins": 24,
+        "matches": 54,
+        "wins": 25,
         "losses": 29,
-        "winrate": 45.3
+        "winrate": 46.3
       },
       {
         "player": "Paul",
@@ -22779,10 +22975,10 @@
         "player": "Paul",
         "other": "Roland",
         "type": "opponent",
-        "matches": 45,
+        "matches": 47,
         "wins": 15,
-        "losses": 30,
-        "winrate": 33.3
+        "losses": 32,
+        "winrate": 31.9
       },
       {
         "player": "Paul",
@@ -22859,6 +23055,15 @@
       {
         "player": "Paul",
         "other": "BenjaminC",
+        "type": "teammate",
+        "matches": 5,
+        "wins": 4,
+        "losses": 1,
+        "winrate": 80.0
+      },
+      {
+        "player": "Paul",
+        "other": "BenjaminC",
         "type": "opponent",
         "matches": 8,
         "wins": 4,
@@ -22896,10 +23101,10 @@
         "player": "Paul",
         "other": "Jules",
         "type": "opponent",
-        "matches": 29,
+        "matches": 30,
         "wins": 19,
-        "losses": 10,
-        "winrate": 65.5
+        "losses": 11,
+        "winrate": 63.3
       },
       {
         "player": "Paul",
@@ -22932,10 +23137,10 @@
         "player": "Paul",
         "other": "ThéoM",
         "type": "teammate",
-        "matches": 19,
+        "matches": 20,
         "wins": 13,
-        "losses": 6,
-        "winrate": 68.4
+        "losses": 7,
+        "winrate": 65.0
       },
       {
         "player": "Paul",
@@ -22995,10 +23200,10 @@
         "player": "Paul",
         "other": "BenjaminZ",
         "type": "opponent",
-        "matches": 15,
+        "matches": 16,
         "wins": 9,
-        "losses": 6,
-        "winrate": 60.0
+        "losses": 7,
+        "winrate": 56.2
       },
       {
         "player": "Paul",
@@ -23039,7 +23244,7 @@
       "score": -5.310830396674033,
       "first_match": "2026-01-27",
       "last_match": "2026-02-20",
-      "days_since_last_match": 227,
+      "days_since_last_match": 228,
       "winrate_all_time": 0.0,
       "winrate_last_30_days": 0.0,
       "worst_enemy": null,
@@ -23063,7 +23268,7 @@
       "score": 26.146844715012787,
       "first_match": "2026-01-27",
       "last_match": "2026-03-31",
-      "days_since_last_match": 188,
+      "days_since_last_match": 189,
       "winrate_all_time": 0.6292134831460674,
       "winrate_last_30_days": 0.0,
       "worst_enemy": "Roland (4/5 80.0%)",
@@ -26062,6 +26267,34 @@
       {
         "date": "2026-10-05",
         "score": 26.146844715012787
+      },
+      {
+        "date": "2026-10-06",
+        "score": 26.146844715012787
+      },
+      {
+        "date": "2026-10-06",
+        "score": 26.146844715012787
+      },
+      {
+        "date": "2026-10-06",
+        "score": 26.146844715012787
+      },
+      {
+        "date": "2026-10-06",
+        "score": 26.146844715012787
+      },
+      {
+        "date": "2026-10-06",
+        "score": 26.146844715012787
+      },
+      {
+        "date": "2026-10-06",
+        "score": 26.146844715012787
+      },
+      {
+        "date": "2026-10-06",
+        "score": 26.146844715012787
       }
     ],
     "relations": [
@@ -26212,7 +26445,7 @@
       "score": 17.931510722518603,
       "first_match": "2026-01-27",
       "last_match": "2026-03-03",
-      "days_since_last_match": 216,
+      "days_since_last_match": 217,
       "winrate_all_time": 0.8571428571428571,
       "winrate_last_30_days": 0.0,
       "worst_enemy": null,
@@ -26236,7 +26469,7 @@
       "score": 14.043152231128058,
       "first_match": "2026-01-27",
       "last_match": "2026-09-23",
-      "days_since_last_match": 12,
+      "days_since_last_match": 13,
       "winrate_all_time": 0.34444444444444444,
       "winrate_last_30_days": 0.1,
       "worst_enemy": "Rémi (13/13 100.0%)",
@@ -29231,6 +29464,34 @@
       {
         "date": "2026-10-05",
         "score": 14.043152231128058
+      },
+      {
+        "date": "2026-10-06",
+        "score": 14.043152231128058
+      },
+      {
+        "date": "2026-10-06",
+        "score": 14.043152231128058
+      },
+      {
+        "date": "2026-10-06",
+        "score": 14.043152231128058
+      },
+      {
+        "date": "2026-10-06",
+        "score": 14.043152231128058
+      },
+      {
+        "date": "2026-10-06",
+        "score": 14.043152231128058
+      },
+      {
+        "date": "2026-10-06",
+        "score": 14.043152231128058
+      },
+      {
+        "date": "2026-10-06",
+        "score": 14.043152231128058
       }
     ],
     "relations": [
@@ -29444,7 +29705,7 @@
       "score": 16.762341647761502,
       "first_match": "2026-01-27",
       "last_match": "2026-10-05",
-      "days_since_last_match": 0,
+      "days_since_last_match": 1,
       "winrate_all_time": 0.4057971014492754,
       "winrate_last_30_days": 0.16666666666666666,
       "worst_enemy": "ThéoM (6/6 100.0%)",
@@ -32423,6 +32684,34 @@
       {
         "date": "2026-10-05",
         "score": 16.762341647761502
+      },
+      {
+        "date": "2026-10-06",
+        "score": 16.762341647761502
+      },
+      {
+        "date": "2026-10-06",
+        "score": 16.762341647761502
+      },
+      {
+        "date": "2026-10-06",
+        "score": 16.762341647761502
+      },
+      {
+        "date": "2026-10-06",
+        "score": 16.762341647761502
+      },
+      {
+        "date": "2026-10-06",
+        "score": 16.762341647761502
+      },
+      {
+        "date": "2026-10-06",
+        "score": 16.762341647761502
+      },
+      {
+        "date": "2026-10-06",
+        "score": 16.762341647761502
       }
     ],
     "relations": [
@@ -32558,15 +32847,15 @@
     "player": "Jules",
     "stats": {
       "player": "Jules",
-      "matches": 186,
-      "mu": 19.532884784352312,
-      "sigma": 1.1962201970297428,
-      "score": 15.944224193263084,
+      "matches": 189,
+      "mu": 19.669912450507713,
+      "sigma": 1.191686297958606,
+      "score": 16.094853556631897,
       "first_match": "2026-01-28",
-      "last_match": "2026-10-05",
+      "last_match": "2026-10-06",
       "days_since_last_match": 0,
-      "winrate_all_time": 0.3709677419354839,
-      "winrate_last_30_days": 0.48484848484848486,
+      "winrate_all_time": 0.37566137566137564,
+      "winrate_last_30_days": 0.5,
       "worst_enemy": "Lily (44/51 86.3%)",
       "best_teammate": "Rémi (16/23 69.6%)",
       "longest_win_streak": 5,
@@ -35527,6 +35816,34 @@
       {
         "date": "2026-10-05",
         "score": 15.944224193263084
+      },
+      {
+        "date": "2026-10-06",
+        "score": 15.944224193263084
+      },
+      {
+        "date": "2026-10-06",
+        "score": 15.944224193263084
+      },
+      {
+        "date": "2026-10-06",
+        "score": 15.923127464833035
+      },
+      {
+        "date": "2026-10-06",
+        "score": 15.923127464833035
+      },
+      {
+        "date": "2026-10-06",
+        "score": 15.923127464833035
+      },
+      {
+        "date": "2026-10-06",
+        "score": 16.023659672843728
+      },
+      {
+        "date": "2026-10-06",
+        "score": 16.094853556631897
       }
     ],
     "relations": [
@@ -35561,10 +35878,10 @@
         "player": "Jules",
         "other": "Lilou",
         "type": "opponent",
-        "matches": 40,
-        "wins": 21,
+        "matches": 42,
+        "wins": 23,
         "losses": 19,
-        "winrate": 52.5
+        "winrate": 54.8
       },
       {
         "player": "Jules",
@@ -35606,28 +35923,28 @@
         "player": "Jules",
         "other": "Paul",
         "type": "opponent",
-        "matches": 29,
-        "wins": 10,
+        "matches": 30,
+        "wins": 11,
         "losses": 19,
-        "winrate": 34.5
+        "winrate": 36.7
       },
       {
         "player": "Jules",
         "other": "Roland",
         "type": "teammate",
-        "matches": 17,
-        "wins": 10,
+        "matches": 18,
+        "wins": 11,
         "losses": 7,
-        "winrate": 58.8
+        "winrate": 61.1
       },
       {
         "player": "Jules",
         "other": "Roland",
         "type": "opponent",
-        "matches": 23,
+        "matches": 24,
         "wins": 7,
-        "losses": 16,
-        "winrate": 30.4
+        "losses": 17,
+        "winrate": 29.2
       },
       {
         "player": "Jules",
@@ -35723,10 +36040,10 @@
         "player": "Jules",
         "other": "ThéoM",
         "type": "opponent",
-        "matches": 20,
+        "matches": 21,
         "wins": 8,
-        "losses": 12,
-        "winrate": 40.0
+        "losses": 13,
+        "winrate": 38.1
       },
       {
         "player": "Jules",
@@ -35741,10 +36058,10 @@
         "player": "Jules",
         "other": "Loïc",
         "type": "teammate",
-        "matches": 10,
-        "wins": 2,
+        "matches": 11,
+        "wins": 3,
         "losses": 8,
-        "winrate": 20.0
+        "winrate": 27.3
       },
       {
         "player": "Jules",
@@ -35772,6 +36089,15 @@
         "wins": 2,
         "losses": 6,
         "winrate": 25.0
+      },
+      {
+        "player": "Jules",
+        "other": "BenjaminZ",
+        "type": "teammate",
+        "matches": 5,
+        "wins": 0,
+        "losses": 5,
+        "winrate": 0.0
       },
       {
         "player": "Jules",
@@ -35822,10 +36148,10 @@
         "player": "Jules",
         "other": "Joris",
         "type": "opponent",
-        "matches": 6,
-        "wins": 5,
+        "matches": 7,
+        "wins": 6,
         "losses": 1,
-        "winrate": 83.3
+        "winrate": 85.7
       }
     ]
   },
@@ -35833,15 +36159,15 @@
     "player": "BenjaminC",
     "stats": {
       "player": "BenjaminC",
-      "matches": 61,
-      "mu": 26.78530785499892,
-      "sigma": 1.768300938531882,
-      "score": 21.480405039403273,
+      "matches": 64,
+      "mu": 27.1301712150192,
+      "sigma": 1.7373360402837519,
+      "score": 21.918163094167944,
       "first_match": "2026-01-28",
-      "last_match": "2026-10-05",
+      "last_match": "2026-10-06",
       "days_since_last_match": 0,
-      "winrate_all_time": 0.5245901639344263,
-      "winrate_last_30_days": 0.25,
+      "winrate_all_time": 0.546875,
+      "winrate_last_30_days": 0.5714285714285714,
       "worst_enemy": "Rémi (17/24 70.8%)",
       "best_teammate": "Rémi (7/7 100.0%)",
       "longest_win_streak": 4,
@@ -38798,9 +39124,46 @@
       {
         "date": "2026-10-05",
         "score": 21.480405039403273
+      },
+      {
+        "date": "2026-10-06",
+        "score": 21.58273213974175
+      },
+      {
+        "date": "2026-10-06",
+        "score": 21.643564405573088
+      },
+      {
+        "date": "2026-10-06",
+        "score": 21.643564405573088
+      },
+      {
+        "date": "2026-10-06",
+        "score": 21.918163094167944
+      },
+      {
+        "date": "2026-10-06",
+        "score": 21.918163094167944
+      },
+      {
+        "date": "2026-10-06",
+        "score": 21.918163094167944
+      },
+      {
+        "date": "2026-10-06",
+        "score": 21.918163094167944
       }
     ],
     "relations": [
+      {
+        "player": "BenjaminC",
+        "other": "Paul",
+        "type": "teammate",
+        "matches": 5,
+        "wins": 4,
+        "losses": 1,
+        "winrate": 80.0
+      },
       {
         "player": "BenjaminC",
         "other": "Paul",
@@ -38859,10 +39222,10 @@
         "player": "BenjaminC",
         "other": "Lilou",
         "type": "opponent",
-        "matches": 6,
-        "wins": 2,
+        "matches": 9,
+        "wins": 5,
         "losses": 4,
-        "winrate": 33.3
+        "winrate": 55.6
       },
       {
         "player": "BenjaminC",
@@ -38930,7 +39293,7 @@
       "score": -2.219031237399598,
       "first_match": "2026-01-29",
       "last_match": "2026-01-29",
-      "days_since_last_match": 249,
+      "days_since_last_match": 250,
       "winrate_all_time": 0.0,
       "winrate_last_30_days": 0.0,
       "worst_enemy": null,
@@ -38954,7 +39317,7 @@
       "score": 10.502246455419685,
       "first_match": "2026-01-30",
       "last_match": "2026-02-26",
-      "days_since_last_match": 221,
+      "days_since_last_match": 222,
       "winrate_all_time": 0.375,
       "winrate_last_30_days": 0.0,
       "worst_enemy": null,
@@ -38978,7 +39341,7 @@
       "score": 18.49575426944653,
       "first_match": "2026-01-30",
       "last_match": "2026-10-02",
-      "days_since_last_match": 3,
+      "days_since_last_match": 4,
       "winrate_all_time": 0.6666666666666666,
       "winrate_last_30_days": 0.8,
       "worst_enemy": "Rémi (3/5 60.0%)",
@@ -41861,6 +42224,34 @@
       {
         "date": "2026-10-05",
         "score": 18.49575426944653
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.49575426944653
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.49575426944653
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.49575426944653
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.49575426944653
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.49575426944653
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.49575426944653
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.49575426944653
       }
     ],
     "relations": [
@@ -41885,7 +42276,7 @@
       "score": -1.6441502533594665,
       "first_match": "2026-01-30",
       "last_match": "2026-02-06",
-      "days_since_last_match": 241,
+      "days_since_last_match": 242,
       "winrate_all_time": 0.0,
       "winrate_last_30_days": 0.0,
       "worst_enemy": null,
@@ -41909,7 +42300,7 @@
       "score": 18.905440949680752,
       "first_match": "2026-02-02",
       "last_match": "2026-10-02",
-      "days_since_last_match": 3,
+      "days_since_last_match": 4,
       "winrate_all_time": 0.5,
       "winrate_last_30_days": 0.3181818181818182,
       "worst_enemy": "Lily (16/21 76.2%)",
@@ -44760,6 +45151,34 @@
       {
         "date": "2026-10-05",
         "score": 18.905440949680752
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.905440949680752
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.905440949680752
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.905440949680752
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.905440949680752
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.905440949680752
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.905440949680752
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.905440949680752
       }
     ],
     "relations": [
@@ -44928,7 +45347,7 @@
       "score": 15.634153342693095,
       "first_match": "2026-02-02",
       "last_match": "2026-10-05",
-      "days_since_last_match": 0,
+      "days_since_last_match": 1,
       "winrate_all_time": 0.4339622641509434,
       "winrate_last_30_days": 0.2222222222222222,
       "worst_enemy": "Rémi (6/6 100.0%)",
@@ -47775,6 +48194,34 @@
       {
         "date": "2026-10-05",
         "score": 15.634153342693095
+      },
+      {
+        "date": "2026-10-06",
+        "score": 15.634153342693095
+      },
+      {
+        "date": "2026-10-06",
+        "score": 15.634153342693095
+      },
+      {
+        "date": "2026-10-06",
+        "score": 15.634153342693095
+      },
+      {
+        "date": "2026-10-06",
+        "score": 15.634153342693095
+      },
+      {
+        "date": "2026-10-06",
+        "score": 15.634153342693095
+      },
+      {
+        "date": "2026-10-06",
+        "score": 15.634153342693095
+      },
+      {
+        "date": "2026-10-06",
+        "score": 15.634153342693095
       }
     ],
     "relations": [
@@ -47907,7 +48354,7 @@
       "score": 5.28916547930163,
       "first_match": "2026-02-03",
       "last_match": "2026-02-03",
-      "days_since_last_match": 244,
+      "days_since_last_match": 245,
       "winrate_all_time": 1.0,
       "winrate_last_30_days": 0.0,
       "worst_enemy": null,
@@ -47925,22 +48372,22 @@
     "player": "Loïc",
     "stats": {
       "player": "Loïc",
-      "matches": 149,
-      "mu": 19.394680350568233,
-      "sigma": 1.2619058063825577,
-      "score": 15.60896293142056,
+      "matches": 152,
+      "mu": 19.419434017273108,
+      "sigma": 1.2524968102009302,
+      "score": 15.661943586670318,
       "first_match": "2026-02-04",
-      "last_match": "2026-10-05",
+      "last_match": "2026-10-06",
       "days_since_last_match": 0,
-      "winrate_all_time": 0.4161073825503356,
-      "winrate_last_30_days": 0.3870967741935484,
+      "winrate_all_time": 0.42105263157894735,
+      "winrate_last_30_days": 0.4117647058823529,
       "worst_enemy": "Rémi (19/22 86.4%)",
       "best_teammate": "Rémi (7/7 100.0%)",
       "longest_win_streak": 6,
       "longest_loss_streak": 5,
       "highest_trueskill_score": 15.663300648064409,
       "ranking_eligible": true,
-      "rank": 18.0
+      "rank": 16.0
     },
     "history": [
       {
@@ -50758,6 +51205,34 @@
       {
         "date": "2026-10-05",
         "score": 15.60896293142056
+      },
+      {
+        "date": "2026-10-06",
+        "score": 15.651337194551338
+      },
+      {
+        "date": "2026-10-06",
+        "score": 15.651337194551338
+      },
+      {
+        "date": "2026-10-06",
+        "score": 15.651337194551338
+      },
+      {
+        "date": "2026-10-06",
+        "score": 15.548930466277364
+      },
+      {
+        "date": "2026-10-06",
+        "score": 15.548930466277364
+      },
+      {
+        "date": "2026-10-06",
+        "score": 15.661943586670318
+      },
+      {
+        "date": "2026-10-06",
+        "score": 15.661943586670318
       }
     ],
     "relations": [
@@ -50900,19 +51375,19 @@
         "player": "Loïc",
         "other": "Lilou",
         "type": "teammate",
-        "matches": 13,
+        "matches": 14,
         "wins": 4,
-        "losses": 9,
-        "winrate": 30.8
+        "losses": 10,
+        "winrate": 28.6
       },
       {
         "player": "Loïc",
         "other": "Lilou",
         "type": "opponent",
-        "matches": 13,
-        "wins": 5,
+        "matches": 15,
+        "wins": 7,
         "losses": 8,
-        "winrate": 38.5
+        "winrate": 46.7
       },
       {
         "player": "Loïc",
@@ -50954,10 +51429,10 @@
         "player": "Loïc",
         "other": "Jules",
         "type": "teammate",
-        "matches": 10,
-        "wins": 2,
+        "matches": 11,
+        "wins": 3,
         "losses": 8,
-        "winrate": 20.0
+        "winrate": 27.3
       },
       {
         "player": "Loïc",
@@ -50998,7 +51473,7 @@
       "score": 14.851198376144843,
       "first_match": "2026-02-04",
       "last_match": "2026-10-02",
-      "days_since_last_match": 3,
+      "days_since_last_match": 4,
       "winrate_all_time": 0.43564356435643564,
       "winrate_last_30_days": 0.5,
       "worst_enemy": "Rémi (14/14 100.0%)",
@@ -53825,6 +54300,34 @@
       {
         "date": "2026-10-05",
         "score": 14.851198376144843
+      },
+      {
+        "date": "2026-10-06",
+        "score": 14.851198376144843
+      },
+      {
+        "date": "2026-10-06",
+        "score": 14.851198376144843
+      },
+      {
+        "date": "2026-10-06",
+        "score": 14.851198376144843
+      },
+      {
+        "date": "2026-10-06",
+        "score": 14.851198376144843
+      },
+      {
+        "date": "2026-10-06",
+        "score": 14.851198376144843
+      },
+      {
+        "date": "2026-10-06",
+        "score": 14.851198376144843
+      },
+      {
+        "date": "2026-10-06",
+        "score": 14.851198376144843
       }
     ],
     "relations": [
@@ -54023,20 +54526,20 @@
     "player": "ThéoM",
     "stats": {
       "player": "ThéoM",
-      "matches": 207,
-      "mu": 26.825614569716766,
-      "sigma": 1.102387002741396,
-      "score": 23.518453561492578,
+      "matches": 209,
+      "mu": 26.727872335982198,
+      "sigma": 1.1010538915314485,
+      "score": 23.424710661387852,
       "first_match": "2026-02-04",
-      "last_match": "2026-10-05",
+      "last_match": "2026-10-06",
       "days_since_last_match": 0,
-      "winrate_all_time": 0.5893719806763285,
-      "winrate_last_30_days": 0.72,
+      "winrate_all_time": 0.5885167464114832,
+      "winrate_last_30_days": 0.7115384615384616,
       "worst_enemy": "Rémi (25/35 71.4%)",
-      "best_teammate": "Roland (26/34 76.5%)",
+      "best_teammate": "Roland (27/35 77.1%)",
       "longest_win_streak": 11,
       "longest_loss_streak": 7,
-      "highest_trueskill_score": 23.518453561492578,
+      "highest_trueskill_score": 23.53086192071829,
       "ranking_eligible": true,
       "rank": 5.0
     },
@@ -56856,6 +57359,34 @@
       {
         "date": "2026-10-05",
         "score": 23.518453561492578
+      },
+      {
+        "date": "2026-10-06",
+        "score": 23.518453561492578
+      },
+      {
+        "date": "2026-10-06",
+        "score": 23.518453561492578
+      },
+      {
+        "date": "2026-10-06",
+        "score": 23.53086192071829
+      },
+      {
+        "date": "2026-10-06",
+        "score": 23.53086192071829
+      },
+      {
+        "date": "2026-10-06",
+        "score": 23.424710661387852
+      },
+      {
+        "date": "2026-10-06",
+        "score": 23.424710661387852
+      },
+      {
+        "date": "2026-10-06",
+        "score": 23.424710661387852
       }
     ],
     "relations": [
@@ -56899,10 +57430,10 @@
         "player": "ThéoM",
         "other": "Paul",
         "type": "teammate",
-        "matches": 19,
+        "matches": 20,
         "wins": 13,
-        "losses": 6,
-        "winrate": 68.4
+        "losses": 7,
+        "winrate": 65.0
       },
       {
         "player": "ThéoM",
@@ -56935,19 +57466,19 @@
         "player": "ThéoM",
         "other": "Roland",
         "type": "teammate",
-        "matches": 34,
-        "wins": 26,
+        "matches": 35,
+        "wins": 27,
         "losses": 8,
-        "winrate": 76.5
+        "winrate": 77.1
       },
       {
         "player": "ThéoM",
         "other": "Roland",
         "type": "opponent",
-        "matches": 38,
+        "matches": 39,
         "wins": 19,
-        "losses": 19,
-        "winrate": 50.0
+        "losses": 20,
+        "winrate": 48.7
       },
       {
         "player": "ThéoM",
@@ -57034,10 +57565,10 @@
         "player": "ThéoM",
         "other": "Jules",
         "type": "opponent",
-        "matches": 20,
-        "wins": 12,
+        "matches": 21,
+        "wins": 13,
         "losses": 8,
-        "winrate": 60.0
+        "winrate": 61.9
       },
       {
         "player": "ThéoM",
@@ -57079,10 +57610,10 @@
         "player": "ThéoM",
         "other": "BenjaminZ",
         "type": "opponent",
-        "matches": 38,
-        "wins": 27,
-        "losses": 11,
-        "winrate": 71.1
+        "matches": 40,
+        "wins": 28,
+        "losses": 12,
+        "winrate": 70.0
       },
       {
         "player": "ThéoM",
@@ -57186,7 +57717,7 @@
       "score": -2.202277508018227,
       "first_match": "2026-02-04",
       "last_match": "2026-04-03",
-      "days_since_last_match": 185,
+      "days_since_last_match": 186,
       "winrate_all_time": 0.2857142857142857,
       "winrate_last_30_days": 0.0,
       "worst_enemy": "Loïc (4/7 57.1%)",
@@ -57220,7 +57751,7 @@
       "score": 17.316828903279912,
       "first_match": "2026-02-04",
       "last_match": "2026-09-25",
-      "days_since_last_match": 10,
+      "days_since_last_match": 11,
       "winrate_all_time": 0.44565217391304346,
       "winrate_last_30_days": 0.35714285714285715,
       "worst_enemy": "ThéoM (8/10 80.0%)",
@@ -60039,6 +60570,34 @@
       {
         "date": "2026-10-05",
         "score": 17.316828903279912
+      },
+      {
+        "date": "2026-10-06",
+        "score": 17.316828903279912
+      },
+      {
+        "date": "2026-10-06",
+        "score": 17.316828903279912
+      },
+      {
+        "date": "2026-10-06",
+        "score": 17.316828903279912
+      },
+      {
+        "date": "2026-10-06",
+        "score": 17.316828903279912
+      },
+      {
+        "date": "2026-10-06",
+        "score": 17.316828903279912
+      },
+      {
+        "date": "2026-10-06",
+        "score": 17.316828903279912
+      },
+      {
+        "date": "2026-10-06",
+        "score": 17.316828903279912
       }
     ],
     "relations": [
@@ -60252,7 +60811,7 @@
       "score": 10.76722559859838,
       "first_match": "2026-02-04",
       "last_match": "2026-09-15",
-      "days_since_last_match": 20,
+      "days_since_last_match": 21,
       "winrate_all_time": 0.3333333333333333,
       "winrate_last_30_days": 0.0,
       "worst_enemy": null,
@@ -60270,15 +60829,15 @@
     "player": "BenjaminZ",
     "stats": {
       "player": "BenjaminZ",
-      "matches": 149,
-      "mu": 21.17039686464572,
-      "sigma": 1.22451490564041,
-      "score": 17.49685214772449,
+      "matches": 151,
+      "mu": 21.290608493846566,
+      "sigma": 1.2197688660008947,
+      "score": 17.631301895843883,
       "first_match": "2026-02-05",
-      "last_match": "2026-10-02",
-      "days_since_last_match": 3,
-      "winrate_all_time": 0.3624161073825503,
-      "winrate_last_30_days": 0.16129032258064516,
+      "last_match": "2026-10-06",
+      "days_since_last_match": 0,
+      "winrate_all_time": 0.36423841059602646,
+      "winrate_last_30_days": 0.18181818181818182,
       "worst_enemy": "Rémi (19/20 95.0%)",
       "best_teammate": "Lily (10/15 66.7%)",
       "longest_win_streak": 7,
@@ -63047,6 +63606,34 @@
       {
         "date": "2026-10-05",
         "score": 17.49685214772449
+      },
+      {
+        "date": "2026-10-06",
+        "score": 17.49685214772449
+      },
+      {
+        "date": "2026-10-06",
+        "score": 17.49685214772449
+      },
+      {
+        "date": "2026-10-06",
+        "score": 17.475536288687813
+      },
+      {
+        "date": "2026-10-06",
+        "score": 17.475536288687813
+      },
+      {
+        "date": "2026-10-06",
+        "score": 17.631301895843883
+      },
+      {
+        "date": "2026-10-06",
+        "score": 17.631301895843883
+      },
+      {
+        "date": "2026-10-06",
+        "score": 17.631301895843883
       }
     ],
     "relations": [
@@ -63054,19 +63641,19 @@
         "player": "BenjaminZ",
         "other": "Roland",
         "type": "teammate",
-        "matches": 24,
-        "wins": 15,
+        "matches": 25,
+        "wins": 16,
         "losses": 9,
-        "winrate": 62.5
+        "winrate": 64.0
       },
       {
         "player": "BenjaminZ",
         "other": "Roland",
         "type": "opponent",
-        "matches": 47,
+        "matches": 48,
         "wins": 14,
-        "losses": 33,
-        "winrate": 29.8
+        "losses": 34,
+        "winrate": 29.2
       },
       {
         "player": "BenjaminZ",
@@ -63135,10 +63722,10 @@
         "player": "BenjaminZ",
         "other": "Paul",
         "type": "opponent",
-        "matches": 15,
-        "wins": 6,
+        "matches": 16,
+        "wins": 7,
         "losses": 9,
-        "winrate": 40.0
+        "winrate": 43.8
       },
       {
         "player": "BenjaminZ",
@@ -63180,10 +63767,10 @@
         "player": "BenjaminZ",
         "other": "ThéoM",
         "type": "opponent",
-        "matches": 38,
-        "wins": 11,
-        "losses": 27,
-        "winrate": 28.9
+        "matches": 40,
+        "wins": 12,
+        "losses": 28,
+        "winrate": 30.0
       },
       {
         "player": "BenjaminZ",
@@ -63193,6 +63780,15 @@
         "wins": 4,
         "losses": 5,
         "winrate": 44.4
+      },
+      {
+        "player": "BenjaminZ",
+        "other": "Jules",
+        "type": "teammate",
+        "matches": 5,
+        "wins": 0,
+        "losses": 5,
+        "winrate": 0.0
       },
       {
         "player": "BenjaminZ",
@@ -63323,7 +63919,7 @@
       "score": 10.748007678011483,
       "first_match": "2026-02-06",
       "last_match": "2026-03-30",
-      "days_since_last_match": 189,
+      "days_since_last_match": 190,
       "winrate_all_time": 0.45454545454545453,
       "winrate_last_30_days": 0.0,
       "worst_enemy": "Lilou (4/5 80.0%)",
@@ -66058,6 +66654,34 @@
       {
         "date": "2026-10-05",
         "score": 10.748007678011483
+      },
+      {
+        "date": "2026-10-06",
+        "score": 10.748007678011483
+      },
+      {
+        "date": "2026-10-06",
+        "score": 10.748007678011483
+      },
+      {
+        "date": "2026-10-06",
+        "score": 10.748007678011483
+      },
+      {
+        "date": "2026-10-06",
+        "score": 10.748007678011483
+      },
+      {
+        "date": "2026-10-06",
+        "score": 10.748007678011483
+      },
+      {
+        "date": "2026-10-06",
+        "score": 10.748007678011483
+      },
+      {
+        "date": "2026-10-06",
+        "score": 10.748007678011483
       }
     ],
     "relations": [
@@ -66082,7 +66706,7 @@
       "score": 1.2300394794480098,
       "first_match": "2026-02-09",
       "last_match": "2026-07-22",
-      "days_since_last_match": 75,
+      "days_since_last_match": 76,
       "winrate_all_time": 0.16666666666666666,
       "winrate_last_30_days": 0.0,
       "worst_enemy": null,
@@ -66106,7 +66730,7 @@
       "score": 16.57573654250824,
       "first_match": "2026-02-10",
       "last_match": "2026-08-18",
-      "days_since_last_match": 48,
+      "days_since_last_match": 49,
       "winrate_all_time": 0.5714285714285714,
       "winrate_last_30_days": 0.0,
       "worst_enemy": "Lily (4/5 80.0%)",
@@ -68649,6 +69273,34 @@
       {
         "date": "2026-10-05",
         "score": 16.57573654250824
+      },
+      {
+        "date": "2026-10-06",
+        "score": 16.57573654250824
+      },
+      {
+        "date": "2026-10-06",
+        "score": 16.57573654250824
+      },
+      {
+        "date": "2026-10-06",
+        "score": 16.57573654250824
+      },
+      {
+        "date": "2026-10-06",
+        "score": 16.57573654250824
+      },
+      {
+        "date": "2026-10-06",
+        "score": 16.57573654250824
+      },
+      {
+        "date": "2026-10-06",
+        "score": 16.57573654250824
+      },
+      {
+        "date": "2026-10-06",
+        "score": 16.57573654250824
       }
     ],
     "relations": [
@@ -68682,7 +69334,7 @@
       "score": 2.601687451539913,
       "first_match": "2026-02-20",
       "last_match": "2026-02-20",
-      "days_since_last_match": 227,
+      "days_since_last_match": 228,
       "winrate_all_time": 0.5,
       "winrate_last_30_days": 0.0,
       "worst_enemy": null,
@@ -68706,7 +69358,7 @@
       "score": -0.057726986521867474,
       "first_match": "2026-03-03",
       "last_match": "2026-03-03",
-      "days_since_last_match": 216,
+      "days_since_last_match": 217,
       "winrate_all_time": 0.0,
       "winrate_last_30_days": 0.0,
       "worst_enemy": null,
@@ -68730,7 +69382,7 @@
       "score": 7.64398342975782,
       "first_match": "2026-06-10",
       "last_match": "2026-07-31",
-      "days_since_last_match": 66,
+      "days_since_last_match": 67,
       "winrate_all_time": 0.24705882352941178,
       "winrate_last_30_days": 0.0,
       "worst_enemy": "Lily (12/12 100.0%)",
@@ -70865,6 +71517,34 @@
       {
         "date": "2026-10-05",
         "score": 7.64398342975782
+      },
+      {
+        "date": "2026-10-06",
+        "score": 7.64398342975782
+      },
+      {
+        "date": "2026-10-06",
+        "score": 7.64398342975782
+      },
+      {
+        "date": "2026-10-06",
+        "score": 7.64398342975782
+      },
+      {
+        "date": "2026-10-06",
+        "score": 7.64398342975782
+      },
+      {
+        "date": "2026-10-06",
+        "score": 7.64398342975782
+      },
+      {
+        "date": "2026-10-06",
+        "score": 7.64398342975782
+      },
+      {
+        "date": "2026-10-06",
+        "score": 7.64398342975782
       }
     ],
     "relations": [
@@ -71069,7 +71749,7 @@
       "score": 8.736219035566153,
       "first_match": "2026-06-16",
       "last_match": "2026-06-26",
-      "days_since_last_match": 101,
+      "days_since_last_match": 102,
       "winrate_all_time": 0.5,
       "winrate_last_30_days": 0.0,
       "worst_enemy": null,
@@ -71093,7 +71773,7 @@
       "score": -0.6553506290934124,
       "first_match": "2026-06-17",
       "last_match": "2026-06-17",
-      "days_since_last_match": 110,
+      "days_since_last_match": 111,
       "winrate_all_time": 0.0,
       "winrate_last_30_days": 0.0,
       "worst_enemy": null,
@@ -71117,7 +71797,7 @@
       "score": -1.9446102836629144,
       "first_match": "2026-06-18",
       "last_match": "2026-06-18",
-      "days_since_last_match": 109,
+      "days_since_last_match": 110,
       "winrate_all_time": 0.0,
       "winrate_last_30_days": 0.0,
       "worst_enemy": null,
@@ -71141,7 +71821,7 @@
       "score": 2.621200649589486,
       "first_match": "2026-07-01",
       "last_match": "2026-07-01",
-      "days_since_last_match": 96,
+      "days_since_last_match": 97,
       "winrate_all_time": 0.5,
       "winrate_last_30_days": 0.0,
       "worst_enemy": null,
@@ -71165,7 +71845,7 @@
       "score": 2.403466819786974,
       "first_match": "2026-07-21",
       "last_match": "2026-07-21",
-      "days_since_last_match": 76,
+      "days_since_last_match": 77,
       "winrate_all_time": 0.5,
       "winrate_last_30_days": 0.0,
       "worst_enemy": null,
@@ -71189,7 +71869,7 @@
       "score": 18.040052461033575,
       "first_match": "2026-07-27",
       "last_match": "2026-10-05",
-      "days_since_last_match": 0,
+      "days_since_last_match": 1,
       "winrate_all_time": 0.4423076923076923,
       "winrate_last_30_days": 0.4444444444444444,
       "worst_enemy": "Lily (13/17 76.5%)",
@@ -72568,6 +73248,34 @@
       {
         "date": "2026-10-05",
         "score": 18.040052461033575
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.040052461033575
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.040052461033575
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.040052461033575
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.040052461033575
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.040052461033575
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.040052461033575
+      },
+      {
+        "date": "2026-10-06",
+        "score": 18.040052461033575
       }
     ],
     "relations": [
@@ -72691,7 +73399,7 @@
       "score": -0.951132350947514,
       "first_match": "2026-08-25",
       "last_match": "2026-08-25",
-      "days_since_last_match": 41,
+      "days_since_last_match": 42,
       "winrate_all_time": 0.0,
       "winrate_last_30_days": 0.0,
       "worst_enemy": null,
@@ -72715,7 +73423,7 @@
       "score": 16.960842458391742,
       "first_match": "2026-09-15",
       "last_match": "2026-09-15",
-      "days_since_last_match": 20,
+      "days_since_last_match": 21,
       "winrate_all_time": 0.8333333333333334,
       "winrate_last_30_days": 0.8333333333333334,
       "worst_enemy": null,
@@ -72739,7 +73447,7 @@
       "score": -0.538495112688242,
       "first_match": "2026-09-15",
       "last_match": "2026-09-15",
-      "days_since_last_match": 20,
+      "days_since_last_match": 21,
       "winrate_all_time": 0.0,
       "winrate_last_30_days": 0.0,
       "worst_enemy": null,
@@ -72757,20 +73465,20 @@
     "player": "Joris",
     "stats": {
       "player": "Joris",
-      "matches": 25,
-      "mu": 15.093372565470569,
-      "sigma": 2.849723244608531,
-      "score": 6.544202831644975,
+      "matches": 29,
+      "mu": 14.872629617554885,
+      "sigma": 2.637254804978974,
+      "score": 6.960865202617963,
       "first_match": "2026-09-16",
-      "last_match": "2026-10-05",
+      "last_match": "2026-10-06",
       "days_since_last_match": 0,
-      "winrate_all_time": 0.12,
-      "winrate_last_30_days": 0.12,
+      "winrate_all_time": 0.13793103448275862,
+      "winrate_last_30_days": 0.13793103448275862,
       "worst_enemy": "ThéoM (10/10 100.0%)",
       "best_teammate": null,
       "longest_win_streak": 1,
       "longest_loss_streak": 9,
-      "highest_trueskill_score": 6.657798898341866,
+      "highest_trueskill_score": 7.228599763921727,
       "ranking_eligible": true,
       "rank": 25.0
     },
@@ -73118,6 +73826,34 @@
       {
         "date": "2026-10-05",
         "score": 6.544202831644975
+      },
+      {
+        "date": "2026-10-06",
+        "score": 6.473742157267644
+      },
+      {
+        "date": "2026-10-06",
+        "score": 6.443934470002262
+      },
+      {
+        "date": "2026-10-06",
+        "score": 6.443934470002262
+      },
+      {
+        "date": "2026-10-06",
+        "score": 7.228599763921727
+      },
+      {
+        "date": "2026-10-06",
+        "score": 7.228599763921727
+      },
+      {
+        "date": "2026-10-06",
+        "score": 6.960865202617963
+      },
+      {
+        "date": "2026-10-06",
+        "score": 6.960865202617963
       }
     ],
     "relations": [
@@ -73143,10 +73879,10 @@
         "player": "Joris",
         "other": "Jules",
         "type": "opponent",
-        "matches": 6,
+        "matches": 7,
         "wins": 1,
-        "losses": 5,
-        "winrate": 16.7
+        "losses": 6,
+        "winrate": 14.3
       }
     ]
   },
@@ -73160,7 +73896,7 @@
       "score": 10.049647866085962,
       "first_match": "2026-10-02",
       "last_match": "2026-10-05",
-      "days_since_last_match": 0,
+      "days_since_last_match": 1,
       "winrate_all_time": 1.0,
       "winrate_last_30_days": 1.0,
       "worst_enemy": null,

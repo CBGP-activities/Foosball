@@ -2278,5 +2278,89 @@
         "wins": 4
       }
     ]
+  },
+  {
+    "week_start": "2026-10-05",
+    "week_end": "2026-10-09",
+    "matches_played": 28,
+    "new_players": [
+      {
+        "player": "Moana",
+        "matches": 1
+      }
+    ],
+    "most_active": [
+      {
+        "player": "ThéoM",
+        "matches": 15
+      },
+      {
+        "player": "Lilou",
+        "matches": 15
+      },
+      {
+        "player": "BenjaminC",
+        "matches": 12
+      }
+    ],
+    "most_wins": [
+      {
+        "player": "ThéoM",
+        "wins": 12,
+        "matches": 15
+      },
+      {
+        "player": "BenjaminC",
+        "wins": 7,
+        "matches": 12
+      },
+      {
+        "player": "Lily",
+        "wins": 7,
+        "matches": 9
+      }
+    ],
+    "best_trueskill_gain": [
+      {
+        "player": "Marguerite",
+        "gain": 8.92
+      },
+      {
+        "player": "Joris",
+        "gain": 1.03
+      },
+      {
+        "player": "ThéoM",
+        "gain": 0.7
+      }
+    ],
+    "ranking_climbers": [
+      {
+        "player": "Marguerite",
+        "places": 18,
+        "old_rank": 27,
+        "new_rank": 9
+      },
+      {
+        "player": "Joris",
+        "places": 2,
+        "old_rank": 31,
+        "new_rank": 29
+      }
+    ],
+    "hot_streak": [
+      {
+        "player": "ThéoM",
+        "wins": 8
+      },
+      {
+        "player": "Lily",
+        "wins": 5
+      },
+      {
+        "player": "Roland",
+        "wins": 4
+      }
+    ]
   }
 ]

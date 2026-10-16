@@ -1,29 +1,5 @@
 [
   {
-    "date": "2026-10-14 00:00:00",
-    "team_red": [
-      "Moana",
-      "BenjaminZ"
-    ],
-    "team_blue": [
-      "PabloR",
-      "Lily"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-10-15 00:00:00",
-    "team_red": [
-      "BenjaminC",
-      "Moana"
-    ],
-    "team_blue": [
-      "Paul",
-      "PabloR"
-    ],
-    "winner": "blue"
-  },
-  {
     "date": "2026-10-15 00:00:00",
     "team_red": [
       "Roland",
@@ -238,5 +214,29 @@
       "Paul"
     ],
     "winner": "red"
+  },
+  {
+    "date": "2026-10-16 00:00:00",
+    "team_red": [
+      "ThéoM",
+      "Paul"
+    ],
+    "team_blue": [
+      "Lilou",
+      "Lily"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-10-16 00:00:00",
+    "team_red": [
+      "Lilou",
+      "ThéoM"
+    ],
+    "team_blue": [
+      "EmmanuelP",
+      "Lily"
+    ],
+    "winner": "blue"
   }
 ]

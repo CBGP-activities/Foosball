@@ -1,65 +1,5 @@
 [
   {
-    "date": "2026-10-15 00:00:00",
-    "team_red": [
-      "ThéoM",
-      "Lilou"
-    ],
-    "team_blue": [
-      "Paul",
-      "Roland"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-10-16 00:00:00",
-    "team_red": [
-      "Lilou",
-      "Vadim"
-    ],
-    "team_blue": [
-      "Paul",
-      "ThéoM"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-10-16 00:00:00",
-    "team_red": [
-      "PabloR",
-      "Joris"
-    ],
-    "team_blue": [
-      "BenjaminZ",
-      "Loïc"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-10-16 00:00:00",
-    "team_red": [
-      "Moana",
-      "Lily"
-    ],
-    "team_blue": [
-      "EmmanuelP",
-      "Rémi"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-10-16 00:00:00",
-    "team_red": [
-      "LaureS",
-      "Paul"
-    ],
-    "team_blue": [
-      "Lilou",
-      "Vadim"
-    ],
-    "winner": "red"
-  },
-  {
     "date": "2026-10-16 00:00:00",
     "team_red": [
       "Lily",
@@ -238,5 +178,65 @@
       "Jules"
     ],
     "winner": "blue"
+  },
+  {
+    "date": "2026-10-20 00:00:00",
+    "team_red": [
+      "Lilou",
+      "Joris"
+    ],
+    "team_blue": [
+      "ThéoM",
+      "Vadim"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-10-20 00:00:00",
+    "team_red": [
+      "Moana",
+      "BenjaminZ"
+    ],
+    "team_blue": [
+      "Paul",
+      "BenjaminC"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-10-20 00:00:00",
+    "team_red": [
+      "PabloR",
+      "Loïc"
+    ],
+    "team_blue": [
+      "Lily",
+      "Roland"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-10-20 00:00:00",
+    "team_red": [
+      "Jules",
+      "JulieB"
+    ],
+    "team_blue": [
+      "EmmanuelP",
+      "ManonV"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-10-20 00:00:00",
+    "team_red": [
+      "BenjaminC",
+      "ThéoM"
+    ],
+    "team_blue": [
+      "Roland",
+      "Paul"
+    ],
+    "winner": "red"
   }
 ]

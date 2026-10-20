@@ -478,7 +478,7 @@
     "best_trueskill_gain": [
       {
         "player": "PhilippeA",
-        "gain": 4.67
+        "gain": 5.86
       },
       {
         "player": "Loïc",
@@ -1451,15 +1451,15 @@
     "best_trueskill_gain": [
       {
         "player": "Sabine",
-        "gain": 6.63
+        "gain": 5.13
+      },
+      {
+        "player": "NathV",
+        "gain": 1.76
       },
       {
         "player": "LaureS",
         "gain": 1.59
-      },
-      {
-        "player": "ThéoM",
-        "gain": 1.33
       }
     ],
     "ranking_climbers": [
@@ -1539,12 +1539,12 @@
         "gain": 7.14
       },
       {
-        "player": "NathV",
-        "gain": 1.88
+        "player": "Sabine",
+        "gain": 1.49
       },
       {
-        "player": "BenjaminZ",
-        "gain": 1.14
+        "player": "NathV",
+        "gain": 1.29
       }
     ],
     "ranking_climbers": [
@@ -1706,15 +1706,15 @@
     "best_trueskill_gain": [
       {
         "player": "ThéoM",
-        "gain": 2.07
+        "gain": 2.39
+      },
+      {
+        "player": "Roland",
+        "gain": 1.59
       },
       {
         "player": "PhilippeA",
         "gain": 1.53
-      },
-      {
-        "player": "Roland",
-        "gain": 1.29
       }
     ],
     "ranking_climbers": [
@@ -2072,7 +2072,7 @@
       },
       {
         "player": "ManonV",
-        "gain": 0.76
+        "gain": 0.54
       }
     ],
     "ranking_climbers": [
@@ -2233,7 +2233,7 @@
     "best_trueskill_gain": [
       {
         "player": "ThéoM",
-        "gain": 1.04
+        "gain": 1.25
       },
       {
         "player": "Joris",
@@ -2330,12 +2330,12 @@
         "gain": 8.92
       },
       {
-        "player": "ThéoM",
-        "gain": 0.91
-      },
-      {
         "player": "BenjaminC",
         "gain": 0.74
+      },
+      {
+        "player": "ThéoM",
+        "gain": 0.71
       }
     ],
     "ranking_climbers": [
@@ -2414,7 +2414,7 @@
       },
       {
         "player": "Lilou",
-        "gain": 0.47
+        "gain": 0.49
       }
     ],
     "ranking_climbers": [

@@ -444,10 +444,10 @@
     "player": "Julia",
     "other": "Paul",
     "type": "opponent",
-    "matches": 19,
+    "matches": 20,
     "wins": 11,
-    "losses": 8,
-    "winrate": 57.9
+    "losses": 9,
+    "winrate": 55.0
   },
   {
     "player": "Roland",
@@ -498,10 +498,10 @@
     "player": "Paul",
     "other": "Julia",
     "type": "opponent",
-    "matches": 19,
-    "wins": 8,
+    "matches": 20,
+    "wins": 9,
     "losses": 11,
-    "winrate": 42.1
+    "winrate": 45.0
   },
   {
     "player": "Lilou",
@@ -579,19 +579,19 @@
     "player": "Julia",
     "other": "Rémi",
     "type": "opponent",
-    "matches": 14,
+    "matches": 15,
     "wins": 0,
-    "losses": 14,
+    "losses": 15,
     "winrate": 0.0
   },
   {
     "player": "Paul",
     "other": "Rémi",
     "type": "teammate",
-    "matches": 13,
-    "wins": 10,
+    "matches": 14,
+    "wins": 11,
     "losses": 3,
-    "winrate": 76.9
+    "winrate": 78.6
   },
   {
     "player": "Paul",
@@ -606,8 +606,8 @@
     "player": "Rémi",
     "other": "Julia",
     "type": "opponent",
-    "matches": 14,
-    "wins": 14,
+    "matches": 15,
+    "wins": 15,
     "losses": 0,
     "winrate": 100.0
   },
@@ -615,10 +615,10 @@
     "player": "Rémi",
     "other": "Paul",
     "type": "teammate",
-    "matches": 13,
-    "wins": 10,
+    "matches": 14,
+    "wins": 11,
     "losses": 3,
-    "winrate": 76.9
+    "winrate": 78.6
   },
   {
     "player": "Rémi",
@@ -2622,8 +2622,8 @@
     "player": "Rémi",
     "other": "JulieB",
     "type": "opponent",
-    "matches": 14,
-    "wins": 14,
+    "matches": 15,
+    "wins": 15,
     "losses": 0,
     "winrate": 100.0
   },
@@ -2658,9 +2658,9 @@
     "player": "JulieB",
     "other": "Rémi",
     "type": "opponent",
-    "matches": 14,
+    "matches": 15,
     "wins": 0,
-    "losses": 14,
+    "losses": 15,
     "winrate": 0.0
   },
   {
@@ -2964,10 +2964,10 @@
     "player": "JulieB",
     "other": "Paul",
     "type": "opponent",
-    "matches": 7,
+    "matches": 8,
     "wins": 2,
-    "losses": 5,
-    "winrate": 28.6
+    "losses": 6,
+    "winrate": 25.0
   },
   {
     "player": "Paul",
@@ -2982,10 +2982,10 @@
     "player": "Paul",
     "other": "JulieB",
     "type": "opponent",
-    "matches": 7,
-    "wins": 5,
+    "matches": 8,
+    "wins": 6,
     "losses": 2,
-    "winrate": 71.4
+    "winrate": 75.0
   },
   {
     "player": "Loïc",

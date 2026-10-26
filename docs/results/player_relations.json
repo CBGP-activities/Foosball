@@ -813,10 +813,10 @@
     "player": "Rémi",
     "other": "Lilou",
     "type": "opponent",
-    "matches": 50,
+    "matches": 51,
     "wins": 44,
-    "losses": 6,
-    "winrate": 88.0
+    "losses": 7,
+    "winrate": 86.3
   },
   {
     "player": "Roland",
@@ -858,10 +858,10 @@
     "player": "Lilou",
     "other": "Rémi",
     "type": "opponent",
-    "matches": 50,
-    "wins": 6,
+    "matches": 51,
+    "wins": 7,
     "losses": 44,
-    "winrate": 12.0
+    "winrate": 13.7
   },
   {
     "player": "Lilou",
@@ -876,10 +876,10 @@
     "player": "Lilou",
     "other": "Jules",
     "type": "opponent",
-    "matches": 50,
-    "wins": 21,
-    "losses": 29,
-    "winrate": 42.0
+    "matches": 53,
+    "wins": 22,
+    "losses": 31,
+    "winrate": 41.5
   },
   {
     "player": "Raphaël",
@@ -921,10 +921,10 @@
     "player": "Rémi",
     "other": "Jules",
     "type": "teammate",
-    "matches": 28,
-    "wins": 20,
-    "losses": 8,
-    "winrate": 71.4
+    "matches": 30,
+    "wins": 21,
+    "losses": 9,
+    "winrate": 70.0
   },
   {
     "player": "Rémi",
@@ -957,10 +957,10 @@
     "player": "Jules",
     "other": "Rémi",
     "type": "teammate",
-    "matches": 28,
-    "wins": 20,
-    "losses": 8,
-    "winrate": 71.4
+    "matches": 30,
+    "wins": 21,
+    "losses": 9,
+    "winrate": 70.0
   },
   {
     "player": "Jules",
@@ -984,10 +984,10 @@
     "player": "Jules",
     "other": "Lilou",
     "type": "opponent",
-    "matches": 50,
-    "wins": 29,
-    "losses": 21,
-    "winrate": 58.0
+    "matches": 53,
+    "wins": 31,
+    "losses": 22,
+    "winrate": 58.5
   },
   {
     "player": "Jules",
@@ -1128,10 +1128,10 @@
     "player": "Lilou",
     "other": "BenjaminC",
     "type": "opponent",
-    "matches": 26,
+    "matches": 28,
     "wins": 12,
-    "losses": 14,
-    "winrate": 46.2
+    "losses": 16,
+    "winrate": 42.9
   },
   {
     "player": "Rémi",
@@ -1182,19 +1182,19 @@
     "player": "BenjaminC",
     "other": "Lilou",
     "type": "opponent",
-    "matches": 26,
-    "wins": 14,
+    "matches": 28,
+    "wins": 16,
     "losses": 12,
-    "winrate": 53.8
+    "winrate": 57.1
   },
   {
     "player": "Jules",
     "other": "BenjaminC",
     "type": "teammate",
-    "matches": 9,
-    "wins": 7,
+    "matches": 11,
+    "wins": 9,
     "losses": 2,
-    "winrate": 77.8
+    "winrate": 81.8
   },
   {
     "player": "Jules",
@@ -1209,10 +1209,10 @@
     "player": "BenjaminC",
     "other": "Jules",
     "type": "teammate",
-    "matches": 9,
-    "wins": 7,
+    "matches": 11,
+    "wins": 9,
     "losses": 2,
-    "winrate": 77.8
+    "winrate": 81.8
   },
   {
     "player": "BenjaminC",
@@ -1614,10 +1614,10 @@
     "player": "JulieB",
     "other": "ThéoM",
     "type": "teammate",
-    "matches": 11,
+    "matches": 12,
     "wins": 8,
-    "losses": 3,
-    "winrate": 72.7
+    "losses": 4,
+    "winrate": 66.7
   },
   {
     "player": "JulieB",
@@ -1650,10 +1650,10 @@
     "player": "ThéoM",
     "other": "JulieB",
     "type": "teammate",
-    "matches": 11,
+    "matches": 12,
     "wins": 8,
-    "losses": 3,
-    "winrate": 72.7
+    "losses": 4,
+    "winrate": 66.7
   },
   {
     "player": "ThéoM",
@@ -2613,10 +2613,10 @@
     "player": "ThéoM",
     "other": "Lilou",
     "type": "teammate",
-    "matches": 18,
-    "wins": 10,
-    "losses": 8,
-    "winrate": 55.6
+    "matches": 21,
+    "wins": 11,
+    "losses": 10,
+    "winrate": 52.4
   },
   {
     "player": "ThéoM",
@@ -2631,10 +2631,10 @@
     "player": "Lilou",
     "other": "ThéoM",
     "type": "teammate",
-    "matches": 18,
-    "wins": 10,
-    "losses": 8,
-    "winrate": 55.6
+    "matches": 21,
+    "wins": 11,
+    "losses": 10,
+    "winrate": 52.4
   },
   {
     "player": "Lilou",
@@ -2658,8 +2658,8 @@
     "player": "Rémi",
     "other": "JulieB",
     "type": "opponent",
-    "matches": 15,
-    "wins": 15,
+    "matches": 16,
+    "wins": 16,
     "losses": 0,
     "winrate": 100.0
   },
@@ -2694,9 +2694,9 @@
     "player": "JulieB",
     "other": "Rémi",
     "type": "opponent",
-    "matches": 15,
+    "matches": 16,
     "wins": 0,
-    "losses": 15,
+    "losses": 16,
     "winrate": 0.0
   },
   {
@@ -3270,10 +3270,10 @@
     "player": "ThéoM",
     "other": "BenjaminC",
     "type": "opponent",
-    "matches": 29,
+    "matches": 31,
     "wins": 15,
-    "losses": 14,
-    "winrate": 51.7
+    "losses": 16,
+    "winrate": 48.4
   },
   {
     "player": "BenjaminC",
@@ -3288,10 +3288,10 @@
     "player": "BenjaminC",
     "other": "ThéoM",
     "type": "opponent",
-    "matches": 29,
-    "wins": 14,
+    "matches": 31,
+    "wins": 16,
     "losses": 15,
-    "winrate": 48.3
+    "winrate": 51.6
   },
   {
     "player": "BenjaminC",
@@ -3360,10 +3360,10 @@
     "player": "Jules",
     "other": "ThéoM",
     "type": "opponent",
-    "matches": 28,
-    "wins": 12,
-    "losses": 16,
-    "winrate": 42.9
+    "matches": 32,
+    "wins": 15,
+    "losses": 17,
+    "winrate": 46.9
   },
   {
     "player": "ThéoM",
@@ -3378,10 +3378,10 @@
     "player": "ThéoM",
     "other": "Jules",
     "type": "opponent",
-    "matches": 28,
-    "wins": 16,
-    "losses": 12,
-    "winrate": 57.1
+    "matches": 32,
+    "wins": 17,
+    "losses": 15,
+    "winrate": 53.1
   },
   {
     "player": "Jules",
@@ -3522,10 +3522,10 @@
     "player": "Rémi",
     "other": "ThéoM",
     "type": "opponent",
-    "matches": 44,
-    "wins": 31,
-    "losses": 13,
-    "winrate": 70.5
+    "matches": 46,
+    "wins": 32,
+    "losses": 14,
+    "winrate": 69.6
   },
   {
     "player": "ThéoM",
@@ -3540,10 +3540,10 @@
     "player": "ThéoM",
     "other": "Rémi",
     "type": "opponent",
-    "matches": 44,
-    "wins": 13,
-    "losses": 31,
-    "winrate": 29.5
+    "matches": 46,
+    "wins": 14,
+    "losses": 32,
+    "winrate": 30.4
   },
   {
     "player": "Jules",
@@ -3630,10 +3630,10 @@
     "player": "Jules",
     "other": "JulieB",
     "type": "opponent",
-    "matches": 9,
-    "wins": 2,
+    "matches": 10,
+    "wins": 3,
     "losses": 7,
-    "winrate": 22.2
+    "winrate": 30.0
   },
   {
     "player": "JulieB",
@@ -3648,10 +3648,10 @@
     "player": "JulieB",
     "other": "Jules",
     "type": "opponent",
-    "matches": 9,
+    "matches": 10,
     "wins": 7,
-    "losses": 2,
-    "winrate": 77.8
+    "losses": 3,
+    "winrate": 70.0
   },
   {
     "player": "JulieB",

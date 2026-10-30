@@ -53,5 +53,10 @@
     "player": "EmmanuelP",
     "photo":"assets/players/EmmanuelP.jpg",
     "comment":"Comment faire simple quand on peut faire compliqué ? Réponse : passe arrière !"
+  },
+  {
+    "player": "Lilou",
+    "photo":"assets/players/Lilou.jpg",
+    "comment":"Je ne perds jamais, je vis des expériences pédagogiques."
   }
 ]

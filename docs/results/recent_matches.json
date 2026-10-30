@@ -1,113 +1,5 @@
 [
   {
-    "date": "2026-10-28 00:00:00",
-    "team_red": [
-      "EmmanuelP",
-      "BenjaminC"
-    ],
-    "team_blue": [
-      "Sabine",
-      "Vadim"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-10-28 00:00:00",
-    "team_red": [
-      "Jules",
-      "PabloR"
-    ],
-    "team_blue": [
-      "Julia",
-      "Paul"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-10-28 00:00:00",
-    "team_red": [
-      "EmmanuelP",
-      "Sabine"
-    ],
-    "team_blue": [
-      "Lily",
-      "BenjaminC"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-10-29 00:00:00",
-    "team_red": [
-      "Lilou",
-      "Vadim"
-    ],
-    "team_blue": [
-      "PabloR",
-      "ThéoM"
-    ],
-    "winner": "red"
-  },
-  {
-    "date": "2026-10-29 00:00:00",
-    "team_red": [
-      "Joris",
-      "Loïc"
-    ],
-    "team_blue": [
-      "Paul",
-      "Rémi"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-10-29 00:00:00",
-    "team_red": [
-      "Lilou",
-      "ThéoM"
-    ],
-    "team_blue": [
-      "Lily",
-      "PabloR"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-10-29 00:00:00",
-    "team_red": [
-      "Vadim",
-      "Joris"
-    ],
-    "team_blue": [
-      "Paul",
-      "Loïc"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-10-29 00:00:00",
-    "team_red": [
-      "Rémi",
-      "ThéoM"
-    ],
-    "team_blue": [
-      "Lily",
-      "PabloR"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-10-29 00:00:00",
-    "team_red": [
-      "Lilou",
-      "Joris"
-    ],
-    "team_blue": [
-      "Vadim",
-      "Julia"
-    ],
-    "winner": "blue"
-  },
-  {
     "date": "2026-10-29 00:00:00",
     "team_red": [
       "Julia",
@@ -236,6 +128,114 @@
     "team_blue": [
       "Vadim",
       "Rémi"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-10-30 00:00:00",
+    "team_red": [
+      "EmmanuelP",
+      "ThéoM"
+    ],
+    "team_blue": [
+      "Rémi",
+      "Jules"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-10-30 00:00:00",
+    "team_red": [
+      "BenjaminZ",
+      "Julia"
+    ],
+    "team_blue": [
+      "Paul",
+      "Lilou"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-10-30 00:00:00",
+    "team_red": [
+      "BenjaminC",
+      "AnnaL"
+    ],
+    "team_blue": [
+      "ThéoM",
+      "PabloR"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-10-30 00:00:00",
+    "team_red": [
+      "BenjaminZ",
+      "Rémi"
+    ],
+    "team_blue": [
+      "Lily",
+      "Paul"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-10-30 00:00:00",
+    "team_red": [
+      "BenjaminC",
+      "PabloR"
+    ],
+    "team_blue": [
+      "Lilou",
+      "BenjaminZ"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-10-30 00:00:00",
+    "team_red": [
+      "Lilou",
+      "Rémi"
+    ],
+    "team_blue": [
+      "Paul",
+      "BenjaminC"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-10-30 00:00:00",
+    "team_red": [
+      "Paul",
+      "BenjaminC"
+    ],
+    "team_blue": [
+      "Lilou",
+      "Rémi"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-10-30 00:00:00",
+    "team_red": [
+      "Lilou",
+      "Rémi"
+    ],
+    "team_blue": [
+      "Paul",
+      "BenjaminC"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-10-30 00:00:00",
+    "team_red": [
+      "NathV",
+      "Rémi"
+    ],
+    "team_blue": [
+      "BenjaminC",
+      "Lilou"
     ],
     "winner": "red"
   }

@@ -2625,7 +2625,7 @@
   {
     "week_start": "2026-11-02",
     "week_end": "2026-11-06",
-    "matches_played": 69,
+    "matches_played": 68,
     "new_players": [
       {
         "player": "Justin",
@@ -2635,46 +2635,46 @@
     "most_active": [
       {
         "player": "ThéoM",
-        "matches": 41
+        "matches": 40
       },
       {
         "player": "Lilou",
-        "matches": 39
+        "matches": 38
       },
       {
         "player": "BenjaminC",
-        "matches": 30
+        "matches": 29
       }
     ],
     "most_wins": [
       {
-        "player": "Lilou",
-        "wins": 19,
-        "matches": 39
-      },
-      {
         "player": "BenjaminC",
         "wins": 18,
-        "matches": 30
+        "matches": 29
+      },
+      {
+        "player": "Lilou",
+        "wins": 18,
+        "matches": 38
       },
       {
         "player": "Rémi",
-        "wins": 18,
-        "matches": 21
+        "wins": 17,
+        "matches": 20
       }
     ],
     "best_trueskill_gain": [
       {
         "player": "Lilou",
-        "gain": 1.44
+        "gain": 1.16
       },
       {
-        "player": "EmmanuelP",
-        "gain": 0.84
+        "player": "BenjaminZ",
+        "gain": 1.08
       },
       {
         "player": "BenjaminC",
-        "gain": 0.75
+        "gain": 0.87
       }
     ],
     "ranking_climbers": [
@@ -2700,7 +2700,7 @@
     "hot_streak": [
       {
         "player": "Rémi",
-        "wins": 9
+        "wins": 8
       },
       {
         "player": "BenjaminC",

@@ -2,18 +2,6 @@
   {
     "date": "2026-11-06 00:00:00",
     "team_red": [
-      "Julia",
-      "Rémi"
-    ],
-    "team_blue": [
-      "EmmanuelP",
-      "BenjaminC"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-11-06 00:00:00",
-    "team_red": [
       "Lily",
       "ThéoM"
     ],
@@ -238,5 +226,17 @@
       "BenjaminC"
     ],
     "winner": "red"
+  },
+  {
+    "date": "2026-11-06 00:00:00",
+    "team_red": [
+      "ThéoM",
+      "BenjaminC"
+    ],
+    "team_blue": [
+      "Rémi",
+      "Lilou"
+    ],
+    "winner": "blue"
   }
 ]

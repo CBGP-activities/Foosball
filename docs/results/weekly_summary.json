@@ -1885,7 +1885,7 @@
       },
       {
         "player": "BenjaminZ",
-        "gain": 0.66
+        "gain": 0.9
       },
       {
         "player": "Vadim",
@@ -2494,12 +2494,12 @@
         "gain": 3.1
       },
       {
-        "player": "BenjaminC",
-        "gain": 0.91
-      },
-      {
         "player": "Vadim",
         "gain": 0.8
+      },
+      {
+        "player": "BenjaminC",
+        "gain": 0.63
       }
     ],
     "ranking_climbers": [
@@ -2625,7 +2625,7 @@
   {
     "week_start": "2026-11-02",
     "week_end": "2026-11-06",
-    "matches_played": 68,
+    "matches_played": 69,
     "new_players": [
       {
         "player": "Justin",
@@ -2635,46 +2635,46 @@
     "most_active": [
       {
         "player": "ThéoM",
-        "matches": 40
+        "matches": 41
       },
       {
         "player": "Lilou",
-        "matches": 38
+        "matches": 39
       },
       {
         "player": "BenjaminC",
-        "matches": 29
+        "matches": 30
       }
     ],
     "most_wins": [
       {
-        "player": "BenjaminC",
-        "wins": 18,
-        "matches": 29
+        "player": "Lilou",
+        "wins": 19,
+        "matches": 39
       },
       {
-        "player": "Lilou",
+        "player": "BenjaminC",
         "wins": 18,
-        "matches": 38
+        "matches": 30
       },
       {
         "player": "Rémi",
-        "wins": 17,
-        "matches": 20
+        "wins": 18,
+        "matches": 21
       }
     ],
     "best_trueskill_gain": [
       {
         "player": "Lilou",
-        "gain": 1.33
-      },
-      {
-        "player": "BenjaminC",
-        "gain": 0.86
+        "gain": 1.44
       },
       {
         "player": "EmmanuelP",
         "gain": 0.84
+      },
+      {
+        "player": "BenjaminC",
+        "gain": 0.75
       }
     ],
     "ranking_climbers": [
@@ -2700,7 +2700,7 @@
     "hot_streak": [
       {
         "player": "Rémi",
-        "wins": 8
+        "wins": 9
       },
       {
         "player": "BenjaminC",

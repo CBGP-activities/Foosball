@@ -62,6 +62,7 @@ def export_data(df, filename):
 # =====================
 # LECTURE DES MATCHS
 # =====================
+
 def load_matches():
 
     if USE_SUPABASE:
@@ -73,18 +74,39 @@ def load_matches():
             SUPABASE_KEY
         )
 
-        response = (
-            supabase
-            .table("matches")
-            .select("*")
-            .order("id")
-            .execute()
-        )
+        all_matches = []
 
-        df = pd.DataFrame(response.data)
+        page_size = 1000
+        start = 0
+
+        while True:
+
+            response = (
+                supabase
+                .table("matches")
+                .select("*")
+                .order("id")
+                .range(start, start + page_size - 1)
+                .execute()
+            )
+
+            batch = response.data
+
+            all_matches.extend(batch)
+
+            print(
+                f"Matchs récupérés : {len(all_matches)}"
+            )
+
+            if len(batch) < page_size:
+                break
+
+            start += page_size
+
+        df = pd.DataFrame(all_matches)
 
         df = df[[
-			"id",
+            "id",
             "date",
             "rouge_p1",
             "rouge_p2",
@@ -92,6 +114,10 @@ def load_matches():
             "bleu_p2",
             "vainqueur"
         ]]
+
+        print(
+            f"Total des matchs récupérés : {len(df)}"
+        )
 
         return df
 
@@ -103,6 +129,7 @@ def load_matches():
             INPUT_EXCEL,
             sheet_name=SHEET_NAME
         )
+
 
 def export_excel_backup(df):
 

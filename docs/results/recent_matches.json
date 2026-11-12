@@ -2,18 +2,6 @@
   {
     "date": "2026-11-10 00:00:00",
     "team_red": [
-      "Lilou",
-      "PabloR"
-    ],
-    "team_blue": [
-      "Jules",
-      "BenjaminC"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-11-10 00:00:00",
-    "team_red": [
       "Roland",
       "Paul"
     ],
@@ -214,6 +202,18 @@
       "Justin"
     ],
     "winner": "red"
+  },
+  {
+    "date": "2026-11-12 00:00:00",
+    "team_red": [
+      "JulienF",
+      "BenjaminZ"
+    ],
+    "team_blue": [
+      "Rémi",
+      "ThéoM"
+    ],
+    "winner": "blue"
   },
   {
     "date": "2026-11-12 00:00:00",

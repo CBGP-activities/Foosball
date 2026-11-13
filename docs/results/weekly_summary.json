@@ -2711,5 +2711,90 @@
         "wins": 6
       }
     ]
+  },
+  {
+    "week_start": "2026-11-09",
+    "week_end": "2026-11-13",
+    "matches_played": 31,
+    "new_players": [],
+    "most_active": [
+      {
+        "player": "ThéoM",
+        "matches": 17
+      },
+      {
+        "player": "BenjaminC",
+        "matches": 13
+      },
+      {
+        "player": "Roland",
+        "matches": 11
+      }
+    ],
+    "most_wins": [
+      {
+        "player": "BenjaminC",
+        "wins": 11,
+        "matches": 13
+      },
+      {
+        "player": "ThéoM",
+        "wins": 10,
+        "matches": 17
+      },
+      {
+        "player": "Roland",
+        "wins": 7,
+        "matches": 11
+      }
+    ],
+    "best_trueskill_gain": [
+      {
+        "player": "Justin",
+        "gain": 4.79
+      },
+      {
+        "player": "Joris",
+        "gain": 0.73
+      },
+      {
+        "player": "Jules",
+        "gain": 0.55
+      }
+    ],
+    "ranking_climbers": [
+      {
+        "player": "Justin",
+        "places": 8,
+        "old_rank": 43,
+        "new_rank": 35
+      },
+      {
+        "player": "Raphaël",
+        "places": 1,
+        "old_rank": 4,
+        "new_rank": 3
+      },
+      {
+        "player": "Jules",
+        "places": 1,
+        "old_rank": 18,
+        "new_rank": 17
+      }
+    ],
+    "hot_streak": [
+      {
+        "player": "Roland",
+        "wins": 5
+      },
+      {
+        "player": "Rémi",
+        "wins": 5
+      },
+      {
+        "player": "BenjaminC",
+        "wins": 5
+      }
+    ]
   }
 ]

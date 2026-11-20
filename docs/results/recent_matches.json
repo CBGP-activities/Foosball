@@ -1,65 +1,5 @@
 [
   {
-    "date": "2026-11-17 00:00:00",
-    "team_red": [
-      "EmmanuelP",
-      "ManonV"
-    ],
-    "team_blue": [
-      "ThéoM",
-      "Justin"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-11-17 00:00:00",
-    "team_red": [
-      "Julia",
-      "PabloR"
-    ],
-    "team_blue": [
-      "Paul",
-      "Jules"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-11-17 00:00:00",
-    "team_red": [
-      "Paul",
-      "Julia"
-    ],
-    "team_blue": [
-      "Roland",
-      "ManonV"
-    ],
-    "winner": "red"
-  },
-  {
-    "date": "2026-11-18 00:00:00",
-    "team_red": [
-      "Paul",
-      "Justin"
-    ],
-    "team_blue": [
-      "ThéoM",
-      "BenjaminC"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-11-18 00:00:00",
-    "team_red": [
-      "Joris",
-      "PabloR"
-    ],
-    "team_blue": [
-      "JulieB",
-      "Moana"
-    ],
-    "winner": "red"
-  },
-  {
     "date": "2026-11-18 00:00:00",
     "team_red": [
       "Roland",
@@ -236,6 +176,66 @@
     "team_blue": [
       "Lily",
       "Justin"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-11-20 00:00:00",
+    "team_red": [
+      "Rémi",
+      "EmmanuelP"
+    ],
+    "team_blue": [
+      "BenjaminC",
+      "Lily"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-11-20 00:00:00",
+    "team_red": [
+      "ThéoM",
+      "Rémi"
+    ],
+    "team_blue": [
+      "BenjaminC",
+      "EmmanuelP"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-11-20 00:00:00",
+    "team_red": [
+      "EmmanuelP",
+      "Lily"
+    ],
+    "team_blue": [
+      "BenjaminC",
+      "JulieB"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-11-20 00:00:00",
+    "team_red": [
+      "Rémi",
+      "ThéoM"
+    ],
+    "team_blue": [
+      "BenjaminC",
+      "JulieB"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-11-20 00:00:00",
+    "team_red": [
+      "Rémi",
+      "Lily"
+    ],
+    "team_blue": [
+      "EmmanuelP",
+      "BenjaminC"
     ],
     "winner": "red"
   }

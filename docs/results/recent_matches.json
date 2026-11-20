@@ -1,65 +1,5 @@
 [
   {
-    "date": "2026-11-16 00:00:00",
-    "team_red": [
-      "Julia",
-      "Loïc"
-    ],
-    "team_blue": [
-      "PabloR",
-      "Justin"
-    ],
-    "winner": "red"
-  },
-  {
-    "date": "2026-11-16 00:00:00",
-    "team_red": [
-      "Loïc",
-      "Julia"
-    ],
-    "team_blue": [
-      "Jules",
-      "Rémi"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-11-17 00:00:00",
-    "team_red": [
-      "ThéoM",
-      "Paul"
-    ],
-    "team_blue": [
-      "Roland",
-      "PabloR"
-    ],
-    "winner": "red"
-  },
-  {
-    "date": "2026-11-17 00:00:00",
-    "team_red": [
-      "Lilou",
-      "ManonV"
-    ],
-    "team_blue": [
-      "ThéoM",
-      "Justin"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-11-17 00:00:00",
-    "team_red": [
-      "Roland",
-      "Paul"
-    ],
-    "team_blue": [
-      "Jules",
-      "PabloR"
-    ],
-    "winner": "red"
-  },
-  {
     "date": "2026-11-17 00:00:00",
     "team_red": [
       "EmmanuelP",
@@ -236,6 +176,66 @@
     "team_blue": [
       "Jules",
       "Rémi"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-11-20 00:00:00",
+    "team_red": [
+      "Justin",
+      "BenjaminC"
+    ],
+    "team_blue": [
+      "Joris",
+      "Moana"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-11-20 00:00:00",
+    "team_red": [
+      "Justin",
+      "ThéoM"
+    ],
+    "team_blue": [
+      "Moana",
+      "BenjaminC"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-11-20 00:00:00",
+    "team_red": [
+      "Lily",
+      "ThéoM"
+    ],
+    "team_blue": [
+      "BenjaminC",
+      "EmmanuelP"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-11-20 00:00:00",
+    "team_red": [
+      "EmmanuelP",
+      "ThéoM"
+    ],
+    "team_blue": [
+      "Lily",
+      "Justin"
+    ],
+    "winner": "blue"
+  },
+  {
+    "date": "2026-11-20 00:00:00",
+    "team_red": [
+      "BenjaminC",
+      "ThéoM"
+    ],
+    "team_blue": [
+      "Lily",
+      "Justin"
     ],
     "winner": "red"
   }

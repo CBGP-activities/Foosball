@@ -2796,5 +2796,90 @@
         "wins": 5
       }
     ]
+  },
+  {
+    "week_start": "2026-11-16",
+    "week_end": "2026-11-20",
+    "matches_played": 24,
+    "new_players": [],
+    "most_active": [
+      {
+        "player": "Jules",
+        "matches": 11
+      },
+      {
+        "player": "PabloR",
+        "matches": 9
+      },
+      {
+        "player": "Rémi",
+        "matches": 9
+      }
+    ],
+    "most_wins": [
+      {
+        "player": "Rémi",
+        "wins": 7,
+        "matches": 9
+      },
+      {
+        "player": "Julia",
+        "wins": 5,
+        "matches": 8
+      },
+      {
+        "player": "ThéoM",
+        "wins": 5,
+        "matches": 7
+      }
+    ],
+    "best_trueskill_gain": [
+      {
+        "player": "Justin",
+        "gain": 4.17
+      },
+      {
+        "player": "Joris",
+        "gain": 0.75
+      },
+      {
+        "player": "Moana",
+        "gain": 0.75
+      }
+    ],
+    "ranking_climbers": [
+      {
+        "player": "Justin",
+        "places": 2,
+        "old_rank": 35,
+        "new_rank": 33
+      },
+      {
+        "player": "Moana",
+        "places": 2,
+        "old_rank": 43,
+        "new_rank": 41
+      },
+      {
+        "player": "Paul",
+        "places": 1,
+        "old_rank": 10,
+        "new_rank": 9
+      }
+    ],
+    "hot_streak": [
+      {
+        "player": "Rémi",
+        "wins": 5
+      },
+      {
+        "player": "Lily",
+        "wins": 4
+      },
+      {
+        "player": "Paul",
+        "wins": 4
+      }
+    ]
   }
 ]

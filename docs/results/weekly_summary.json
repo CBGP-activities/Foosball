@@ -575,7 +575,7 @@
         "gain": 2.64
       },
       {
-        "player": "Jules",
+        "player": "Lily",
         "gain": 0.66
       }
     ],
@@ -1109,7 +1109,7 @@
       },
       {
         "player": "EmmanuelP",
-        "gain": 1.23
+        "gain": 1.45
       }
     ],
     "ranking_climbers": [
@@ -1193,8 +1193,8 @@
         "gain": 1.16
       },
       {
-        "player": "EmmanuelP",
-        "gain": 0.74
+        "player": "Armelle",
+        "gain": 1.09
       }
     ],
     "ranking_climbers": [
@@ -1279,7 +1279,7 @@
       },
       {
         "player": "Jules",
-        "gain": 0.42
+        "gain": 0.56
       }
     ],
     "ranking_climbers": [
@@ -1365,7 +1365,7 @@
       },
       {
         "player": "EmmanuelP",
-        "gain": 0.87
+        "gain": 1.39
       },
       {
         "player": "Rémi",
@@ -1705,16 +1705,16 @@
     ],
     "best_trueskill_gain": [
       {
-        "player": "PhilippeA",
-        "gain": 2.62
-      },
-      {
         "player": "ThéoM",
         "gain": 2.07
       },
       {
         "player": "Roland",
         "gain": 1.58
+      },
+      {
+        "player": "PhilippeA",
+        "gain": 1.53
       }
     ],
     "ranking_climbers": [
@@ -2063,16 +2063,16 @@
     ],
     "best_trueskill_gain": [
       {
-        "player": "NathV",
-        "gain": 1.24
-      },
-      {
         "player": "Sabine",
         "gain": 0.97
       },
       {
         "player": "ManonV",
-        "gain": 0.76
+        "gain": 0.5
+      },
+      {
+        "player": "Paul",
+        "gain": 0.5
       }
     ],
     "ranking_climbers": [
@@ -2146,12 +2146,12 @@
         "gain": 9.48
       },
       {
-        "player": "Loïc",
-        "gain": 0.6
+        "player": "NathV",
+        "gain": 1.19
       },
       {
-        "player": "ThéoM",
-        "gain": 0.47
+        "player": "Loïc",
+        "gain": 0.6
       }
     ],
     "ranking_climbers": [
@@ -2232,16 +2232,16 @@
     ],
     "best_trueskill_gain": [
       {
+        "player": "Marguerite",
+        "gain": 8.91
+      },
+      {
         "player": "ThéoM",
         "gain": 1.25
       },
       {
         "player": "Joris",
         "gain": 1.24
-      },
-      {
-        "player": "NathV",
-        "gain": 0.6
       }
     ],
     "ranking_climbers": [
@@ -2326,16 +2326,16 @@
     ],
     "best_trueskill_gain": [
       {
-        "player": "Marguerite",
-        "gain": 8.92
-      },
-      {
         "player": "BenjaminC",
         "gain": 0.74
       },
       {
         "player": "ThéoM",
         "gain": 0.71
+      },
+      {
+        "player": "Joris",
+        "gain": 0.66
       }
     ],
     "ranking_climbers": [
@@ -2494,12 +2494,12 @@
         "gain": 3.03
       },
       {
-        "player": "BenjaminC",
-        "gain": 0.91
+        "player": "Vadim",
+        "gain": 1.07
       },
       {
-        "player": "Vadim",
-        "gain": 0.8
+        "player": "BenjaminC",
+        "gain": 0.91
       }
     ],
     "ranking_climbers": [
@@ -2576,7 +2576,7 @@
     "best_trueskill_gain": [
       {
         "player": "PabloR",
-        "gain": 1.67
+        "gain": 2.51
       },
       {
         "player": "Julia",
@@ -2584,7 +2584,7 @@
       },
       {
         "player": "Vadim",
-        "gain": 1.03
+        "gain": 0.76
       }
     ],
     "ranking_climbers": [
@@ -2665,12 +2665,12 @@
     ],
     "best_trueskill_gain": [
       {
-        "player": "BenjaminC",
-        "gain": 0.92
+        "player": "Lilou",
+        "gain": 0.84
       },
       {
-        "player": "Lilou",
-        "gain": 0.92
+        "player": "BenjaminC",
+        "gain": 0.77
       },
       {
         "player": "BenjaminZ",
@@ -2836,15 +2836,15 @@
     "best_trueskill_gain": [
       {
         "player": "Justin",
-        "gain": 4.33
+        "gain": 4.61
       },
       {
         "player": "Moana",
         "gain": 2.76
       },
       {
-        "player": "Joris",
-        "gain": 0.73
+        "player": "BenjaminC",
+        "gain": 0.88
       }
     ],
     "ranking_climbers": [

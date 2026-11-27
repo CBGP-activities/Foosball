@@ -1,7 +1,4 @@
 date,team_red,team_blue,winner
-2026-11-24,"['Paul', 'Jules']","['ThéoM', 'Julia']",red
-2026-11-24,"['Rémi', 'NathV']","['BenjaminC', 'Paul']",blue
-2026-11-24,"['Rémi', 'ThéoM']","['NathV', 'Paul']",red
 2026-11-25,"['Rémi', 'Joris']","['Justin', 'EmmanuelP']",red
 2026-11-25,"['Roland', 'Julia']","['Joris', 'JulieB']",red
 2026-11-25,"['BenjaminC', 'Julia']","['Loïc', 'Joris']",red
@@ -19,3 +16,6 @@ date,team_red,team_blue,winner
 2026-11-26,"['BenjaminC', 'Jules']","['Lily', 'Roland']",red
 2026-11-26,"['Rémi', 'Jules']","['BenjaminC', 'Roland']",blue
 2026-11-26,"['Rémi', 'Julia']","['BenjaminC', 'Jules']",red
+2026-11-27,"['JulieB', 'BenjaminC']","['ThéoM', 'Jules']",red
+2026-11-27,"['Lily', 'Jules']","['BenjaminC', 'EmmanuelP']",red
+2026-11-27,"['BenjaminC', 'Jules']","['EmmanuelP', 'Lily']",blue

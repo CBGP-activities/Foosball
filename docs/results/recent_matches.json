@@ -1,41 +1,5 @@
 [
   {
-    "date": "2026-11-24 00:00:00",
-    "team_red": [
-      "Paul",
-      "Jules"
-    ],
-    "team_blue": [
-      "ThéoM",
-      "Julia"
-    ],
-    "winner": "red"
-  },
-  {
-    "date": "2026-11-24 00:00:00",
-    "team_red": [
-      "Rémi",
-      "NathV"
-    ],
-    "team_blue": [
-      "BenjaminC",
-      "Paul"
-    ],
-    "winner": "blue"
-  },
-  {
-    "date": "2026-11-24 00:00:00",
-    "team_red": [
-      "Rémi",
-      "ThéoM"
-    ],
-    "team_blue": [
-      "NathV",
-      "Paul"
-    ],
-    "winner": "red"
-  },
-  {
     "date": "2026-11-25 00:00:00",
     "team_red": [
       "Rémi",
@@ -238,5 +202,41 @@
       "Jules"
     ],
     "winner": "red"
+  },
+  {
+    "date": "2026-11-27 00:00:00",
+    "team_red": [
+      "JulieB",
+      "BenjaminC"
+    ],
+    "team_blue": [
+      "ThéoM",
+      "Jules"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-11-27 00:00:00",
+    "team_red": [
+      "Lily",
+      "Jules"
+    ],
+    "team_blue": [
+      "BenjaminC",
+      "EmmanuelP"
+    ],
+    "winner": "red"
+  },
+  {
+    "date": "2026-11-27 00:00:00",
+    "team_red": [
+      "BenjaminC",
+      "Jules"
+    ],
+    "team_blue": [
+      "EmmanuelP",
+      "Lily"
+    ],
+    "winner": "blue"
   }
 ]
